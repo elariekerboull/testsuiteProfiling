@@ -1,0 +1,73 @@
+ 1.2973513 /^it should be possible to use the HTTP proxy$/ # features/step_definitions/command_steps.rb:69
+ 1.2973513 Then it should be possible to use the HTTP proxy # features/core/allcli_sanity.feature:90
+ 1.1742000 /^it should be possible to reach the test packages$/ # features/step_definitions/command_steps.rb:64
+ 1.1742000 Then it should be possible to reach the test packages # features/core/allcli_sanity.feature:84
+ 0.5992819 /^"([^"]*)" should communicate with the server using public interface/ # features/step_definitions/command_steps.rb:43
+ 0.5817699 And "proxy" should communicate with the server using public interface # features/core/allcli_sanity.feature:37
+ 0.5888016 And "sle_minion" should communicate with the server using public interface # features/core/allcli_sanity.feature:44
+ 0.5782566 And "build_host" should communicate with the server using public interface # features/core/allcli_sanity.feature:51
+ 0.5960196 And "ssh_minion" should communicate with the server using public interface # features/core/allcli_sanity.feature:58
+ 0.6019781 And "rhlike_minion" should communicate with the server using public interface # features/core/allcli_sanity.feature:65
+ 0.6728563 And "deblike_minion" should communicate with the server using public interface # features/core/allcli_sanity.feature:72
+ 0.5752915 And "kvm_server" should communicate with the server using public interface # features/core/allcli_sanity.feature:79
+ 0.5511297 /^"([^"]*)" should have a FQDN$/ # features/step_definitions/command_steps.rb:12
+ 0.2845186 Then "server" should have a FQDN # features/core/allcli_sanity.feature:9
+ 0.6436053 Then "proxy" should have a FQDN # features/core/allcli_sanity.feature:35
+ 0.5697476 Then "sle_minion" should have a FQDN # features/core/allcli_sanity.feature:42
+ 0.6226452 Then "build_host" should have a FQDN # features/core/allcli_sanity.feature:49
+ 0.5078478 Then "ssh_minion" should have a FQDN # features/core/allcli_sanity.feature:56
+ 0.5385148 Then "rhlike_minion" should have a FQDN # features/core/allcli_sanity.feature:63
+ 0.6248532 Then "deblike_minion" should have a FQDN # features/core/allcli_sanity.feature:70
+ 0.6173057 Then "kvm_server" should have a FQDN # features/core/allcli_sanity.feature:77
+ 0.5072186 /^it should be possible to reach the Docker profiles$/ # features/step_definitions/command_steps.rb:90
+ 0.5072186 And it should be possible to reach the Docker profiles # features/core/allcli_sanity.feature:86
+ 0.3638997 /^it should be possible to reach the not authenticated registry$/ # features/step_definitions/command_steps.rb:105
+ 0.3638997 Then it should be possible to reach the not authenticated registry # features/core/allcli_sanity.feature:98
+ 0.3556022 /^it should be possible to reach the authenticated registry$/ # features/step_definitions/command_steps.rb:98
+ 0.3556022 Then it should be possible to reach the authenticated registry # features/core/allcli_sanity.feature:94
+ 0.3256492 /^it should be possible to use the custom download endpoint$/ # features/step_definitions/command_steps.rb:75
+ 0.3256492 Then it should be possible to use the custom download endpoint # features/core/allcli_sanity.feature:102
+ 0.3199551 /^socket "([^"]*)" is enabled on "([^"]*)"$/ # features/step_definitions/command_steps.rb:678
+ 0.3199551 And socket "tftp" is enabled on "server" # features/core/allcli_sanity.feature:28
+ 0.3151210 /^the clock from "([^"]*)" should be exact$/ # features/step_definitions/command_steps.rb:56
+ 0.3086190 And the clock from "server" should be exact # features/core/allcli_sanity.feature:11
+ 0.2877225 And the clock from "proxy" should be exact # features/core/allcli_sanity.feature:38
+ 0.2991922 And the clock from "sle_minion" should be exact # features/core/allcli_sanity.feature:45
+ 0.2970784 And the clock from "build_host" should be exact # features/core/allcli_sanity.feature:52
+ 0.2995935 And the clock from "ssh_minion" should be exact # features/core/allcli_sanity.feature:59
+ 0.3246465 And the clock from "rhlike_minion" should be exact # features/core/allcli_sanity.feature:66
+ 0.4063289 And the clock from "deblike_minion" should be exact # features/core/allcli_sanity.feature:73
+ 0.2977869 And the clock from "kvm_server" should be exact # features/core/allcli_sanity.feature:80
+ 0.3086912 /^reverse resolution should work for "([^"]*)"$/ # features/step_definitions/command_steps.rb:25
+ 0.2879015 And reverse resolution should work for "server" # features/core/allcli_sanity.feature:10
+ 0.3102409 And reverse resolution should work for "proxy" # features/core/allcli_sanity.feature:36
+ 0.2808124 And reverse resolution should work for "sle_minion" # features/core/allcli_sanity.feature:43
+ 0.3094616 And reverse resolution should work for "build_host" # features/core/allcli_sanity.feature:50
+ 0.2827369 And reverse resolution should work for "ssh_minion" # features/core/allcli_sanity.feature:57
+ 0.3328177 And reverse resolution should work for "rhlike_minion" # features/core/allcli_sanity.feature:64
+ 0.3795966 And reverse resolution should work for "deblike_minion" # features/core/allcli_sanity.feature:71
+ 0.2859618 And reverse resolution should work for "kvm_server" # features/core/allcli_sanity.feature:78
+ 0.3070748 /^service "([^"]*)" is enabled on "([^"]*)"$/ # features/step_definitions/command_steps.rb:664
+ 0.3730809 And service "apache2" is enabled on "server" # features/core/allcli_sanity.feature:12
+ 0.3051879 And service "cobblerd" is enabled on "server" # features/core/allcli_sanity.feature:14
+ 0.3070422 And service "jabberd" is enabled on "server" # features/core/allcli_sanity.feature:16
+ 0.3099661 And service "osa-dispatcher" is enabled on "server" # features/core/allcli_sanity.feature:18
+ 0.3091446 And service "rhn-search" is enabled on "server" # features/core/allcli_sanity.feature:20
+ 0.3057666 And service "salt-api" is enabled on "server" # features/core/allcli_sanity.feature:22
+ 0.3064766 And service "salt-master" is enabled on "server" # features/core/allcli_sanity.feature:24
+ 0.2402513 And service "taskomatic" is enabled on "server" # features/core/allcli_sanity.feature:26
+ 0.3067574 And service "tomcat" is enabled on "server" # features/core/allcli_sanity.feature:30
+ 0.3029014 /^socket "([^"]*)" is active on "([^"]*)"$/ # features/step_definitions/command_steps.rb:685
+ 0.3029014 And socket "tftp" is active on "server" # features/core/allcli_sanity.feature:29
+ 0.2991972 /^service "([^"]*)" is active on "([^"]*)"$/ # features/step_definitions/command_steps.rb:671
+ 0.2820361 And service "apache2" is active on "server" # features/core/allcli_sanity.feature:13
+ 0.3039381 And service "cobblerd" is active on "server" # features/core/allcli_sanity.feature:15
+ 0.3033814 And service "jabberd" is active on "server" # features/core/allcli_sanity.feature:17
+ 0.3124643 And service "osa-dispatcher" is active on "server" # features/core/allcli_sanity.feature:19
+ 0.3006221 And service "rhn-search" is active on "server" # features/core/allcli_sanity.feature:21
+ 0.3014591 And service "salt-api" is active on "server" # features/core/allcli_sanity.feature:23
+ 0.3121489 And service "salt-master" is active on "server" # features/core/allcli_sanity.feature:25
+ 0.2902227 And service "taskomatic" is active on "server" # features/core/allcli_sanity.feature:27
+ 0.2865019 And service "tomcat" is active on "server" # features/core/allcli_sanity.feature:31
+ 0.0015755 /^it should be possible to reach the build sources$/ # features/step_definitions/command_steps.rb:80
+ 0.0015755 And it should be possible to reach the build sources # features/core/allcli_sanity.feature:85

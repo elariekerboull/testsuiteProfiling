@@ -1,0 +1,267 @@
+
+
+ 1333.3083690 /^I kill all running spacewalk\-repo\-sync, excepted the ones needed to bootstrap$/ # features/step_definitions/command_steps.rb:335
+ 1333.3083690 When I kill all running spacewalk-repo-sync, excepted the ones needed to bootstrap # features/reposync/srv_wait_for_reposync.feature:17
+ 1005.2227495 /^I wait until all spacewalk\-repo\-sync finished$/ # features/step_definitions/command_steps.rb:308
+ 1005.2227495 And I wait until all spacewalk-repo-sync finished # features/reposync/srv_add_rocky8_repositories.feature:55
+ 82.4830964 /^I refresh SCC$/ # features/step_definitions/command_steps.rb:295
+ 82.4830964 When I refresh SCC # features/reposync/srv_sync_channels.feature:12
+ 60.7944658 /^I execute mgr\-sync refresh$/ # features/step_definitions/command_steps.rb:300
+ 60.7944658 And I execute mgr-sync refresh # features/reposync/srv_sync_channels.feature:94
+ 22.3579009 /^I wait until I see "(.*?)" product has been added$/ # features/step_definitions/common_steps.rb:584
+ 16.7030845 And I wait until I see "SUSE Linux Enterprise Server 12 SP5 x86_64" product has been added # features/reposync/srv_sync_products.feature:49
+ 28.0127173 And I wait until I see "SUSE Linux Enterprise Server 15 SP4 x86_64" product has been added # features/reposync/srv_sync_products.feature:65
+ 19.3814092 /^I enable product "([^"]*)"$/ # features/step_definitions/command_steps.rb:253
+ 19.3814092 When I enable product "SUSE Linux Enterprise Desktop 15 SP3 x86_64" # features/reposync/srv_enable_sync_products.feature:23
+ 9.4527221 /^I enable product "([^"]*)" without recommended$/ # features/step_definitions/command_steps.rb:268
+ 9.4527221 When I enable product "SUSE Linux Enterprise Server for SAP Applications 15 x86_64" without recommended # features/reposync/srv_enable_sync_products.feature:36
+ 8.7359817 /^"([^"]*)" package should have been stored$/ # features/step_definitions/command_steps.rb:374
+ 8.7359817 Then "orion-dummy-1.1-1.1.x86_64.rpm" package should have been stored # features/reposync/srv_check_reposync.feature:7
+ 6.2205998 /^I wait until I do not see "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:40
+ 6.5426122 And I wait until I do not see "Loading" text # features/reposync/srv_sync_products.feature:18
+ 7.0180688 And I wait until I do not see "Loading" text # features/reposync/srv_sync_products.feature:27
+ 6.3166447 And I wait until I do not see "Loading" text # features/reposync/srv_sync_products.feature:38
+ 8.8336171 And I wait until I do not see "Loading" text # features/reposync/srv_sync_products.feature:55
+ 2.3920560 And I wait until I do not see "Loading" text # features/reposync/srv_add_rocky8_repositories.feature:93
+ 4.8340688 /^I create the bootstrap repository for "([^"]*)" on the server$/ # features/step_definitions/command_steps.rb:942
+ 4.8340688 When I create the bootstrap repository for "rhlike_minion" on the server # features/reposync/srv_add_rocky8_repositories.feature:115
+ 4.7648607 /^I call spacewalk\-repo\-sync for channel "(.*?)" with a custom url "(.*?)"$/ # features/step_definitions/command_steps.rb:738
+ 4.7648607 When I call spacewalk-repo-sync for channel "test_base_channel" with a custom url "http://localhost/pub/TestRepoRpmUpdates/" # features/reposync/srv_sync_channels.feature:45
+ 4.1660442 /I wait until all synchronized channels have finished$/ # features/step_definitions/command_steps.rb:402
+ 4.1660442 When I wait until all synchronized channels have finished # features/reposync/srv_wait_for_reposync.feature:20
+ 2.9869697 /^I am authorized for the "([^"]*)" section$/ # features/step_definitions/navigation_steps.rb:395
+ 4.5867064 Given I am authorized for the "Admin" section # features/reposync/srv_sync_products.feature:8
+ 2.4281403 Given I am authorized for the "Admin" section # features/reposync/srv_wait_for_reposync.feature:7
+ 2.5799339 Given I am authorized for the "Admin" section # features/reposync/srv_add_rocky8_repositories.feature:14
+ 2.3530984 Given I am authorized for the "Admin" section # features/reposync/srv_add_rocky8_repositories.feature:62
+ 2.9735572 /^I wait until I see "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:36
+ 7.6420936 And I wait until I see "Product Description" text # features/reposync/srv_sync_products.feature:10
+ 0.6319074 And I wait until I see "SUSE Linux Enterprise Server 12 SP5 x86_64" text # features/reposync/srv_sync_products.feature:40
+ 0.6466707 And I wait until I see "SUSE Linux Enterprise Server 15 SP4 x86_64" text # features/reposync/srv_sync_products.feature:57
+ 2.5799309 /^the SLE15 (SP3|SP4) product should be added$/ # features/step_definitions/common_steps.rb:612
+ 2.5799309 Then the SLE15 SP4 product should be added # features/reposync/srv_sync_products.feature:66
+ 2.4206278 /^I use spacewalk\-common\-channel to add channel "([^"]*)" with arch "([^"]*)"$/ # features/step_definitions/command_steps.rb:129
+ 2.4206278 And I use spacewalk-common-channel to add channel "el8-uyuni-client" with arch "x86_64" # features/reposync/srv_sync_channels.feature:78
+ 2.3930129 /^the SLE12 SP5 product should be added$/ # features/step_definitions/common_steps.rb:603
+ 2.3930129 Then the SLE12 SP5 product should be added # features/reposync/srv_sync_products.feature:50
+ 2.1259951 /^I execute mgr\-sync "([^"]*)" with user "([^"]*)" and password "([^"]*)"$/ # features/step_definitions/command_steps.rb:283
+ 2.4799333 And I execute mgr-sync "list channels -e" with user "admin" and password "admin" # features/reposync/srv_sync_channels.feature:13
+ 1.8150648 When I execute mgr-sync "list channels" with user "admin" and password "admin" # features/reposync/srv_sync_products.feature:70
+ 2.0829873 When I execute mgr-sync "list products" with user "admin" and password "admin" # features/reposync/srv_enable_sync_products.feature:10
+ 1.8771567 /^I execute mgr\-sync "([^"]*)"$/ # features/step_definitions/command_steps.rb:287
+ 2.5368371 When I execute mgr-sync "list channels -e --no-optional" # features/reposync/srv_sync_channels.feature:19
+ 2.4211632 When I execute mgr-sync "list products --expand --filter x86_64" # features/reposync/srv_sync_channels.feature:39
+ 5.2960019 When I execute mgr-sync "add channel sles12-sp4-pool-x86_64" # features/reposync/srv_sync_channels.feature:52
+ 2.1386664 And I execute mgr-sync "list channels" # features/reposync/srv_sync_channels.feature:53
+ 4.0442749 When I execute mgr-sync "add channel rhel8-pool-x86_64" # features/reposync/srv_sync_channels.feature:74
+ 5.7078762 And I execute mgr-sync "add channel res-8-updates-x86_64" # features/reposync/srv_sync_channels.feature:75
+ 2.3005721 And I execute mgr-sync "add channel res-as-8-updates-x86_64" # features/reposync/srv_sync_channels.feature:76
+ 2.2934679 And I execute mgr-sync "add channel res-cb-8-updates-x86_64" # features/reposync/srv_sync_channels.feature:77
+ 2.3817700 And I execute mgr-sync "list channels" # features/reposync/srv_sync_channels.feature:79
+ 5.0098967 When I execute mgr-sync "add channel sle-module-containers12-pool-x86_64-sp4" # features/reposync/srv_sync_channels.feature:86
+ 2.5005128 And I execute mgr-sync "list channels" # features/reposync/srv_sync_channels.feature:87
+ 2.7892509 When I execute mgr-sync "list products -e" # features/reposync/srv_enable_sync_products.feature:15
+ 1.7619368 /^I should not see a "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:618
+ 1.7619368 And I should not see a "WebYaST 1.3" text # features/reposync/srv_sync_products.feature:13
+ 1.4886422 /^I call spacewalk\-repo\-sync to sync the channel "(.*?)"$/ # features/step_definitions/command_steps.rb:742
+ 1.4886422 When I call spacewalk-repo-sync to sync the channel "rocky-8-iso" # features/reposync/srv_add_rocky8_repositories.feature:54
+ 1.3975174 /^I follow "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:288
+ 1.9403100 And I follow "mgr-sync-refresh-default" # features/reposync/srv_wait_for_reposync.feature:11
+ 1.5155832 And I follow "Create Channel" # features/reposync/srv_add_rocky8_repositories.feature:18
+ 1.2512349 And I follow "Create Repository" # features/reposync/srv_add_rocky8_repositories.feature:28
+ 1.3019258 And I follow "Create Repository" # features/reposync/srv_add_rocky8_repositories.feature:37
+ 1.4838581 And I follow "Custom Channel for Rocky 8 DVD" # features/reposync/srv_add_rocky8_repositories.feature:46
+ 0.8921924 When I follow "Create Project" # features/reposync/srv_add_rocky8_repositories.feature:87
+ 1.2530008 /^I mount as "([^"]+)" the ISO from "([^"]+)" in the server$/ # features/step_definitions/common_steps.rb:17
+ 1.2530008 When I mount as "rocky-8-iso" the ISO from "http://minima-mirror.mgr.suse.de/pub/rocky/8/isos/x86_64/Rocky-x86_64-dvd.iso" in the server # features/reposync/srv_add_rocky8_repositories.feature:11
+ 1.2175655 /^I select "([^"]*)" from "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:181
+ 0.2157539 And I select "RHEL8-Pool for x86_64" from "Parent Channel" # features/reposync/srv_add_rocky8_repositories.feature:21
+ 1.5931006 And I select "Module (Stream)" from "type" # features/reposync/srv_add_rocky8_repositories.feature:68
+ 1.6608855 And I select "Module (Stream)" from "type" # features/reposync/srv_add_rocky8_repositories.feature:77
+ 1.4005220 And I select "RHEL8-Pool for x86_64" from "selectedBaseChannel" # features/reposync/srv_add_rocky8_repositories.feature:94
+ 1.0704744 /^I should see a "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:570
+ 1.9557357 Then I should see a "Arch" text # features/reposync/srv_sync_products.feature:11
+ 1.8908532 And I should see a "Channels" text # features/reposync/srv_sync_products.feature:12
+ 1.0242925 Then I should see a "RHEL or SLES ES or CentOS 8 Base" text # features/reposync/srv_sync_products.feature:20
+ 0.8525537 Then I should see a "RHEL or SLES ES or CentOS 8 Base" text # features/reposync/srv_sync_products.feature:22
+ 2.4196705 Then I should see a "Product Channels" text # features/reposync/srv_sync_products.feature:30
+ 0.6037438 And I should see a "Mandatory Channels" text # features/reposync/srv_sync_products.feature:31
+ 0.5557361 And I should see a "Optional Channels" text # features/reposync/srv_sync_products.feature:32
+ 0.7533079 And I should see a "Legacy Module 12 x86_64" text # features/reposync/srv_sync_products.feature:45
+ 0.6173890 Then I should see a "Basesystem Module 15 SP4 x86_64" text # features/reposync/srv_sync_products.feature:59
+ 0.6135774 Then I should see a "Channel Custom Channel for Rocky 8 DVD created" text # features/reposync/srv_add_rocky8_repositories.feature:24
+ 0.5315546 Then I should see a "Repository created successfully" text # features/reposync/srv_add_rocky8_repositories.feature:33
+ 0.4537164 Then I should see a "Repository created successfully" text # features/reposync/srv_add_rocky8_repositories.feature:42
+ 0.4625953 Then I should see a "repository information was successfully updated" text # features/reposync/srv_add_rocky8_repositories.feature:51
+ 0.6657554 Then I should see a "Create a new filter" text # features/reposync/srv_add_rocky8_repositories.feature:66
+ 0.5149463 Then I should see a "ruby-2.7" text # features/reposync/srv_add_rocky8_repositories.feature:72
+ 0.6314232 Then I should see a "Create a new filter" text # features/reposync/srv_add_rocky8_repositories.feature:75
+ 0.6618870 Then I should see a "python-3.6" text # features/reposync/srv_add_rocky8_repositories.feature:81
+ 0.3287667 Then I should see a "Content Lifecycle Projects" text # features/reposync/srv_add_rocky8_repositories.feature:85
+ 0.4563005 And I should see a "There are no entries to show." text # features/reposync/srv_add_rocky8_repositories.feature:86
+ 2.0197700 Then I should see a "Content Lifecycle Project - Remove AppStream metadata" text # features/reposync/srv_add_rocky8_repositories.feature:91
+ 1.3797833 Then I should see a "Custom Channel for Rocky 8 DVD" text # features/reposync/srv_add_rocky8_repositories.feature:97
+ 2.1729044 Then I should see a "python-3.6: enable module python36:3.6" text # features/reposync/srv_add_rocky8_repositories.feature:102
+ 0.6490509 Then I should see a "not built" text # features/reposync/srv_add_rocky8_repositories.feature:108
+ 3.4760720 Then I should see a "Version 1: Initial build" text # features/reposync/srv_add_rocky8_repositories.feature:112
+ 0.8631757 /^I enter "([^"]*)" as the filtered product description$/ # features/step_definitions/navigation_steps.rb:808
+ 0.5139918 And I enter "RHEL" as the filtered product description # features/reposync/srv_sync_products.feature:19
+ 1.0041576 And I enter "SUSE Linux Enterprise Server for SAP Applications 15 x86_64" as the filtered product description # features/reposync/srv_sync_products.feature:28
+ 1.0876066 And I enter "SUSE Linux Enterprise Server 12 SP5" as the filtered product description # features/reposync/srv_sync_products.feature:39
+ 0.8469468 And I enter "SUSE Linux Enterprise Server 15 SP4" as the filtered product description # features/reposync/srv_sync_products.feature:56
+ 0.7952636 /^I click on "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:260
+ 1.8948778 And I click on "Update Schedule" # features/reposync/srv_wait_for_reposync.feature:13
+ 1.7114378 And I click on "Delete Schedule" # features/reposync/srv_wait_for_reposync.feature:14
+ 1.5787109 And I click on "Create Channel" # features/reposync/srv_add_rocky8_repositories.feature:23
+ 1.1572009 And I click on "Create Repository" # features/reposync/srv_add_rocky8_repositories.feature:32
+ 1.1709354 And I click on "Create Repository" # features/reposync/srv_add_rocky8_repositories.feature:41
+ 2.0545894 And I click on "Save Repositories" # features/reposync/srv_add_rocky8_repositories.feature:50
+ 0.9874189 And I click on "Create Filter" # features/reposync/srv_add_rocky8_repositories.feature:64
+ 0.1986792 When I click on "Create Filter" # features/reposync/srv_add_rocky8_repositories.feature:73
+ 0.1817261 And I click on "Create" # features/reposync/srv_add_rocky8_repositories.feature:90
+ 0.2530441 When I click on "Attach/Detach Sources" # features/reposync/srv_add_rocky8_repositories.feature:92
+ 0.2648690 And I click on "Save" # features/reposync/srv_add_rocky8_repositories.feature:96
+ 0.1789742 When I click on "Attach/Detach Filters" # features/reposync/srv_add_rocky8_repositories.feature:98
+ 0.1367837 And I click on "Save" # features/reposync/srv_add_rocky8_repositories.feature:101
+ 0.2026591 When I click on "Add Environment" # features/reposync/srv_add_rocky8_repositories.feature:103
+ 0.1506667 And I click on "Save" # features/reposync/srv_add_rocky8_repositories.feature:107
+ 0.6016445 When I click on "Build" # features/reposync/srv_add_rocky8_repositories.feature:109
+ 0.6703641 /^I click on "([^"]*)" in "([^"]*)" modal$/ # features/step_definitions/navigation_steps.rb:953
+ 0.7168080 And I click on "Save" in "Create a new filter" modal # features/reposync/srv_add_rocky8_repositories.feature:71
+ 0.6239201 And I click on "Save" in "Create a new filter" modal # features/reposync/srv_add_rocky8_repositories.feature:80
+ 0.6506016 /^I wait until the channel "([^"]*)" has been synced$/ # features/step_definitions/command_steps.rb:382
+ 0.6506016 When I wait until the channel "rocky-8-iso" has been synced # features/reposync/srv_add_rocky8_repositories.feature:59
+ 0.4949259 /^I select "(.*?)" in the dropdown list of the architecture filter$/ # features/step_definitions/common_steps.rb:523
+ 0.4949259 When I select "x86_64" in the dropdown list of the architecture filter # features/reposync/srv_sync_products.feature:21
+ 0.4941046 /^I follow the left menu "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:341
+ 0.9220505 When I follow the left menu "Admin > Setup Wizard > Products" # features/reposync/srv_sync_products.feature:9
+ 0.5308512 When I follow the left menu "Admin > Setup Wizard > Products" # features/reposync/srv_sync_products.feature:17
+ 0.2271823 When I follow the left menu "Admin > Setup Wizard > Products" # features/reposync/srv_sync_products.feature:26
+ 0.5174783 When I follow the left menu "Admin > Setup Wizard > Products" # features/reposync/srv_sync_products.feature:37
+ 0.4873364 When I follow the left menu "Admin > Setup Wizard > Products" # features/reposync/srv_sync_products.feature:54
+ 0.4059634 When I follow the left menu "Admin > Task Schedules" # features/reposync/srv_wait_for_reposync.feature:10
+ 0.5658913 When I follow the left menu "Software > Manage > Channels" # features/reposync/srv_add_rocky8_repositories.feature:17
+ 0.3656791 When I follow the left menu "Software > Manage > Repositories" # features/reposync/srv_add_rocky8_repositories.feature:27
+ 0.2315944 When I follow the left menu "Software > Manage > Repositories" # features/reposync/srv_add_rocky8_repositories.feature:36
+ 0.2753036 When I follow the left menu "Software > Manage > Channels" # features/reposync/srv_add_rocky8_repositories.feature:45
+ 1.1716022 When I follow the left menu "Content Lifecycle > Filters" # features/reposync/srv_add_rocky8_repositories.feature:63
+ 0.2283224 When I follow the left menu "Content Lifecycle > Projects" # features/reposync/srv_add_rocky8_repositories.feature:84
+ 0.4139673 /^I enter "([^"]*)" as "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:230
+ 0.3716899 And I enter "Custom Channel for Rocky 8 DVD" as "Channel Name" # features/reposync/srv_add_rocky8_repositories.feature:19
+ 0.3240919 And I enter "rocky-8-iso" as "Channel Label" # features/reposync/srv_add_rocky8_repositories.feature:20
+ 0.3290384 And I enter "Custom channel" as "Channel Summary" # features/reposync/srv_add_rocky8_repositories.feature:22
+ 0.2715535 And I enter "rocky-8-iso-appstream" as "label" # features/reposync/srv_add_rocky8_repositories.feature:29
+ 0.4019552 And I enter "http://127.0.0.1/rocky-8-iso/AppStream" as "url" # features/reposync/srv_add_rocky8_repositories.feature:30
+ 0.2629434 And I enter "rocky-8-iso-baseos" as "label" # features/reposync/srv_add_rocky8_repositories.feature:38
+ 0.3768534 And I enter "http://127.0.0.1/rocky-8-iso/BaseOS" as "url" # features/reposync/srv_add_rocky8_repositories.feature:39
+ 0.5627257 When I enter "ruby-2.7" as "filter_name" # features/reposync/srv_add_rocky8_repositories.feature:67
+ 0.4559462 And I enter "ruby" as "moduleName" # features/reposync/srv_add_rocky8_repositories.feature:69
+ 0.2294381 And I enter "2.7" as "moduleStream" # features/reposync/srv_add_rocky8_repositories.feature:70
+ 0.3521433 When I enter "python-3.6" as "filter_name" # features/reposync/srv_add_rocky8_repositories.feature:76
+ 0.3674301 And I enter "python36" as "moduleName" # features/reposync/srv_add_rocky8_repositories.feature:78
+ 0.2222290 And I enter "3.6" as "moduleStream" # features/reposync/srv_add_rocky8_repositories.feature:79
+ 0.4182897 And I enter "Remove AppStream metadata" as "name" # features/reposync/srv_add_rocky8_repositories.feature:88
+ 0.3377117 And I enter "no-appstream" as "label" # features/reposync/srv_add_rocky8_repositories.feature:89
+ 0.3810331 And I enter "result" as "name" # features/reposync/srv_add_rocky8_repositories.feature:104
+ 0.3947888 And I enter "result" as "label" # features/reposync/srv_add_rocky8_repositories.feature:105
+ 0.9480099 And I enter "Filtered channels without AppStream channels" as "description" # features/reposync/srv_add_rocky8_repositories.feature:106
+ 0.8575081 And I enter "Initial build" as "message" # features/reposync/srv_add_rocky8_repositories.feature:110
+ 0.3348246 /^I wait at most (\d+) seconds until I see modal containing "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:980
+ 0.3228214 And I wait at most 10 seconds until I see modal containing "Create a new filter" text # features/reposync/srv_add_rocky8_repositories.feature:65
+ 0.3468278 Then I wait at most 10 seconds until I see modal containing "Create a new filter" text # features/reposync/srv_add_rocky8_repositories.feature:74
+ 0.3192351 /^solver file for "([^"]*)" should reference "([^"]*)"$/ # features/step_definitions/command_steps.rb:378
+ 0.3192351 And solver file for "test-channel-x86_64" should reference "orion-dummy-1.1-1.1.x86_64.rpm" # features/reposync/srv_check_reposync.feature:8
+ 0.3097800 /^I remove the mgr\-sync cache file$/ # features/step_definitions/command_steps.rb:291
+ 0.3097800 When I remove the mgr-sync cache file # features/reposync/srv_sync_channels.feature:93
+ 0.2759478 /^the reposync logs should not report errors$/ # features/step_definitions/command_steps.rb:369
+ 0.2759478 Then the reposync logs should not report errors # features/reposync/srv_add_rocky8_repositories.feature:56
+ 0.2294358 /^I click the channel list of product "(.*?)"$/ # features/step_definitions/common_steps.rb:619
+ 0.2294358 And I click the channel list of product "SUSE Linux Enterprise Server for SAP Applications 15 x86_64" # features/reposync/srv_sync_products.feature:29
+ 0.2168631 /^I check "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:169
+ 0.3029818 And I check "Custom Channel for Rocky 8 DVD" # features/reposync/srv_add_rocky8_repositories.feature:95
+ 0.1940339 And I check "python-3.6: enable module python36:3.6" # features/reposync/srv_add_rocky8_repositories.feature:99
+ 0.1535737 And I check "ruby-2.7: enable module ruby:2.7" # features/reposync/srv_add_rocky8_repositories.feature:100
+ 0.1824135 /^I follow "([^"]*)" in the (.+)$/ # features/step_definitions/navigation_steps.rb:303
+ 0.1824135 And I follow "Repositories" in the content area # features/reposync/srv_add_rocky8_repositories.feature:47
+ 0.1672221 /^I select the "([^"]*)" repo$/ # features/step_definitions/navigation_steps.rb:746
+ 0.1718834 And I select the "rocky-8-iso-appstream" repo # features/reposync/srv_add_rocky8_repositories.feature:48
+ 0.1625607 And I select the "rocky-8-iso-baseos" repo # features/reposync/srv_add_rocky8_repositories.feature:49
+ 0.1659613 /^I choose "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:223
+ 0.1659613 And I choose "disabled" # features/reposync/srv_wait_for_reposync.feature:12
+ 0.1616310 /^I (deselect|select) "([^\"]*)" as a product$/ # features/step_definitions/common_steps.rb:531
+ 0.1720470 And I select "SUSE Linux Enterprise Server 12 SP5 x86_64" as a product # features/reposync/srv_sync_products.feature:41
+ 0.1512151 When I select "SUSE Linux Enterprise Server 15 SP4 x86_64" as a product # features/reposync/srv_sync_products.feature:61
+ 0.1443686 /^I click the environment build button$/ # features/step_definitions/common_steps.rb:1159
+ 0.1443686 And I click the environment build button # features/reposync/srv_add_rocky8_repositories.feature:111
+ 0.1435904 /^I select the addon "(.*?)"$/ # features/step_definitions/common_steps.rb:566
+ 0.1435904 When I select the addon "Legacy Module 12 x86_64" # features/reposync/srv_sync_products.feature:46
+ 0.1427734 /^I open the sub-list of the product "(.*?)"$/ # features/step_definitions/common_steps.rb:561
+ 0.1522013 When I open the sub-list of the product "SUSE Linux Enterprise Server 12 SP5 x86_64" # features/reposync/srv_sync_products.feature:43
+ 0.1333454 And I open the sub-list of the product "SUSE Linux Enterprise Server 15 SP4 x86_64" # features/reposync/srv_sync_products.feature:58
+ 0.1382492 /^I uncheck "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:173
+ 0.1418026 And I uncheck "metadataSigned" # features/reposync/srv_add_rocky8_repositories.feature:31
+ 0.1346958 And I uncheck "metadataSigned" # features/reposync/srv_add_rocky8_repositories.feature:40
+ 0.1206094 /^I click the Add Product button$/ # features/step_definitions/common_steps.rb:599
+ 0.1201710 When I click the Add Product button # features/reposync/srv_sync_products.feature:48
+ 0.1210479 When I click the Add Product button # features/reposync/srv_sync_products.feature:64
+ 0.1068115 /^I close the modal dialog$/ # features/step_definitions/navigation_steps.rb:1020
+ 0.1068115 When I close the modal dialog # features/reposync/srv_sync_products.feature:33
+ 0.0986576 /^I should see the "(.*?)" selected$/ # features/step_definitions/common_steps.rb:577
+ 0.1238768 Then I should see the "SUSE Linux Enterprise Server 12 SP5 x86_64" selected # features/reposync/srv_sync_products.feature:42
+ 0.0679570 Then I should see the "SUSE Linux Enterprise Server 12 SP5 x86_64" selected # features/reposync/srv_sync_products.feature:44
+ 0.0829847 Then I should see the "Legacy Module 12 x86_64" selected # features/reposync/srv_sync_products.feature:47
+ 0.0908627 Then I should see the "SUSE Linux Enterprise Server 15 SP4 x86_64" selected # features/reposync/srv_sync_products.feature:62
+ 0.1276067 And I should see the "Basesystem Module 15 SP4 x86_64" selected # features/reposync/srv_sync_products.feature:63
+ 0.0361149 /^I should see that the "(.*?)" product is "(.*?)"$/ # features/step_definitions/common_steps.rb:572
+ 0.0361149 And I should see that the "Basesystem Module 15 SP4 x86_64" product is "recommended" # features/reposync/srv_sync_products.feature:60
+ 0.0000595 /^I should see "(.*?)" in the output$/ # features/step_definitions/command_steps.rb:660
+ 0.0000815 Then I should see "Channel: test_base_channel" in the output # features/reposync/srv_sync_channels.feature:46
+ 0.0000564 And I should see "Sync completed." in the output # features/reposync/srv_sync_channels.feature:47
+ 0.0000456 And I should see "Total time:" in the output # features/reposync/srv_sync_channels.feature:48
+ 0.0000544 And I should see "Repo URL:" in the output # features/reposync/srv_sync_channels.feature:49
+ 0.0000463 /^I shouldn't get "([^"]*)"$/ # features/step_definitions/command_steps.rb:138
+ 0.0000653 And I shouldn't get " [ ] SLES12-SP5-Installer-Updates for x86_64 SUSE Linux Enterprise Server 12 SP5 x86_64 [sles12-sp5-installer-updates-x86_64]" # features/reposync/srv_sync_channels.feature:22
+ 0.0000539 And I shouldn't get "ppc64" # features/reposync/srv_sync_channels.feature:41
+ 0.0000545 And I shouldn't get "s390x" # features/reposync/srv_sync_channels.feature:42
+ 0.0000279 And I shouldn't get "sle-module-basesystem15-pool-x86_64-sap" # features/reposync/srv_enable_sync_products.feature:40
+ 0.0000301 And I shouldn't get "sle-module-basesystem15-updates-x86_64-sap" # features/reposync/srv_enable_sync_products.feature:41
+ 0.0000347 /^I should get "([^"]*)"$/ # features/step_definitions/command_steps.rb:134
+ 0.0000645 Then I should get "[ ] SLES12-SP5-Pool for x86_64 SUSE Linux Enterprise Server 12 SP5 x86_64 [sles12-sp5-pool-x86_64]" # features/reposync/srv_sync_channels.feature:14
+ 0.0000658 And I should get " [ ] SLES12-SP5-Updates for x86_64 SUSE Linux Enterprise Server 12 SP5 x86_64 [sles12-sp5-updates-x86_64]" # features/reposync/srv_sync_channels.feature:15
+ 0.0000631 And I should get " [ ] SLES12-SP5-Installer-Updates for x86_64 SUSE Linux Enterprise Server 12 SP5 x86_64 [sles12-sp5-installer-updates-x86_64]" # features/reposync/srv_sync_channels.feature:16
+ 0.0000664 Then I should get "[ ] SLES12-SP5-Pool for x86_64 SUSE Linux Enterprise Server 12 SP5 x86_64 [sles12-sp5-pool-x86_64]" # features/reposync/srv_sync_channels.feature:20
+ 0.0000546 And I should get " [ ] SLES12-SP5-Updates for x86_64 SUSE Linux Enterprise Server 12 SP5 x86_64 [sles12-sp5-updates-x86_64]" # features/reposync/srv_sync_channels.feature:21
+ 0.0000521 Then I should get "[ ] SUSE Linux Enterprise Server 12 SP4 x86_64" # features/reposync/srv_sync_channels.feature:40
+ 0.0000658 Then I should get "[I] SLES12-SP4-Pool for x86_64 SUSE Linux Enterprise Server 12 SP4 x86_64 [sles12-sp4-pool-x86_64]" # features/reposync/srv_sync_channels.feature:54
+ 0.0000339 And I should get " [I] SLES12-SP4-Updates for x86_64 SUSE Linux Enterprise Server 12 SP4 x86_64 [sles12-sp4-updates-x86_64]" # features/reposync/srv_sync_channels.feature:55
+ 0.0000743 And I should get " [ ] SLE-Module-Containers12-Pool for x86_64 Containers Module 12 x86_64 [sle-module-containers12-pool-x86_64-sp4]" # features/reposync/srv_sync_channels.feature:56
+ 0.0000441 Then I should get "[I] RHEL8-Pool for x86_64 RHEL or SLES ES or CentOS 8 Base [rhel8-pool-x86_64]" # features/reposync/srv_sync_channels.feature:80
+ 0.0000446 And I should get "[I] RES-8-Updates for x86_64 SUSE Linux Enterprise Server with Expanded Support 8 x86_64 [res-8-updates-x86_64]" # features/reposync/srv_sync_channels.feature:81
+ 0.0000457 And I should get "[I] RES-AS-8-Updates for x86_64 SUSE Linux Enterprise Server with Expanded Support 8 x86_64 [res-as-8-updates-x86_64]" # features/reposync/srv_sync_channels.feature:82
+ 0.0000453 And I should get "[I] RES-CB-8-Updates for x86_64 SUSE Linux Enterprise Server with Expanded Support 8 x86_64 [res-cb-8-updates-x86_64]" # features/reposync/srv_sync_channels.feature:83
+ 0.0000503 Then I should get "[I] SLES12-SP4-Pool for x86_64 SUSE Linux Enterprise Server 12 SP4 x86_64 [sles12-sp4-pool-x86_64]" # features/reposync/srv_sync_channels.feature:88
+ 0.0000500 And I should get " [I] SLE-Module-Containers12-Pool for x86_64 Containers Module 12 x86_64 [sle-module-containers12-pool-x86_64-sp4]" # features/reposync/srv_sync_channels.feature:89
+ 0.0000615 And I should get " [I] SLE-Module-Containers12-Updates for x86_64 Containers Module 12 x86_64 [sle-module-containers12-updates-x86_64-sp4]" # features/reposync/srv_sync_channels.feature:90
+ 0.0000551 Then I should get "Timeout. No user input for 60 seconds. Exiting..." # features/reposync/srv_sync_channels.feature:95
+ 0.0000507 Then I should get " [I] SLES12-SP5-Installer-Updates for x86_64 SUSE Linux Enterprise Server 12 SP5 x86_64 [sles12-sp5-installer-updates-x86_64]" # features/reposync/srv_sync_products.feature:71
+ 0.0000327 And I should get " [I] SLE15-SP4-Installer-Updates for x86_64 SUSE Linux Enterprise Server 15 SP4 x86_64 [sle15-sp4-installer-updates-x86_64]" # features/reposync/srv_sync_products.feature:72
+ 0.0000290 Then I should get "[I] SUSE Linux Enterprise Server 12 SP5 x86_64" # features/reposync/srv_enable_sync_products.feature:11
+ 0.0000296 And I should get "[ ] SUSE Linux Enterprise Desktop 15 SP3 x86_64" # features/reposync/srv_enable_sync_products.feature:12
+ 0.0000336 Then I should get "[ ] SUSE Linux Enterprise Desktop 15 SP3 x86_64" # features/reposync/srv_enable_sync_products.feature:16
+ 0.0000276 And I should get " [ ] (R) Basesystem Module 15 SP3 x86_64" # features/reposync/srv_enable_sync_products.feature:17
+ 0.0000306 And I should get " [ ] Desktop Applications Module 15 SP3 x86_64" # features/reposync/srv_enable_sync_products.feature:18
+ 0.0000301 Then I should get "Adding channels required by 'SUSE Linux Enterprise Desktop 15 SP3 x86_64' product" # features/reposync/srv_enable_sync_products.feature:24
+ 0.0000323 And I should get "- sle-product-sled15-sp3-updates-x86_64" # features/reposync/srv_enable_sync_products.feature:25
+ 0.0000268 And I should get "- sle-product-sled15-sp3-pool-x86_64" # features/reposync/srv_enable_sync_products.feature:26
+ 0.0000309 And I should get "- sle-module-basesystem15-sp3-updates-x86_64-sled" # features/reposync/srv_enable_sync_products.feature:27
+ 0.0000361 And I should get "- sle-module-basesystem15-sp3-pool-x86_64-sled" # features/reposync/srv_enable_sync_products.feature:28
+ 0.0000312 And I should get "- sle-module-desktop-applications15-sp3-updates-x86_64-sled" # features/reposync/srv_enable_sync_products.feature:29
+ 0.0000305 And I should get "- sle-module-desktop-applications15-sp3-pool-x86_64-sled" # features/reposync/srv_enable_sync_products.feature:30
+ 0.0000309 And I should get "- sle-product-we15-sp3-updates-x86_64-sled" # features/reposync/srv_enable_sync_products.feature:31
+ 0.0000316 And I should get "- sle-product-we15-sp3-pool-x86_64-sled" # features/reposync/srv_enable_sync_products.feature:32
+ 0.0000517 And I should get "Product successfully added" # features/reposync/srv_enable_sync_products.feature:33
+ 0.0000382 Then I should get "Adding channels required by 'SUSE Linux Enterprise Server for SAP Applications 15 x86_64' product" # features/reposync/srv_enable_sync_products.feature:37
+ 0.0000297 And I should get "- sle-product-sles_sap15-updates-x86_64" # features/reposync/srv_enable_sync_products.feature:38
+ 0.0000290 And I should get "- sle-product-sles_sap15-pool-x86_64" # features/reposync/srv_enable_sync_products.feature:39
+ 0.0000290 And I should get "Product successfully added" # features/reposync/srv_enable_sync_products.feature:42
+

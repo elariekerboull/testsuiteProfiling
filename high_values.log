@@ -1,0 +1,159 @@
+ 700.0005741 /^I wait for "(\d+)" seconds?$/ # features/step_definitions/common_steps.rb:13
+ 700.0005741 And I wait for "700" seconds # features/core/proxy_branch_network.feature:200
+ 140.6109940 /^I wait until onboarding is completed for "([^"]*)"$/ # features/step_definitions/common_steps.rb:856
+ 140.6109940 When I wait until onboarding is completed for "proxy" # features/core/proxy_register_as_minion_with_script.feature:48
+ 64.9930312 /^I wait until event "([^"]*)" is completed$/ # features/step_definitions/common_steps.rb:132
+ 100.4689069 And I wait until event "Apply highstate scheduled by admin" is completed # features/core/proxy_branch_network.feature:186
+ 1333.3083690 /^I kill all running spacewalk\-repo\-sync, excepted the ones needed to bootstrap$/ # features/step_definitions/command_steps.rb:335
+ 1333.3083690 When I kill all running spacewalk-repo-sync, excepted the ones needed to bootstrap # features/reposync/srv_wait_for_reposync.feature:17
+ 1005.2227495 /^I wait until all spacewalk\-repo\-sync finished$/ # features/step_definitions/command_steps.rb:308
+ 1005.2227495 And I wait until all spacewalk-repo-sync finished # features/reposync/srv_add_rocky8_repositories.feature:55
+ 82.4830964 /^I refresh SCC$/ # features/step_definitions/command_steps.rb:295
+ 82.4830964 When I refresh SCC # features/reposync/srv_sync_channels.feature:12
+ 60.7944658 /^I execute mgr\-sync refresh$/ # features/step_definitions/command_steps.rb:300
+ 60.7944658 And I execute mgr-sync refresh # features/reposync/srv_sync_channels.feature:94
+ 250.0649249 /^I apply highstate on "([^"]*)"$/ # features/step_definitions/command_steps.rb:229
+ 250.0649249 And I apply highstate on "build_host" # features/init_clients/buildhost_bootstrap.feature:72
+ 65.7727450 /^I wait until file "([^"]*)" exists on "([^"]*)"$/ # features/step_definitions/command_steps.rb:712
+ 65.7727450 And I wait until file "/var/lib/Kiwi/repo/rhn-org-trusted-ssl-cert-osimage-1.0-1.noarch.rpm" exists on "build_host" # features/init_clients/buildhost_bootstrap.feature:74
+ 62.2450044 /^I check for failed events on history event page$/ # features/step_definitions/common_steps.rb:1101
+ 72.4031024 Then I check for failed events on history event page # features/init_clients/min_rhlike_salt.feature:60
+ 62.1019832 Then I check for failed events on history event page # features/init_clients/buildhost_bootstrap.feature:84
+ 97.6584044 And I wait until onboarding is completed for "ssh_minion" # features/init_clients/sle_ssh_minion.feature:21
+ 73.2826482 And I wait until onboarding is completed for "deblike_minion" # features/init_clients/min_deblike_salt.feature:26
+ 71.9297407 And I wait until I see "Successfully bootstrapped host!" text # features/init_clients/sle_ssh_minion.feature:18
+ 84.3797858 And I wait until I see "Successfully bootstrapped host!" text # features/init_clients/min_deblike_salt.feature:23
+ 63.9947910 And I wait until I see the name of "sle_minion", refreshing the page # features/init_clients/sle_minion.feature:27
+ 65.8032094 And I wait until I see the name of "rhlike_minion", refreshing the page # features/init_clients/min_rhlike_salt.feature:25
+ 1772.2680558 /^I wait until the image build "([^"]*)" is completed$/ # features/step_definitions/retail_steps.rb:555
+ 1772.2680558 When I wait until the image build "suse_os_image" is completed # features/secondary/buildhost_osimage_build_image.feature:50
+ 251.5911643 /^the server starts mocking an IPMI host$/ # features/step_definitions/command_steps.rb:511
+ 251.5576596 When the server starts mocking an IPMI host # features/secondary/srv_power_management.feature:9
+ 251.6246690 When the server starts mocking an IPMI host # features/secondary/srv_power_management_api.feature:8
+ 241.1510973 /^I wait at most (\d+) seconds until file "([^"]*)" exists on "([^"]*)"$/ # features/step_definitions/command_steps.rb:716
+ 238.9313459 And I wait at most 300 seconds until file "/tmp/action_chain_one_system_done" exists on "sle_minion" # features/secondary/min_action_chain.feature:176
+ 243.3708487 And I wait at most 300 seconds until file "/tmp/action_chain_one_system_done" exists on "ssh_minion" # features/secondary/minssh_action_chain.feature:166
+ 210.2372435 /^I wait and check that "([^"]*)" has rebooted$/ # features/step_definitions/command_steps.rb:731
+ 210.2372435 Then I wait and check that "ssh_minion" has rebooted # features/secondary/allcli_reboot.feature:23
+ 192.1859834 /^I wait at most (\d+) seconds until event "([^"]*)" is completed$/ # features/step_definitions/common_steps.rb:151
+ 244.8568094 When I wait at most 600 seconds until event "System reboot scheduled by admin" is completed # features/secondary/allcli_reboot.feature:32
+ 242.0365728 When I wait at most 600 seconds until event "System reboot scheduled by admin" is completed # features/secondary/allcli_reboot.feature:43
+ 241.9724969 When I wait at most 600 seconds until event "System reboot scheduled by admin" is completed # features/secondary/allcli_reboot.feature:54
+ 83.3191228 And I wait at most 500 seconds until event "OpenSCAP xccdf scanning" is completed # features/secondary/min_rhlike_openscap_audit.feature:48
+ 243.0109932 And I wait at most 660 seconds until event "Image Build suse_key scheduled by admin" is completed # features/secondary/buildhost_docker_build_image.feature:56
+ 225.4423016 And I wait at most 660 seconds until event "Image Build suse_simple scheduled by admin" is completed # features/secondary/buildhost_docker_build_image.feature:67
+ 242.9287628 And I wait at most 660 seconds until event "Image Build suse_real_key scheduled by admin" is completed # features/secondary/buildhost_docker_build_image.feature:75
+ 145.9208646 /^I wait at most (\d+) seconds until image "([^"]*)" with version "([^"]*)" is built successfully via API$/ # features/step_definitions/docker_steps.rb:33
+ 218.4648073 And I wait at most 600 seconds until image "suse_key" with version "Latest_key-activation1" is built successfully via API # features/secondary/buildhost_docker_build_image.feature:83
+ 213.3301375 And I wait at most 600 seconds until image "suse_simple" with version "Latest_simple" is built successfully via API # features/secondary/buildhost_docker_build_image.feature:89
+ 218.1357893 And I wait at most 600 seconds until image "suse_simple" with version "Latest_simple" is built successfully via API # features/secondary/buildhost_docker_build_image.feature:101
+ 208.1371364 And I wait at most 600 seconds until image "suse_key" with version "Latest_key-activation1" is built successfully via API # features/secondary/buildhost_docker_build_image.feature:107
+ 193.0242872 And I wait at most 600 seconds until image "suse_real_key" with version "GUI_BUILT_IMAGE" is built successfully via API # features/secondary/buildhost_docker_build_image.feature:118
+ 188.1962468 And I wait at most 600 seconds until image "suse_real_key" with version "GUI_DOCKERADMIN" is built successfully via API # features/secondary/buildhost_docker_build_image.feature:129
+ 218.4789396 When I wait at most 600 seconds until image "auth_registry_profile" with version "latest" is built successfully via API # features/secondary/buildhost_docker_auth_registry.feature:40
+ 114.7700303 /^I apply state "([^"]*)" to "([^"]*)"$/ # features/step_definitions/salt_steps.rb:119
+ 114.7700303 And I apply state "image-sync" to "proxy" # features/secondary/buildhost_osimage_build_image.feature:61
+ 111.7086310 /^I wait at most (\d+) seconds until Salt master sees "([^"]*)" as "([^"]*)"$/ # features/step_definitions/salt_steps.rb:71
+ 768.1878191 And I wait at most 1200 seconds until Salt master sees "pxeboot_minion" as "unaccepted" # features/secondary/proxy_cobbler_pxeboot.feature:89
+ 104.7155054 /^I wait at most (\d+) seconds until image "([^"]*)" with version "([^"]*)" is inspected successfully via API$/ # features/step_definitions/docker_steps.rb:54
+ 136.9612134 And I wait at most 300 seconds until image "suse_key" with version "latest" is inspected successfully via API # features/secondary/buildhost_docker_build_image.feature:60
+ 91.7877362 And I wait at most 300 seconds until image "suse_simple" with version "latest" is inspected successfully via API # features/secondary/buildhost_docker_build_image.feature:69
+ 76.2645041 And I wait at most 300 seconds until image "suse_real_key" with version "latest" is inspected successfully via API # features/secondary/buildhost_docker_build_image.feature:78
+ 106.7626800 And I wait at most 300 seconds until image "suse_key" with version "Latest_key-activation1" is inspected successfully via API # features/secondary/buildhost_docker_build_image.feature:84
+ 106.6559891 And I wait at most 300 seconds until image "suse_simple" with version "Latest_simple" is inspected successfully via API # features/secondary/buildhost_docker_build_image.feature:90
+ 106.5879394 And I wait at most 300 seconds until image "suse_simple" with version "Latest_simple" is inspected successfully via API # features/secondary/buildhost_docker_build_image.feature:102
+ 106.7072443 And I wait at most 300 seconds until image "suse_key" with version "Latest_key-activation1" is inspected successfully via API # features/secondary/buildhost_docker_build_image.feature:108
+ 101.7308623 And I wait at most 300 seconds until image "suse_real_key" with version "GUI_BUILT_IMAGE" is inspected successfully via API # features/secondary/buildhost_docker_build_image.feature:119
+ 106.8442618 And I wait at most 300 seconds until image "suse_real_key" with version "GUI_DOCKERADMIN" is inspected successfully via API # features/secondary/buildhost_docker_build_image.feature:130
+ 106.8526230 And I wait at most 300 seconds until image "auth_registry_profile" with version "latest" is inspected successfully via API # features/secondary/buildhost_docker_auth_registry.feature:41
+ 90.6102990 /^I reboot the server through SSH$/ # features/step_definitions/common_steps.rb:1392
+ 87.9979358 And I reboot the server through SSH # features/secondary/srv_rename_hostname.feature:15
+ 93.2226622 And I reboot the server through SSH # features/secondary/srv_rename_hostname.feature:20
+ 82.2300005 /^I wait until onboarding is completed for "([^"]*)"$/ # features/step_definitions/common_steps.rb:856
+ 111.5116509 And I wait until onboarding is completed for "rhlike_minion" # features/secondary/min_rhlike_ssh.feature:34
+ 71.9776591 And I wait until onboarding is completed for "rhlike_minion" # features/secondary/min_rhlike_ssh.feature:104
+ 63.3257281 And I wait until onboarding is completed for "deblike_minion" # features/secondary/min_deblike_ssh.feature:35
+ 64.2940259 And I wait until onboarding is completed for "ssh_minion" # features/secondary/minssh_bootstrap_api.feature:32
+ 142.2630377 And I wait until onboarding is completed for "ssh_minion" # features/secondary/min_ssh_tunnel.feature:31
+ 86.1488047 And I wait until onboarding is completed for "ssh_minion" # features/secondary/min_ssh_tunnel.feature:87
+ 123.1485049 And I wait until onboarding is completed for "sle_minion" # features/secondary/min_salt_minions_page.feature:52
+ 118.3959526 And I wait until onboarding is completed for "sle_minion" # features/secondary/min_salt_minions_page.feature:81
+ 118.2522904 And I wait until onboarding is completed for "sle_minion" # features/secondary/min_salt_mgrcompat_state.feature:50
+ 118.4214045 And I wait until onboarding is completed for "sle_minion" # features/secondary/min_salt_mgrcompat_state.feature:90
+ 120.3322738 And I wait until onboarding is completed for "sle_minion" # features/secondary/min_move_from_and_to_proxy.feature:30
+ 128.0484708 And I wait until onboarding is completed for "ssh_minion" # features/secondary/minssh_move_from_and_to_proxy.feature:31
+ 73.9298250 /^I wait at most "([^"]*)" seconds until I do not see "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:81
+ 73.9298250 And I wait at most "300" seconds until I do not see "restarting. If this page" text # features/secondary/srv_restart.feature:16
+ 67.1474187 /^I call system\.bootstrap\(\) on host "([^"]*)" and salt\-ssh "([^"]*)"$/ # features/step_definitions/api_common.rb:27
+ 67.1474187 When I call system.bootstrap() on host "ssh_minion" and salt-ssh "enabled" # features/secondary/minssh_bootstrap_api.feature:26
+ 65.7805784 /^I run spacewalk-hostname-rename command on the server$/ # features/step_definitions/common_steps.rb:1422
+ 66.2607764 And I run spacewalk-hostname-rename command on the server # features/secondary/srv_rename_hostname.feature:16
+ 65.3003804 And I run spacewalk-hostname-rename command on the server # features/secondary/srv_rename_hostname.feature:21
+ 64.7684465 /^I check for failed events on history event page$/ # features/step_definitions/common_steps.rb:1101
+ 62.3520359 Then I check for failed events on history event page # features/secondary/min_rhlike_ssh.feature:65
+ 72.5113892 Then I check for failed events on history event page # features/secondary/min_rhlike_ssh.feature:82
+ 62.3180247 Then I check for failed events on history event page # features/secondary/min_deblike_ssh.feature:66
+ 72.2152986 Then I check for failed events on history event page # features/secondary/min_deblike_ssh.feature:82
+ 62.1845603 Then I check for failed events on history event page # features/secondary/min_activationkey.feature:120
+ 82.2914727 Then I check for failed events on history event page # features/secondary/min_move_from_and_to_proxy.feature:102
+ 62.1224308 Then I check for failed events on history event page # features/secondary/minssh_move_from_and_to_proxy.feature:91
+ 61.4129839 /^I synchronize the tftp configuration on the proxy with the server$/ # features/step_definitions/command_steps.rb:605
+ 61.4129839 And I synchronize the tftp configuration on the proxy with the server # features/secondary/proxy_cobbler_pxeboot.feature:79
+ 60.0004871 And I wait for "60" seconds # features/secondary/proxy_cobbler_pxeboot.feature:87
+ 120.0008704 Given I wait for "120" seconds # features/secondary/min_move_from_and_to_proxy.feature:70
+ 120.0005990 Given I wait for "120" seconds # features/secondary/minssh_move_from_and_to_proxy.feature:65
+ 63.2187972 And I wait until I see the name of "deblike_minion", refreshing the page # features/secondary/min_deblike_ssh.feature:34
+ 63.7230765 And I wait until I see the name of "deblike_minion", refreshing the page # features/secondary/min_deblike_ssh.feature:103
+ 63.6457260 And I wait until I see the name of "sle_minion", refreshing the page # features/secondary/min_bootstrap_ssh_key.feature:57
+ 77.6334656 And I wait until I see the name of "sle_minion", refreshing the page # features/secondary/min_activationkey.feature:64
+ 94.8570851 And I wait until I see the name of "pxeboot_minion", refreshing the page # features/secondary/proxy_cobbler_pxeboot.feature:92
+ 65.4388199 And I wait until I see the "empty-profile" system, refreshing the page # features/secondary/min_empty_system_profiles.feature:38
+ 62.7377408 And I wait until event "Subscribe channels scheduled by admin" is completed # features/secondary/min_rhlike_ssh.feature:61
+ 63.4138364 Then I wait until event "Package Install/Upgrade scheduled by admin" is completed # features/secondary/min_ssh_tunnel.feature:47
+ 63.7105829 Then I wait until event "Package Removal scheduled by admin" is completed # features/secondary/min_ssh_tunnel.feature:59
+ 64.9497853 And I wait until event "Apply highstate scheduled by admin" is completed # features/secondary/proxy_cobbler_pxeboot.feature:30
+ 71.5013049 And I install OpenSCAP dependencies on "rhlike_minion" # features/secondary/min_rhlike_openscap_audit.feature:34
+ 87.2215739 And I wait until I see "Successfully bootstrapped host!" text # features/secondary/min_rhlike_ssh.feature:31
+ 64.8154863 And I wait until I see "Successfully bootstrapped host!" text # features/secondary/min_ssh_tunnel.feature:30
+ 63.9200115 And I wait until I see "Successfully bootstrapped host!" text # features/secondary/minssh_move_from_and_to_proxy.feature:30
+ 275.6252232 /^I wait at most (\d+) seconds until Salt master sees "([^"]*)" as "([^"]*)"$/ # features/step_definitions/salt_steps.rb:71
+ 779.0901466 And I wait at most 1000 seconds until Salt master sees "test-vm2" as "unaccepted" # features/secondary/minkvm_guests.feature:439
+ 197.2032020 /^I trigger cobbler system record on the "([^"]*)"$/ # features/step_definitions/common_steps.rb:299
+ 197.2032020 When I trigger cobbler system record on the "sle_minion" # features/secondary/srv_distro_cobbler.feature:143
+ 169.0685101 /^I create system "([^"]*)" for profile "([^"]*)" as user "([^"]*)" with password "([^"]*)"$/ # features/step_definitions/common_steps.rb:286
+ 169.0685101 When I create system "testsystem" for profile "orchid" as user "testing" with password "testing" # features/secondary/srv_cobbler_buildiso.feature:33
+ 154.1943175 /^I create a system record$/ # features/step_definitions/api_common.rb:69
+ 154.1943175 And I create a system record # features/secondary/srv_distro_cobbler.feature:147
+ 72.4432427 /^I check for failed events on history event page$/ # features/step_definitions/common_steps.rb:1101
+ 72.4432427 Then I check for failed events on history event page # features/secondary/min_bootstrap_api.feature:59
+ 67.1907258 /^I delete all the imported terminals$/ # features/step_definitions/retail_steps.rb:340
+ 67.1907258 When I delete all the imported terminals # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:356
+ 65.7943269 /^I wait until onboarding is completed for "([^"]*)"$/ # features/step_definitions/common_steps.rb:856
+ 106.0955281 And I wait until onboarding is completed for "kvm_server" # features/secondary/minkvm_guests.feature:28
+ 61.4939052 /^I add the Cobbler parameter "([^"]*)" with value "([^"]*)" to item "(distro|profile|system)" with name "([^"]*)"$/ # features/step_definitions/common_steps.rb:1375
+ 61.4939052 And I add the Cobbler parameter "name-servers" with value "9.9.9.9" to item "system" with name "testsystem" # features/secondary/srv_cobbler_buildiso.feature:34
+ 99.4091208 And I wait at most 350 seconds until event "Apply states [util.syncstates, saltboot] scheduled by (none)" is completed # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:194
+ 73.0396294 And I wait until the package "virgo-dummy-2.0-1.1.noarch" has been cached on this "sle_minion" # features/secondary/min_salt_install_with_staging.feature:67
+ 65.0737881 And I wait until I see the name of "pxeboot_minion", refreshing the page # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:191
+ 66.7971752 And I wait until I see the name of "pxeboot_minion", refreshing the page # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:321
+ 78.4682884 And I wait until I see the name of "sle_minion", refreshing the page # features/secondary/min_bootstrap_api.feature:25
+ 60.2752977 Then I wait at most 600 seconds until I see "Built" text in the environment "prod_name" # features/secondary/srv_content_lifecycle.feature:125
+ 84.8389282 And I wait until event "Apply highstate scheduled by admin" is completed # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:111
+ 65.4190088 And I wait until event "Apply highstate scheduled by admin" is completed # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:284
+ 66.1828220 And I wait until event "Apply highstate scheduled by admin" is completed # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:311
+ 66.5417989 And I wait until event "Apply highstate scheduled by admin" is completed # features/secondary/min_rhlike_monitoring.feature:45
+ 63.8062359 When I wait until event "Package Install/Upgrade scheduled by admin" is completed # features/secondary/minssh_salt_install_package.feature:28
+ 100.8072365 And I wait until event "Apply highstate scheduled by admin" is completed # features/secondary/minssh_ansible_control_node.feature:33
+ 63.1871620 And I wait until event "Apply highstate scheduled by admin" is completed # features/secondary/min_deblike_monitoring.feature:45
+ 65.4520246 When I wait until event "Apply highstate scheduled by admin" is completed # features/secondary/min_salt_formulas.feature:70
+ 87.4944086 And I wait until event "Apply highstate scheduled by admin" is completed # features/secondary/min_monitoring.feature:55
+ 71.4066938 And I wait until event "Apply highstate scheduled by admin" is completed # features/secondary/min_ansible_control_node.feature:31
+ 97.1386845 And I wait for "orion-dummy-1.1" to be installed on "deblike_minion" # features/secondary/min_deblike_salt_install_with_staging.feature:59
+ 120.4428095 And I wait for "orion-dummy-1.1-1.1" to be installed on "sle_minion" # features/secondary/min_salt_install_with_staging.feature:57
+ 97.3000332 And I wait for "virgo-dummy-2.0-1.1" to be installed on "sle_minion" # features/secondary/min_salt_install_with_staging.feature:68
+ 180.0008507 When I wait for "180" seconds # features/secondary/allcli_software_channels.feature:53
+ 86.1157701 And I wait 180 seconds until the event is picked up and 300 seconds until the event "Creates a virtual domain: test-vm2" is completed # features/secondary/minkvm_guests.feature:431
+ 250.2113240 And I check the "vsftpd" formula # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:292
+ 220.2873312 And I wait until I see "Hosted Virtual Systems" text # features/secondary/minkvm_guests.feature:430
+ 221.1050757 /^I extract the log files from all our active nodes$/ # features/step_definitions/command_steps.rb:473
+ 221.1050757 When I extract the log files from all our active nodes # features/finishing/allcli_debug.feature:7

@@ -1,0 +1,13 @@
+
+ 221.1050757 /^I extract the log files from all our active nodes$/ # features/step_definitions/command_steps.rb:473
+ 221.1050757 When I extract the log files from all our active nodes # features/finishing/allcli_debug.feature:7
+ 58.7816663 /^I execute spacewalk-debug on the server$/ # features/step_definitions/command_steps.rb:467
+ 58.7816663 When I execute spacewalk-debug on the server # features/finishing/srv_debug.feature:7
+ 2.5837122 /^the salt event log on server should contain no failures$/ # features/step_definitions/common_steps.rb:193
+ 2.5837122 Then the salt event log on server should contain no failures # features/finishing/srv_debug.feature:13
+ 0.4564445 /^the tomcat logs should not contain errors$/ # features/step_definitions/command_steps.rb:434
+ 0.4564445 Then the tomcat logs should not contain errors # features/finishing/srv_debug.feature:10
+ 0.3437043 /^the log messages should not contain out of memory errors$/ # features/step_definitions/command_steps.rb:450
+ 0.3437043 Then the log messages should not contain out of memory errors # features/finishing/srv_debug.feature:19
+ 0.2956584 /^the taskomatic logs should not contain errors$/ # features/step_definitions/command_steps.rb:442
+ 0.2956584 Then the taskomatic logs should not contain errors # features/finishing/srv_debug.feature:16

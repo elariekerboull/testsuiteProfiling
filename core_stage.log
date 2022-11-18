@@ -1,0 +1,574 @@
+ 700.0005741 /^I wait for "(\d+)" seconds?$/ # features/step_definitions/common_steps.rb:13
+ 700.0005741 And I wait for "700" seconds # features/core/proxy_branch_network.feature:200
+ 140.6109940 /^I wait until onboarding is completed for "([^"]*)"$/ # features/step_definitions/common_steps.rb:856
+ 140.6109940 When I wait until onboarding is completed for "proxy" # features/core/proxy_register_as_minion_with_script.feature:48
+ 64.9930312 /^I wait until event "([^"]*)" is completed$/ # features/step_definitions/common_steps.rb:132
+ 100.4689069 And I wait until event "Apply highstate scheduled by admin" is completed # features/core/proxy_branch_network.feature:186
+ 29.5171555 When I wait until event "Hardware List Refresh scheduled by admin" is completed # features/core/proxy_branch_network.feature:221
+ 41.5890411 /^I set up the private network on the terminals$/ # features/step_definitions/retail_steps.rb:144
+ 41.5890411 When I set up the private network on the terminals # features/core/proxy_branch_network.feature:205
+ 41.3290357 /^I configure the proxy$/ # features/step_definitions/command_steps.rb:991
+ 41.3290357 And I configure the proxy # features/core/proxy_register_as_minion_with_script.feature:55
+ 39.5221887 /^I install proxy pattern on the proxy$/ # features/step_definitions/command_steps.rb:961
+ 39.5221887 And I install proxy pattern on the proxy # features/core/proxy_register_as_minion_with_script.feature:20
+ 33.6735547 /^I wait until mgr-sync refresh is finished$/ # features/step_definitions/command_steps.rb:650
+ 33.6735547 When I wait until mgr-sync refresh is finished # features/core/srv_first_settings.feature:54
+ 16.2185847 /^I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows$/ # features/step_definitions/navigation_steps.rb:678
+ 29.6525798 And I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/core/srv_create_repository.feature:117
+ 2.7845896 And I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/core/srv_create_repository.feature:125
+ 11.5887831 /^the SCC credentials should be valid$/ # features/step_definitions/common_steps.rb:477
+ 11.5887831 Then the SCC credentials should be valid # features/core/srv_organization_credentials.feature:13
+ 10.8748008 /^I wait until the channel "([^"]*)" has been synced$/ # features/step_definitions/command_steps.rb:382
+ 31.4699391 When I wait until the channel "test-channel-x86_64" has been synced # features/core/srv_channels_add.feature:102
+ 0.5777127 And I wait until the channel "test-channel-i586" has been synced # features/core/srv_channels_add.feature:103
+ 0.5767506 And I wait until the channel "test-channel-x86_64" has been synced # features/core/srv_create_repository.feature:50
+ 10.2769297 /^"([^"]*)" should not communicate with the server using private interface/ # features/step_definitions/command_steps.rb:49
+ 10.2769297 Then "sle_minion" should not communicate with the server using private interface # features/core/proxy_branch_network.feature:212
+ 10.1453531 /^the "([^"]*)" formula should be ([^ ]*)$/ # features/step_definitions/salt_steps.rb:235
+ 10.1163334 Then the "branch-network" formula should be checked # features/core/proxy_branch_network.feature:64
+ 10.1482375 And the "dhcpd" formula should be checked # features/core/proxy_branch_network.feature:65
+ 10.1714886 And the "bind" formula should be checked # features/core/proxy_branch_network.feature:66
+ 6.3692375 /^I access the host the first time$/ # features/step_definitions/navigation_steps.rb:389
+ 6.3692375 Given I access the host the first time # features/core/srv_first_settings.feature:10
+ 5.8984008 /^I manually install the "([^"]*)" formula on the server$/ # features/step_definitions/salt_steps.rb:189
+ 5.6176347 When I manually install the "branch-network" formula on the server # features/core/proxy_branch_network.feature:25
+ 5.5434133 And I manually install the "dhcpd" formula on the server # features/core/proxy_branch_network.feature:26
+ 6.5341544 And I manually install the "bind" formula on the server # features/core/proxy_branch_network.feature:27
+ 5.5601403 /^I synchronize all Salt dynamic modules on "([^"]*)"$/ # features/step_definitions/salt_steps.rb:198
+ 5.5601403 And I synchronize all Salt dynamic modules on "proxy" # features/core/proxy_branch_network.feature:28
+ 4.5050707 /^I am on the Systems overview page of this "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:407
+ 7.0325157 When I am on the Systems overview page of this "proxy" # features/core/proxy_register_as_minion_with_script.feature:69
+ 6.4826964 And I am on the Systems overview page of this "proxy" # features/core/proxy_branch_network.feature:50
+ 3.6058515 /^I install pattern "([^"]*)" on this "([^"]*)"$/ # features/step_definitions/command_steps.rb:827
+ 7.2117031 When I install pattern "uyuni_retail" on this "server" # features/core/proxy_branch_network.feature:43
+ 3.0043515 /^I am authorized as "([^"]*)" with password "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:502
+ 1.5441469 Given I am authorized as "admin" with password "admin" # features/core/srv_user_preferences.feature:10
+ 4.4645561 Given I am authorized as "testing" with password "testing" # features/core/srv_user_preferences.feature:17
+ 2.9729535 /^I copy server\'s keys to the proxy$/ # features/step_definitions/command_steps.rb:981
+ 2.9729535 When I copy server's keys to the proxy # features/core/proxy_register_as_minion_with_script.feature:54
+ 2.8297519 /^I wait until I see "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:36
+ 2.8297519 And I wait until I see "Formula saved." text # features/core/proxy_branch_network.feature:63
+ 2.6749762 /^name resolution should work on terminal "([^"]*)"$/ # features/step_definitions/retail_steps.rb:189
+ 2.6749762 And name resolution should work on terminal "sle_minion" # features/core/proxy_branch_network.feature:207
+ 2.2976451 /^I install packages? "([^"]*)" on this "([^"]*)"((?: without error control)?)$/ # features/step_definitions/command_steps.rb:863
+ 2.2976451 And I install package "expect" on this "proxy" # features/core/proxy_register_as_minion_with_script.feature:76
+ 2.1046606 /^I remove packages? "([^"]*)" from this "([^"]*)"((?: without error control)?)$/ # features/step_definitions/command_steps.rb:901
+ 2.1046606 When I remove package "dhcp dhcp-client" from this "proxy" # features/core/proxy_branch_network.feature:19
+ 1.9349406 /^I am authorized for the "([^"]*)" section$/ # features/step_definitions/navigation_steps.rb:395
+ 1.6698488 Given I am authorized for the "Admin" section # features/core/srv_first_settings.feature:25
+ 1.6001528 Given I am authorized for the "Admin" section # features/core/srv_organization_credentials.feature:8
+ 3.8392103 Given I am authorized for the "Admin" section # features/core/srv_channels_add.feature:10
+ 2.0842084 Given I am authorized for the "Admin" section # features/core/srv_create_repository.feature:11
+ 1.8213322 Given I am authorized for the "Admin" section # features/core/srv_create_activationkey.feature:10
+ 1.4293250 Given I am authorized for the "Admin" section # features/core/srv_osimage.feature:7
+ 1.4946156 Given I am authorized for the "Admin" section # features/core/srv_docker.feature:7
+ 1.4466271 Given I am authorized for the "Admin" section # features/core/proxy_register_as_minion_with_script.feature:40
+ 2.0291454 Given I am authorized for the "Admin" section # features/core/proxy_branch_network.feature:49
+ 1.7190493 /^I should see "([^"]*)" via spacecmd$/ # features/step_definitions/common_steps.rb:867
+ 1.7190493 Then I should see "proxy" via spacecmd # features/core/proxy_register_as_minion_with_script.feature:56
+ 1.5251589 /^HTTP proxy verification should have succeeded$/ # features/step_definitions/common_steps.rb:457
+ 1.5251589 Then HTTP proxy verification should have succeeded # features/core/srv_first_settings.feature:66
+ 1.4826728 /^I follow "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:288
+ 1.4519671 And I follow "Create User" # features/core/srv_first_settings.feature:29
+ 1.4756024 And I follow "testing" # features/core/srv_first_settings.feature:43
+ 1.4602984 And I follow "Create Channel" # features/core/srv_channels_add.feature:14
+ 1.3509994 And I follow "Create Channel" # features/core/srv_channels_add.feature:26
+ 1.4707163 And I follow "Create Channel" # features/core/srv_channels_add.feature:38
+ 1.4559734 And I follow "Create Channel" # features/core/srv_channels_add.feature:50
+ 1.3618390 And I follow "Create Channel" # features/core/srv_channels_add.feature:62
+ 1.4042850 And I follow "Create Channel" # features/core/srv_channels_add.feature:74
+ 1.4036091 And I follow "Create Channel" # features/core/srv_channels_add.feature:86
+ 1.0733505 And I follow "Create Repository" # features/core/srv_create_repository.feature:15
+ 1.2001748 And I follow "Test-Repository-x86_64" # features/core/srv_create_repository.feature:24
+ 1.4094785 And I follow "Test-Channel-x86_64" # features/core/srv_create_repository.feature:32
+ 1.4286186 And I follow "Test-Channel-x86_64" # features/core/srv_create_repository.feature:44
+ 1.3341539 And I follow "Sync" # features/core/srv_create_repository.feature:46
+ 1.0216782 And I follow "Create Repository" # features/core/srv_create_repository.feature:55
+ 1.4840592 And I follow "Test-Channel-i586" # features/core/srv_create_repository.feature:64
+ 1.4112161 And I follow "Test-Channel-i586" # features/core/srv_create_repository.feature:75
+ 1.2179811 And I follow "Sync" # features/core/srv_create_repository.feature:77
+ 1.1484212 And I follow "Create Repository" # features/core/srv_create_repository.feature:85
+ 1.4693320 And I follow "Test-Channel-Deb-AMD64" # features/core/srv_create_repository.feature:95
+ 1.4047844 And I follow "Test-Channel-Deb-AMD64" # features/core/srv_create_repository.feature:104
+ 1.3266338 And I follow "Sync" # features/core/srv_create_repository.feature:106
+ 1.8786445 And I follow "errata-cache-default" # features/core/srv_create_repository.feature:113
+ 2.9901951 And I follow "errata-cache-bunch" # features/core/srv_create_repository.feature:114
+ 2.9808235 And I follow "channel-repodata-default" # features/core/srv_create_repository.feature:121
+ 2.1352715 And I follow "channel-repodata-bunch" # features/core/srv_create_repository.feature:122
+ 1.4627876 And I follow "Test-Channel-x86_64" # features/core/srv_create_repository.feature:129
+ 1.4088430 And I follow "Test-Channel-Deb-AMD64" # features/core/srv_create_repository.feature:136
+ 1.2938372 And I follow "Create Key" # features/core/srv_create_activationkey.feature:14
+ 1.2753480 And I follow "Create Key" # features/core/srv_create_activationkey.feature:30
+ 1.4021775 And I follow "Create Key" # features/core/srv_create_activationkey.feature:44
+ 1.4627878 And I follow "Create Key" # features/core/srv_create_activationkey.feature:55
+ 1.5129250 And I follow "Create User" # features/core/srv_osimage.feature:11
+ 1.3719886 And I follow "kiwikiwi" # features/core/srv_osimage.feature:23
+ 1.3550837 And I follow "Create Key" # features/core/srv_osimage.feature:29
+ 1.5222064 And I follow "Create User" # features/core/srv_docker.feature:11
+ 1.3823223 And I follow "docker" # features/core/srv_docker.feature:23
+ 1.4492906 And I follow "Create Key" # features/core/srv_docker.feature:29
+ 1.5002584 And I follow "Packages" # features/core/srv_docker.feature:35
+ 1.1569504 And I follow "Create" # features/core/srv_docker.feature:43
+ 1.2153065 /^I click on "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:260
+ 2.9476703 And I click on "Create Organization" # features/core/srv_first_settings.feature:21
+ 1.5001956 And I click on "Create Login" # features/core/srv_first_settings.feature:37
+ 1.5196597 And I click on "Update" # features/core/srv_first_settings.feature:49
+ 0.2267878 And I click on "Save and Verify" # features/core/srv_first_settings.feature:65
+ 0.2141540 And I click on "Save" # features/core/srv_organization_credentials.feature:12
+ 1.3609441 And I click on "Save Preferences" # features/core/srv_user_preferences.feature:13
+ 1.3687181 And I click on "Save Preferences" # features/core/srv_user_preferences.feature:20
+ 1.4630980 And I click on "Create Channel" # features/core/srv_channels_add.feature:21
+ 1.5190302 And I click on "Create Channel" # features/core/srv_channels_add.feature:33
+ 1.2838543 And I click on "Create Channel" # features/core/srv_channels_add.feature:45
+ 1.4896224 And I click on "Create Channel" # features/core/srv_channels_add.feature:57
+ 1.3699161 And I click on "Create Channel" # features/core/srv_channels_add.feature:69
+ 1.3158156 And I click on "Create Channel" # features/core/srv_channels_add.feature:81
+ 1.5686807 And I click on "Create Channel" # features/core/srv_channels_add.feature:98
+ 1.2132095 And I click on "Create Repository" # features/core/srv_create_repository.feature:18
+ 1.0405562 And I click on "Update Repository" # features/core/srv_create_repository.feature:26
+ 1.4654459 And I click on "Update Channel" # features/core/srv_create_repository.feature:34
+ 1.8067414 And I click on "Save Repositories" # features/core/srv_create_repository.feature:38
+ 3.3433233 And I click on "Sync Now" # features/core/srv_create_repository.feature:48
+ 1.0885809 And I click on "Create Repository" # features/core/srv_create_repository.feature:59
+ 1.3396826 And I click on "Update Channel" # features/core/srv_create_repository.feature:66
+ 1.8759117 And I click on "Save Repositories" # features/core/srv_create_repository.feature:70
+ 2.2954630 And I click on "Sync Now" # features/core/srv_create_repository.feature:79
+ 1.1100140 And I click on "Create Repository" # features/core/srv_create_repository.feature:89
+ 1.8030484 And I click on "Save Repositories" # features/core/srv_create_repository.feature:98
+ 2.2276619 And I click on "Sync Now" # features/core/srv_create_repository.feature:108
+ 2.1739248 And I click on "Single Run Schedule" # features/core/srv_create_repository.feature:115
+ 2.5113487 And I click on "Single Run Schedule" # features/core/srv_create_repository.feature:123
+ 1.5788462 And I click on "Create Activation Key" # features/core/srv_create_activationkey.feature:19
+ 1.3298900 And I click on "Create Activation Key" # features/core/srv_create_activationkey.feature:34
+ 1.4059195 And I click on "Create Activation Key" # features/core/srv_create_activationkey.feature:50
+ 1.3163215 And I click on "Create Activation Key" # features/core/srv_create_activationkey.feature:61
+ 1.2859673 And I click on "Create Login" # features/core/srv_osimage.feature:19
+ 1.2478051 And I click on "Update" # features/core/srv_osimage.feature:25
+ 1.3396137 And I click on "Create Activation Key" # features/core/srv_osimage.feature:34
+ 1.3008809 And I click on "Create Login" # features/core/srv_docker.feature:19
+ 1.3145530 And I click on "Update" # features/core/srv_docker.feature:25
+ 1.3375756 And I click on "Create Activation Key" # features/core/srv_docker.feature:34
+ 1.1980982 And I click on "Update Activation Key" # features/core/srv_docker.feature:37
+ 0.1451927 And I click on "create-btn" # features/core/srv_docker.feature:46
+ 0.1469753 And I click on "Save" # features/core/proxy_branch_network.feature:62
+ 0.3529784 And I click on "Expand All Sections" # features/core/proxy_branch_network.feature:73
+ 0.2770620 And I click on "Save Formula" # features/core/proxy_branch_network.feature:81
+ 0.2166281 And I click on "Expand All Sections" # features/core/proxy_branch_network.feature:89
+ 0.2476671 And I click on "Save Formula" # features/core/proxy_branch_network.feature:103
+ 0.2461647 And I click on "Expand All Sections" # features/core/proxy_branch_network.feature:111
+ 0.2482281 And I click on "Save Formula" # features/core/proxy_branch_network.feature:145
+ 0.2220053 And I click on "Expand All Sections" # features/core/proxy_branch_network.feature:160
+ 0.2964824 And I click on "Save Formula" # features/core/proxy_branch_network.feature:165
+ 0.2541930 And I click on "Expand All Sections" # features/core/proxy_branch_network.feature:169
+ 0.2658676 And I click on "Save Formula" # features/core/proxy_branch_network.feature:173
+ 0.4667502 And I click on "Apply Highstate" # features/core/proxy_branch_network.feature:185
+ 1.9265215 And I click on "Schedule Hardware Refresh" # features/core/proxy_branch_network.feature:219
+ 1.1883775 /^I wait until table row contains a "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:491
+ 1.1883775 Then I wait until table row contains a "galaxy-registry" text # features/core/srv_docker.feature:47
+ 1.1160333 /^I go to the home page$/ # features/step_definitions/navigation_steps.rb:385
+ 1.1160333 When I go to the home page # features/core/srv_first_settings.feature:12
+ 1.1046930 /^I run "([^"]*)" on "([^"]*)"$/ # features/step_definitions/command_steps.rb:692
+ 0.2688925 And I run "rm -Rf /srv/salt/*" on "server" # features/core/srv_first_settings.feature:11
+ 4.6570286 And I run "sh ./bootstrap-proxy.sh" on "proxy" # features/core/proxy_register_as_minion_with_script.feature:37
+ 0.3096290 When I run "rm /srv/www/htdocs/pub/bootstrap/bootstrap-proxy.sh" on "server" # features/core/proxy_register_as_minion_with_script.feature:80
+ 0.2879148 And I run "rm /root/bootstrap-proxy.sh" on "proxy" # features/core/proxy_register_as_minion_with_script.feature:81
+ 1.0289003 /^I enter the SCC credentials$/ # features/step_definitions/common_steps.rb:469
+ 1.0289003 And I enter the SCC credentials # features/core/srv_organization_credentials.feature:11
+ 0.9630376 /^I open avahi port on the proxy$/ # features/step_definitions/command_steps.rb:977
+ 0.9630376 When I open avahi port on the proxy # features/core/proxy_branch_network.feature:179
+ 0.9624421 /^I turn off disable_local_repos for all clients/ # features/step_definitions/command_steps.rb:38
+ 0.9624421 When I turn off disable_local_repos for all clients # features/core/srv_disable_local_repos_off.feature:10
+ 0.9219608 /^I refresh the metadata for "([^"]*)"$/ # features/step_definitions/common_steps.rb:357
+ 1.5330460 When I refresh the metadata for "proxy" # features/core/proxy_register_as_minion_with_script.feature:17
+ 1.2328365 When I refresh the metadata for "server" # features/core/proxy_branch_network.feature:42
+ 0.9027978 /^I enter the MAC address of "([^"]*)" in (.*) field$/ # features/step_definitions/retail_steps.rb:456
+ 1.2518364 And I enter the MAC address of "sle_minion" in first reserved MAC field # features/core/proxy_branch_network.feature:102
+ 0.5537593 And I enter the MAC address of "pxeboot_minion" in second reserved MAC field # features/core/proxy_branch_network.feature:164
+ 0.8606583 /^I should see a "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:570
+ 0.4780186 Then I should see a "Account testing created, login information sent to galaxy-noise@suse.de" text # features/core/srv_first_settings.feature:38
+ 0.5472214 Then I should see a "User information updated" text # features/core/srv_first_settings.feature:50
+ 0.4651565 And I should see a "testing" text # features/core/srv_first_settings.feature:51
+ 0.5601157 Then I should see a "HTTP Proxy Hostname" text # features/core/srv_first_settings.feature:59
+ 0.3934227 And I should see a "HTTP Proxy Username" text # features/core/srv_first_settings.feature:60
+ 0.4475745 And I should see a "HTTP Proxy Password" text # features/core/srv_first_settings.feature:61
+ 0.8734070 Then I should see a "Preferences modified" text # features/core/srv_user_preferences.feature:14
+ 0.8700015 Then I should see a "Preferences modified" text # features/core/srv_user_preferences.feature:21
+ 0.6893339 Then I should see a "Channel Test Base Channel created." text # features/core/srv_channels_add.feature:22
+ 0.5954405 Then I should see a "Channel Test Child Channel created." text # features/core/srv_channels_add.feature:34
+ 0.5699401 Then I should see a "Channel Test-Channel-i586 created." text # features/core/srv_channels_add.feature:46
+ 0.5650160 Then I should see a "Channel Test-Channel-i586 Child Channel created." text # features/core/srv_channels_add.feature:58
+ 0.5704452 Then I should see a "Channel Test-Channel-x86_64 created." text # features/core/srv_channels_add.feature:70
+ 0.6686958 Then I should see a "Channel Test-Channel-x86_64 Child Channel created." text # features/core/srv_channels_add.feature:82
+ 0.5821940 Then I should see a "Channel Test-Channel-Deb-AMD64 created." text # features/core/srv_channels_add.feature:99
+ 0.4634240 Then I should see a "Repository created successfully" text # features/core/srv_create_repository.feature:19
+ 0.4347516 Then I should see a "Repository updated successfully" text # features/core/srv_create_repository.feature:27
+ 0.5850022 Then I should see a "Channel Test-Channel-x86_64 updated" text # features/core/srv_create_repository.feature:35
+ 0.4122750 Then I should see a "Test-Channel-x86_64 repository information was successfully updated" text # features/core/srv_create_repository.feature:39
+ 0.4198701 Then I should see a "Repository sync scheduled for Test-Channel-x86_64." text # features/core/srv_create_repository.feature:49
+ 0.4410048 Then I should see a "Repository created successfully" text # features/core/srv_create_repository.feature:60
+ 0.6894066 Then I should see a "Channel Test-Channel-i586 updated" text # features/core/srv_create_repository.feature:67
+ 0.4181353 Then I should see a "Test-Channel-i586 repository information was successfully updated" text # features/core/srv_create_repository.feature:71
+ 0.5189113 Then I should see a "Repository sync scheduled for Test-Channel-i586." text # features/core/srv_create_repository.feature:80
+ 0.4389598 Then I should see a "Repository created successfully" text # features/core/srv_create_repository.feature:90
+ 0.4314686 Then I should see a "Test-Channel-Deb-AMD64 repository information was successfully updated" text # features/core/srv_create_repository.feature:99
+ 0.4169094 Then I should see a "Repository sync scheduled for Test-Channel-Deb-AMD64." text # features/core/srv_create_repository.feature:109
+ 0.8087931 Then I should see a "bunch was scheduled" text # features/core/srv_create_repository.feature:116
+ 0.8433498 Then I should see a "bunch was scheduled" text # features/core/srv_create_repository.feature:124
+ 0.6563500 Then I should see a "Activation key SUSE Test Key x86_64 has been created" text # features/core/srv_create_activationkey.feature:20
+ 0.6617537 Then I should see a "Activation key Debian-like Test Key has been created" text # features/core/srv_create_activationkey.feature:35
+ 0.6337858 Then I should see a "Activation key SUSE SSH Test Key x86_64 has been created" text # features/core/srv_create_activationkey.feature:51
+ 0.4948736 Then I should see a "Account kiwikiwi created" text # features/core/srv_osimage.feature:20
+ 0.5238193 And I should see a "normal user" text # features/core/srv_osimage.feature:22
+ 0.6835305 Then I should see a "Activation key Kiwi testing has been created" text # features/core/srv_osimage.feature:35
+ 0.7044199 Then I should see a "Account docker created" text # features/core/srv_docker.feature:20
+ 0.6463398 And I should see a "normal user" text # features/core/srv_docker.feature:22
+ 0.4379696 Then I should see a "Activation key Docker testing has been modified" text # features/core/srv_docker.feature:38
+ 0.4774922 And I should see a "Items 1 - 1 of 1" text # features/core/srv_docker.feature:48
+ 0.3922482 Then I should see a "Choose formulas" text # features/core/proxy_branch_network.feature:56
+ 0.6002543 And I should see a "Suse Manager For Retail" text # features/core/proxy_branch_network.feature:57
+ 0.7298801 And I should see a "General System Configuration" text # features/core/proxy_branch_network.feature:58
+ 2.5228212 Then I should see a "Formula saved" text # features/core/proxy_branch_network.feature:82
+ 3.5525747 Then I should see a "Formula saved" text # features/core/proxy_branch_network.feature:104
+ 3.6237308 Then I should see a "Formula saved" text # features/core/proxy_branch_network.feature:146
+ 2.9026330 Then I should see a "Formula saved" text # features/core/proxy_branch_network.feature:166
+ 3.6090971 Then I should see a "Formula saved" text # features/core/proxy_branch_network.feature:174
+ 1.0988700 Then I should see a "You have successfully scheduled a hardware profile refresh" text # features/core/proxy_branch_network.feature:220
+ 1.0215687 Then I should see a "proxy.example.org" text # features/core/proxy_branch_network.feature:224
+ 0.8351369 /^I wait until I see "([^"]*)" (text|regex), refreshing the page$/ # features/step_definitions/navigation_steps.rb:52
+ 0.5943002 And I wait until I see "blackhole-dummy" text, refreshing the page # features/core/srv_create_repository.feature:131
+ 0.5881904 And I wait until I see "blackhole-dummy" text, refreshing the page # features/core/srv_create_repository.feature:138
+ 1.3229200 And I wait until I see "pending" text, refreshing the page # features/core/proxy_register_as_minion_with_script.feature:44
+ 0.7476513 /^I enter the URI of the registry as "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:244
+ 0.7476513 And I enter the URI of the registry as "uri" # features/core/srv_docker.feature:45
+ 0.7453788 /^I enter the local zone name in (.*) field$/ # features/step_definitions/retail_steps.rb:477
+ 0.7022488 And I enter the local zone name in second configured zone name field # features/core/proxy_branch_network.feature:119
+ 0.7885089 And I enter the local zone name in second available zone name field # features/core/proxy_branch_network.feature:135
+ 0.5967173 /^I enter the local IP address of "([^"]*)" in (.*) field$/ # features/step_definitions/retail_steps.rb:355
+ 0.6107526 And I enter the local IP address of "proxy" in IP field # features/core/proxy_branch_network.feature:75
+ 0.5193620 And I enter the local IP address of "proxy" in domain name server field # features/core/proxy_branch_network.feature:91
+ 0.5610299 And I enter the local IP address of "network" in network IP field # features/core/proxy_branch_network.feature:93
+ 0.8640503 And I enter the local IP address of "range begin" in dynamic IP range begin field # features/core/proxy_branch_network.feature:95
+ 0.7797321 And I enter the local IP address of "range end" in dynamic IP range end field # features/core/proxy_branch_network.feature:96
+ 0.5869640 And I enter the local IP address of "broadcast" in broadcast address field # features/core/proxy_branch_network.feature:97
+ 0.3662420 And I enter the local IP address of "sle_minion" in first reserved IP field # features/core/proxy_branch_network.feature:101
+ 0.4856054 And I enter the local IP address of "pxeboot_minion" in second reserved IP field # features/core/proxy_branch_network.feature:163
+ 0.5540476 /^I let squid use avahi on the proxy$/ # features/step_definitions/command_steps.rb:967
+ 0.5540476 And I let squid use avahi on the proxy # features/core/proxy_register_as_minion_with_script.feature:21
+ 0.5248902 /^terminal "([^"]*)" should have got a retail network IP address$/ # features/step_definitions/retail_steps.rb:183
+ 0.5248902 And terminal "sle_minion" should have got a retail network IP address # features/core/proxy_branch_network.feature:206
+ 0.5200259 /^I enter "([^"]*)" in (.*) field of zone with local name$/ # features/step_definitions/retail_steps.rb:489
+ 0.5389036 And I enter "proxy.example.org." in SOA name server field of zone with local name # features/core/proxy_branch_network.feature:137
+ 0.4656962 And I enter "admin@example.org." in SOA contact field of zone with local name # features/core/proxy_branch_network.feature:138
+ 0.5069341 And I enter "proxy.example.org." in first NS field of zone with local name # features/core/proxy_branch_network.feature:140
+ 0.5685698 And I enter "example.org" in first for zones field of zone with local name # features/core/proxy_branch_network.feature:143
+ 0.4603776 /^I am logged in$/ # features/step_definitions/navigation_steps.rb:540
+ 0.4603776 Then I am logged in # features/core/srv_first_settings.feature:22
+ 0.4599373 /^I enter "([^"]*)" in (.*) field of (.*) zone$/ # features/step_definitions/retail_steps.rb:424
+ 0.4494467 And I enter "master/db.example.org" in file name field of example.org zone # features/core/proxy_branch_network.feature:122
+ 0.2580858 And I enter "proxy" in SOA name server field of example.org zone # features/core/proxy_branch_network.feature:123
+ 0.6044144 And I enter "admin@example.org." in SOA contact field of example.org zone # features/core/proxy_branch_network.feature:124
+ 0.5451355 And I enter "minion" in first A name field of example.org zone # features/core/proxy_branch_network.feature:126
+ 0.4133533 And I enter "proxy" in second A name field of example.org zone # features/core/proxy_branch_network.feature:129
+ 0.6102292 And I enter "proxy.example.org." in first NS field of example.org zone # features/core/proxy_branch_network.feature:132
+ 0.3388960 And I enter "pxeboot" in third A name field of example.org zone # features/core/proxy_branch_network.feature:171
+ 0.4517217 /^I enter the local network in (.*) field of zone with local name$/ # features/step_definitions/retail_steps.rb:494
+ 0.4517217 And I enter the local network in generate reverse network field of zone with local name # features/core/proxy_branch_network.feature:141
+ 0.4226506 /^I wait at most (\d+) seconds until I do not see "([^"]*)" text, refreshing the page$/ # features/step_definitions/navigation_steps.rb:67
+ 0.4204929 And I wait at most 60 seconds until I do not see "Repository sync is running." text, refreshing the page # features/core/srv_create_repository.feature:47
+ 0.4116287 And I wait at most 60 seconds until I do not see "Repository sync is running." text, refreshing the page # features/core/srv_create_repository.feature:78
+ 0.4358302 And I wait at most 60 seconds until I do not see "Repository sync is running." text, refreshing the page # features/core/srv_create_repository.feature:107
+ 0.4200771 /^I enter the local IP address of "([^"]*)" in (.*) field of (.*) zone$/ # features/step_definitions/retail_steps.rb:452
+ 0.4562105 And I enter the local IP address of "sle_minion" in first A address field of example.org zone # features/core/proxy_branch_network.feature:127
+ 0.3789489 And I enter the local IP address of "proxy" in second A address field of example.org zone # features/core/proxy_branch_network.feature:130
+ 0.4250720 And I enter the local IP address of "pxeboot_minion" in third A address field of example.org zone # features/core/proxy_branch_network.feature:172
+ 0.4165078 /^I enable repositories before installing branch server$/ # features/step_definitions/retail_steps.rb:93
+ 0.3709651 When I enable repositories before installing branch server # features/core/proxy_register_as_minion_with_script.feature:75
+ 0.4620505 When I enable repositories before installing branch server # features/core/proxy_branch_network.feature:151
+ 0.4081952 /^I query latest Salt changes on "(.*?)"$/ # features/step_definitions/command_steps.rb:184
+ 0.3759423 When I query latest Salt changes on "server" # features/core/srv_first_settings.feature:69
+ 0.4404480 When I query latest Salt changes on "proxy" # features/core/proxy_register_as_minion_with_script.feature:51
+ 0.4004599 /^I enter the address of the HTTP proxy as "([^"]*)"$/ # features/step_definitions/common_steps.rb:461
+ 0.4004599 When I enter the address of the HTTP proxy as "HTTP Proxy Hostname" # features/core/srv_first_settings.feature:62
+ 0.3801441 /^I disable repositories after installing branch server$/ # features/step_definitions/retail_steps.rb:108
+ 0.3636567 And I disable repositories after installing branch server # features/core/proxy_register_as_minion_with_script.feature:77
+ 0.3966316 When I disable repositories after installing branch server # features/core/proxy_branch_network.feature:197
+ 0.3760167 /^I enter "([^"]*)" in (.*) field$/ # features/step_definitions/retail_steps.rb:374
+ 0.3028324 And I enter "eth1" in NIC field # features/core/proxy_branch_network.feature:74
+ 0.2762922 And I enter "example" in branch id field # features/core/proxy_branch_network.feature:80
+ 0.4054430 And I enter "example.org" in domain name field # features/core/proxy_branch_network.feature:90
+ 0.2789369 And I enter "eth1" in listen interfaces field # features/core/proxy_branch_network.feature:92
+ 0.6032024 And I enter "255.255.255.0" in network mask field # features/core/proxy_branch_network.feature:94
+ 0.3216791 And I enter "minion" in first reserved hostname field # features/core/proxy_branch_network.feature:100
+ 0.4380936 And I enter "empty-zones-enable" in first option field # features/core/proxy_branch_network.feature:115
+ 0.1885092 And I enter "no" in first value field # features/core/proxy_branch_network.feature:116
+ 0.3355302 And I enter "example.org" in first configured zone name field # features/core/proxy_branch_network.feature:117
+ 0.4488140 And I enter "example.org" in first available zone name field # features/core/proxy_branch_network.feature:121
+ 0.5368501 And I enter "pxeboot" in second reserved hostname field # features/core/proxy_branch_network.feature:162
+ 0.3369907 /^I enter "([^"]*)" as "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:230
+ 0.2575196 And I enter "SUSE Test" as "orgName" # features/core/srv_first_settings.feature:13
+ 0.2072312 And I enter "admin" as "login" # features/core/srv_first_settings.feature:14
+ 0.3700301 And I enter "admin" as "desiredpassword" # features/core/srv_first_settings.feature:15
+ 0.3090879 And I enter "admin" as "desiredpasswordConfirm" # features/core/srv_first_settings.feature:16
+ 0.2569052 And I enter "Admin" as "firstNames" # features/core/srv_first_settings.feature:18
+ 0.2206898 And I enter "Admin" as "lastName" # features/core/srv_first_settings.feature:19
+ 0.3205431 And I enter "galaxy-noise@suse.de" as "email" # features/core/srv_first_settings.feature:20
+ 0.1974727 And I enter "testing" as "login" # features/core/srv_first_settings.feature:30
+ 0.3982183 And I enter "testing" as "desiredpassword" # features/core/srv_first_settings.feature:31
+ 0.3784020 And I enter "testing" as "desiredpasswordConfirm" # features/core/srv_first_settings.feature:32
+ 0.1909347 And I enter "Test" as "firstNames" # features/core/srv_first_settings.feature:34
+ 0.2012435 And I enter "User" as "lastName" # features/core/srv_first_settings.feature:35
+ 0.3016975 And I enter "galaxy-noise@suse.de" as "email" # features/core/srv_first_settings.feature:36
+ 0.2059038 And I enter "suma2" as "HTTP Proxy Username" # features/core/srv_first_settings.feature:63
+ 0.3423637 And I enter "P4$$wordWith%and&" as "HTTP Proxy Password" # features/core/srv_first_settings.feature:64
+ 0.2920099 And I enter "Test Base Channel" as "Channel Name" # features/core/srv_channels_add.feature:15
+ 0.2816560 And I enter "test_base_channel" as "Channel Label" # features/core/srv_channels_add.feature:16
+ 0.3324298 And I enter "Base channel for testing" as "Channel Summary" # features/core/srv_channels_add.feature:19
+ 0.4104314 And I enter "No more description for base channel." as "Channel Description" # features/core/srv_channels_add.feature:20
+ 0.2736014 And I enter "Test Child Channel" as "Channel Name" # features/core/srv_channels_add.feature:27
+ 0.3942319 And I enter "test_child_channel" as "Channel Label" # features/core/srv_channels_add.feature:28
+ 0.3166861 And I enter "Child channel for testing" as "Channel Summary" # features/core/srv_channels_add.feature:31
+ 0.4278644 And I enter "Description for Test Child Channel." as "Channel Description" # features/core/srv_channels_add.feature:32
+ 0.2658448 And I enter "Test-Channel-i586" as "Channel Name" # features/core/srv_channels_add.feature:39
+ 0.2791547 And I enter "test-channel-i586" as "Channel Label" # features/core/srv_channels_add.feature:40
+ 0.4824306 And I enter "Test-Channel-i586 channel for testing" as "Channel Summary" # features/core/srv_channels_add.feature:43
+ 0.3918380 And I enter "No more description for base channel." as "Channel Description" # features/core/srv_channels_add.feature:44
+ 0.3592017 And I enter "Test-Channel-i586 Child Channel" as "Channel Name" # features/core/srv_channels_add.feature:51
+ 0.3503284 And I enter "test-channel-i586-child-channel" as "Channel Label" # features/core/srv_channels_add.feature:52
+ 0.4389195 And I enter "Test-Channel-i586 child channel for testing" as "Channel Summary" # features/core/srv_channels_add.feature:55
+ 0.4423781 And I enter "Description for Test-Channel-i586 Child Channel." as "Channel Description" # features/core/srv_channels_add.feature:56
+ 0.2766898 And I enter "Test-Channel-x86_64" as "Channel Name" # features/core/srv_channels_add.feature:63
+ 0.2802350 And I enter "test-channel-x86_64" as "Channel Label" # features/core/srv_channels_add.feature:64
+ 0.4893317 And I enter "Test-Channel-x86_64 channel for testing" as "Channel Summary" # features/core/srv_channels_add.feature:67
+ 0.3861986 And I enter "No more description for base channel." as "Channel Description" # features/core/srv_channels_add.feature:68
+ 0.3695169 And I enter "Test-Channel-x86_64 Child Channel" as "Channel Name" # features/core/srv_channels_add.feature:75
+ 0.3558621 And I enter "test-channel-x86_64-child-channel" as "Channel Label" # features/core/srv_channels_add.feature:76
+ 0.4678394 And I enter "Test-Channel-x86_64 child channel for testing" as "Channel Summary" # features/core/srv_channels_add.feature:79
+ 0.4456857 And I enter "Description for Test-Channel-x86_64 Child Channel." as "Channel Description" # features/core/srv_channels_add.feature:80
+ 0.2958718 And I enter "Test-Channel-Deb-AMD64" as "Channel Name" # features/core/srv_channels_add.feature:87
+ 0.4357782 And I enter "test-channel-deb-amd64" as "Channel Label" # features/core/srv_channels_add.feature:88
+ 0.4621633 And I enter "Test-Channel-Deb-AMD64 for testing" as "Channel Summary" # features/core/srv_channels_add.feature:91
+ 0.4837079 And I enter "No more description for base channel." as "Channel Description" # features/core/srv_channels_add.feature:92
+ 0.3632242 And I enter "Test-Repository-x86_64" as "label" # features/core/srv_create_repository.feature:16
+ 0.4220048 And I enter "http://localhost/pub/TestRepoRpmUpdates/" as "url" # features/core/srv_create_repository.feature:17
+ 0.5597791 And I enter "file:///etc/pki/rpm-gpg/uyuni-tools-gpg-pubkey-0d20833e.key" as "GPG key URL" # features/core/srv_create_repository.feature:33
+ 0.2968664 And I enter "Test-Repository-i586" as "label" # features/core/srv_create_repository.feature:56
+ 0.5264831 And I enter "file:///srv/www/htdocs/pub/TestRepoRpmUpdates/" as "url" # features/core/srv_create_repository.feature:57
+ 0.5519427 And I enter "file:///etc/pki/rpm-gpg/uyuni-tools-gpg-pubkey-0d20833e.key" as "GPG key URL" # features/core/srv_create_repository.feature:65
+ 0.2801961 And I enter "Test-Repository-Deb" as "label" # features/core/srv_create_repository.feature:86
+ 0.5331760 And I enter "http://localhost/pub/TestRepoDebUpdates/" as "url" # features/core/srv_create_repository.feature:88
+ 0.4332942 And I enter "SUSE Test Key x86_64" as "description" # features/core/srv_create_activationkey.feature:15
+ 0.2854775 And I enter "SUSE-KEY-x86_64" as "key" # features/core/srv_create_activationkey.feature:16
+ 0.1665590 And I enter "20" as "usageLimit" # features/core/srv_create_activationkey.feature:17
+ 0.4200786 And I enter "Debian-like Test Key" as "description" # features/core/srv_create_activationkey.feature:31
+ 0.2926691 And I enter "DEBLIKE-KEY" as "key" # features/core/srv_create_activationkey.feature:32
+ 0.3882330 And I enter "SUSE SSH Test Key x86_64" as "description" # features/core/srv_create_activationkey.feature:45
+ 0.3089536 And I enter "SUSE-SSH-KEY-x86_64" as "key" # features/core/srv_create_activationkey.feature:46
+ 0.2189554 And I enter "20" as "usageLimit" # features/core/srv_create_activationkey.feature:47
+ 0.4525009 And I enter "SUSE SSH Tunnel Test Key x86_64" as "description" # features/core/srv_create_activationkey.feature:56
+ 0.3413436 And I enter "SUSE-SSH-TUNNEL-KEY-x86_64" as "key" # features/core/srv_create_activationkey.feature:57
+ 0.1594125 And I enter "20" as "usageLimit" # features/core/srv_create_activationkey.feature:58
+ 0.1984774 And I enter "kiwikiwi" as "login" # features/core/srv_osimage.feature:12
+ 0.4883063 And I enter "kiwikiwi" as "desiredpassword" # features/core/srv_osimage.feature:13
+ 0.2824701 And I enter "kiwikiwi" as "desiredpasswordConfirm" # features/core/srv_osimage.feature:14
+ 0.2144927 And I enter "TestKiwi" as "firstNames" # features/core/srv_osimage.feature:16
+ 0.2300622 And I enter "TestKiwi" as "lastName" # features/core/srv_osimage.feature:17
+ 0.3100582 And I enter "kiwi@susy.de" as "email" # features/core/srv_osimage.feature:18
+ 0.4181295 And I enter "Kiwi testing" as "description" # features/core/srv_osimage.feature:30
+ 0.2501669 And I enter "KIWI-TEST" as "key" # features/core/srv_osimage.feature:31
+ 0.2240220 And I enter "20" as "usageLimit" # features/core/srv_osimage.feature:32
+ 0.1849651 And I enter "docker" as "login" # features/core/srv_docker.feature:12
+ 0.4548448 And I enter "docker" as "desiredpassword" # features/core/srv_docker.feature:13
+ 0.3257552 And I enter "docker" as "desiredpasswordConfirm" # features/core/srv_docker.feature:14
+ 0.2278627 And I enter "TestDocky" as "firstNames" # features/core/srv_docker.feature:16
+ 0.2273435 And I enter "TestDocky" as "lastName" # features/core/srv_docker.feature:17
+ 0.3369842 And I enter "gino-ginae@susy.de" as "email" # features/core/srv_docker.feature:18
+ 0.3904987 When I enter "Docker testing" as "description" # features/core/srv_docker.feature:30
+ 0.2638888 And I enter "DOCKER-TEST" as "key" # features/core/srv_docker.feature:31
+ 0.1907863 And I enter "20" as "usageLimit" # features/core/srv_docker.feature:32
+ 0.2782126 And I enter "orion-dummy perseus-dummy" as "packages" # features/core/srv_docker.feature:36
+ 0.4886300 And I enter "galaxy-registry" as "label" # features/core/srv_docker.feature:44
+ 0.3353724 /^I should see "([^"]*)" hostname$/ # features/step_definitions/navigation_steps.rb:583
+ 0.6707448 Then I should see "proxy" hostname # features/core/proxy_register_as_minion_with_script.feature:70
+ 0.3335611 /^I follow the left menu "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:341
+ 0.4821535 When I follow the left menu "Users > User List > Active" # features/core/srv_first_settings.feature:28
+ 0.2528603 When I follow the left menu "Users > User List > Active" # features/core/srv_first_settings.feature:42
+ 0.7050021 When I follow the left menu "Admin > Setup Wizard > HTTP Proxy" # features/core/srv_first_settings.feature:58
+ 0.5033126 When I follow the left menu "Admin > Setup Wizard > Organization Credentials" # features/core/srv_organization_credentials.feature:9
+ 0.2031029 When I follow the left menu "Home > My Preferences" # features/core/srv_user_preferences.feature:11
+ 0.2165660 When I follow the left menu "Home > My Preferences" # features/core/srv_user_preferences.feature:18
+ 0.5279595 When I follow the left menu "Software > Manage > Channels" # features/core/srv_channels_add.feature:13
+ 0.2433296 When I follow the left menu "Software > Manage > Channels" # features/core/srv_channels_add.feature:25
+ 0.2866118 When I follow the left menu "Software > Manage > Channels" # features/core/srv_channels_add.feature:37
+ 0.2338533 When I follow the left menu "Software > Manage > Channels" # features/core/srv_channels_add.feature:49
+ 0.2775723 When I follow the left menu "Software > Manage > Channels" # features/core/srv_channels_add.feature:61
+ 0.3022381 When I follow the left menu "Software > Manage > Channels" # features/core/srv_channels_add.feature:73
+ 0.2429993 When I follow the left menu "Software > Manage > Channels" # features/core/srv_channels_add.feature:85
+ 0.5174039 When I follow the left menu "Software > Manage > Repositories" # features/core/srv_create_repository.feature:14
+ 0.2791607 When I follow the left menu "Software > Manage > Repositories" # features/core/srv_create_repository.feature:23
+ 0.2989545 When I follow the left menu "Software > Manage > Channels" # features/core/srv_create_repository.feature:31
+ 0.4032315 And I follow the left menu "Software > Manage > Channels" # features/core/srv_create_repository.feature:43
+ 0.2667941 When I follow the left menu "Software > Manage > Repositories" # features/core/srv_create_repository.feature:54
+ 0.2816121 When I follow the left menu "Software > Manage > Channels" # features/core/srv_create_repository.feature:63
+ 0.2968217 When I follow the left menu "Software > Manage > Channels" # features/core/srv_create_repository.feature:74
+ 0.2131128 When I follow the left menu "Software > Manage > Repositories" # features/core/srv_create_repository.feature:84
+ 0.2378142 When I follow the left menu "Software > Manage > Channels" # features/core/srv_create_repository.feature:94
+ 0.1470721 When I follow the left menu "Software > Manage > Channels" # features/core/srv_create_repository.feature:103
+ 0.3366073 When I follow the left menu "Admin > Task Schedules" # features/core/srv_create_repository.feature:112
+ 0.2086223 When I follow the left menu "Admin > Task Schedules" # features/core/srv_create_repository.feature:120
+ 0.3157840 When I follow the left menu "Software > Channel List" # features/core/srv_create_repository.feature:128
+ 0.1226518 When I follow the left menu "Software > Channel List" # features/core/srv_create_repository.feature:135
+ 0.3784686 When I follow the left menu "Systems > Activation Keys" # features/core/srv_create_activationkey.feature:13
+ 0.2237052 When I follow the left menu "Systems > Activation Keys" # features/core/srv_create_activationkey.feature:29
+ 0.2239171 When I follow the left menu "Systems > Activation Keys" # features/core/srv_create_activationkey.feature:43
+ 0.2474781 When I follow the left menu "Systems > Activation Keys" # features/core/srv_create_activationkey.feature:54
+ 0.6139576 When I follow the left menu "Users > User List > Active" # features/core/srv_osimage.feature:10
+ 0.3564342 When I follow the left menu "Systems > Activation Keys" # features/core/srv_osimage.feature:28
+ 0.5715161 When I follow the left menu "Users > User List > Active" # features/core/srv_docker.feature:10
+ 0.3594073 When I follow the left menu "Systems > Activation Keys" # features/core/srv_docker.feature:28
+ 0.3767686 When I follow the left menu "Images > Stores" # features/core/srv_docker.feature:42
+ 0.5869039 When I follow the left menu "Salt > Keys" # features/core/proxy_register_as_minion_with_script.feature:43
+ 0.3311227 /^I wait for "([^"]*)" to be (uninstalled|installed) on "([^"]*)"$/ # features/step_definitions/command_steps.rb:159
+ 0.6622455 And I wait for "patterns-uyuni_retail" to be installed on "server" # features/core/proxy_branch_network.feature:44
+ 0.3062735 /^I disable source package syncing$/ # features/step_definitions/command_steps.rb:822
+ 0.3062735 And I disable source package syncing # features/core/srv_create_repository.feature:51
+ 0.3057918 /^service "([^"]*)" is enabled on "([^"]*)"$/ # features/step_definitions/command_steps.rb:664
+ 0.3187931 Then service "dhcpd" is enabled on "proxy" # features/core/proxy_branch_network.feature:187
+ 0.2983318 And service "named" is enabled on "proxy" # features/core/proxy_branch_network.feature:189
+ 0.3002506 And service "firewalld" is enabled on "proxy" # features/core/proxy_branch_network.feature:191
+ 0.3041836 /^I execute mgr\-bootstrap "([^"]*)"$/ # features/step_definitions/command_steps.rb:409
+ 0.6083672 When I execute mgr-bootstrap "--script=bootstrap-proxy.sh --force-bundle" # features/core/proxy_register_as_minion_with_script.feature:33
+ 0.2999594 /^I enter the local file name in (.*) field of zone with local name$/ # features/step_definitions/retail_steps.rb:483
+ 0.2999594 And I enter the local file name in file name field of zone with local name # features/core/proxy_branch_network.feature:136
+ 0.2949736 /^service "([^"]*)" is active on "([^"]*)"$/ # features/step_definitions/command_steps.rb:671
+ 0.2758418 And service "salt-broker" is active on "proxy" # features/core/proxy_register_as_minion_with_script.feature:57
+ 0.3007076 And service "dhcpd" is active on "proxy" # features/core/proxy_branch_network.feature:188
+ 0.3025700 And service "named" is active on "proxy" # features/core/proxy_branch_network.feature:190
+ 0.3007749 And service "firewalld" is active on "proxy" # features/core/proxy_branch_network.feature:192
+ 0.2769736 /^I enable source package syncing$/ # features/step_definitions/command_steps.rb:817
+ 0.2769736 When I enable source package syncing # features/core/srv_create_repository.feature:42
+ 0.2675485 /^I follow "([^"]*)" in the (.+)$/ # features/step_definitions/navigation_steps.rb:303
+ 0.2359692 When I follow "Repositories" in the content area # features/core/srv_create_repository.feature:36
+ 0.1704721 And I follow "Repositories" in the content area # features/core/srv_create_repository.feature:45
+ 0.1917754 When I follow "Repositories" in the content area # features/core/srv_create_repository.feature:68
+ 0.1669035 And I follow "Repositories" in the content area # features/core/srv_create_repository.feature:76
+ 0.1881844 And I follow "Repositories" in the content area # features/core/srv_create_repository.feature:96
+ 0.1636286 And I follow "Repositories" in the content area # features/core/srv_create_repository.feature:105
+ 0.1792778 And I follow "Packages" in the content area # features/core/srv_create_repository.feature:130
+ 0.2625615 And I follow "Packages" in the content area # features/core/srv_create_repository.feature:137
+ 0.1708075 When I follow "Formulas" in the content area # features/core/proxy_branch_network.feature:55
+ 0.3661509 When I follow "Formulas" in the content area # features/core/proxy_branch_network.feature:71
+ 0.2748101 When I follow "Formulas" in the content area # features/core/proxy_branch_network.feature:87
+ 0.2448864 When I follow "Formulas" in the content area # features/core/proxy_branch_network.feature:109
+ 0.4591934 When I follow "Formulas" in the content area # features/core/proxy_branch_network.feature:158
+ 0.3094154 When I follow "States" in the content area # features/core/proxy_branch_network.feature:184
+ 0.4410174 When I follow "Details" in the content area # features/core/proxy_branch_network.feature:217
+ 0.5422654 And I follow "Hardware" in the content area # features/core/proxy_branch_network.feature:218
+ 0.2763115 And I follow "Details" in the content area # features/core/proxy_branch_network.feature:222
+ 0.1722424 And I follow "Hardware" in the content area # features/core/proxy_branch_network.feature:223
+ 0.2559564 /^I ask to add new credentials$/ # features/step_definitions/common_steps.rb:465
+ 0.2559564 And I ask to add new credentials # features/core/srv_organization_credentials.feature:10
+ 0.2418156 /^I press "Add Item" in (.*) section$/ # features/step_definitions/retail_steps.rb:503
+ 0.4097289 And I press "Add Item" in host reservations section # features/core/proxy_branch_network.feature:99
+ 0.1368388 And I press "Add Item" in config options section # features/core/proxy_branch_network.feature:114
+ 0.2350638 And I press "Add Item" in configured zones section # features/core/proxy_branch_network.feature:118
+ 0.2328053 And I press "Add Item" in available zones section # features/core/proxy_branch_network.feature:134
+ 0.1946412 And I press "Add Item" in host reservations section # features/core/proxy_branch_network.feature:161
+ 0.2276830 /^I follow first "([^"]*)" in the (.+)$/ # features/step_definitions/navigation_steps.rb:314
+ 0.2578674 And I follow first "Branch Network" in the content area # features/core/proxy_branch_network.feature:72
+ 0.2547376 And I follow first "Dhcpd" in the content area # features/core/proxy_branch_network.feature:88
+ 0.2132822 And I follow first "Bind" in the content area # features/core/proxy_branch_network.feature:110
+ 0.2135232 And I follow first "Dhcpd" in the content area # features/core/proxy_branch_network.feature:159
+ 0.1990048 When I follow first "Bind" in the content area # features/core/proxy_branch_network.feature:168
+ 0.2188650 /^I check (.*) box$/ # features/step_definitions/retail_steps.rb:540
+ 0.1562533 And I check enable SLAAC with routing box # features/core/proxy_branch_network.feature:77
+ 0.2814768 And I check include forwarders box # features/core/proxy_branch_network.feature:113
+ 0.2013964 /^I select "([^"]*)" from "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:181
+ 0.2920271 And I select "Mr." from "prefix" # features/core/srv_first_settings.feature:17
+ 0.1344775 And I select "Mr." from "prefix" # features/core/srv_first_settings.feature:33
+ 0.1773833 And I select "100" from "pagesize" # features/core/srv_user_preferences.feature:12
+ 0.1841484 And I select "100" from "pagesize" # features/core/srv_user_preferences.feature:19
+ 0.1446050 And I select "None" from "Parent Channel" # features/core/srv_channels_add.feature:17
+ 0.2006934 And I select "x86_64" from "Architecture:" # features/core/srv_channels_add.feature:18
+ 0.1940746 And I select "Test Base Channel" from "Parent Channel" # features/core/srv_channels_add.feature:29
+ 0.1713588 And I select "x86_64" from "Architecture:" # features/core/srv_channels_add.feature:30
+ 0.1365656 And I select "None" from "Parent Channel" # features/core/srv_channels_add.feature:41
+ 0.2251328 And I select "IA-32" from "Architecture:" # features/core/srv_channels_add.feature:42
+ 0.1977104 And I select "Test-Channel-i586" from "Parent Channel" # features/core/srv_channels_add.feature:53
+ 0.1923176 And I select "IA-32" from "Architecture:" # features/core/srv_channels_add.feature:54
+ 0.1220845 And I select "None" from "Parent Channel" # features/core/srv_channels_add.feature:65
+ 0.1142788 And I select "x86_64" from "Architecture:" # features/core/srv_channels_add.feature:66
+ 0.2461102 And I select "Test-Channel-x86_64" from "Parent Channel" # features/core/srv_channels_add.feature:77
+ 0.1597112 And I select "x86_64" from "Architecture:" # features/core/srv_channels_add.feature:78
+ 0.1291478 And I select "None" from "Parent Channel" # features/core/srv_channels_add.feature:89
+ 0.1756035 And I select "AMD64 Debian" from "Architecture:" # features/core/srv_channels_add.feature:90
+ 0.1837833 And I select "deb" from "contenttype" # features/core/srv_create_repository.feature:87
+ 0.2545367 And I select "Test-Channel-x86_64" from "selectedBaseChannel" # features/core/srv_create_activationkey.feature:18
+ 0.1957282 And I select "Test-Channel-Deb-AMD64" from "selectedBaseChannel" # features/core/srv_create_activationkey.feature:33
+ 0.2392363 And I select "Test-Channel-x86_64" from "selectedBaseChannel" # features/core/srv_create_activationkey.feature:48
+ 0.2943215 And I select "Push via SSH" from "contact-method" # features/core/srv_create_activationkey.feature:49
+ 0.2364176 And I select "Test-Channel-x86_64" from "selectedBaseChannel" # features/core/srv_create_activationkey.feature:59
+ 0.3512243 And I select "Push via SSH tunnel" from "contact-method" # features/core/srv_create_activationkey.feature:60
+ 0.1728378 And I select "Mr." from "prefix" # features/core/srv_osimage.feature:15
+ 0.2662263 And I select "Test-Channel-x86_64" from "selectedBaseChannel" # features/core/srv_osimage.feature:33
+ 0.1587970 And I select "Mr." from "prefix" # features/core/srv_docker.feature:15
+ 0.2899560 And I select "Test-Channel-x86_64" from "selectedBaseChannel" # features/core/srv_docker.feature:33
+ 0.1987383 /^I ([^ ]*) the "([^"]*)" formula$/ # features/step_definitions/salt_steps.rb:220
+ 0.2384276 When I check the "branch-network" formula # features/core/proxy_branch_network.feature:59
+ 0.1749181 And I check the "dhcpd" formula # features/core/proxy_branch_network.feature:60
+ 0.1828693 And I check the "bind" formula # features/core/proxy_branch_network.feature:61
+ 0.1766171 /^I press "Add Item" in (A|NS|CNAME|for zones) section of zone with local name$/ # features/step_definitions/retail_steps.rb:525
+ 0.1407552 And I press "Add Item" in NS section of zone with local name # features/core/proxy_branch_network.feature:139
+ 0.2124790 And I press "Add Item" in for zones section of zone with local name # features/core/proxy_branch_network.feature:142
+ 0.1763761 /^I press "Remove" in the routers section$/ # features/step_definitions/retail_steps.rb:535
+ 0.1763761 And I press "Remove" in the routers section # features/core/proxy_branch_network.feature:98
+ 0.1741431 /^I uncheck (.*) box$/ # features/step_definitions/retail_steps.rb:544
+ 0.1950773 And I uncheck enable route box # features/core/proxy_branch_network.feature:78
+ 0.1532089 And I uncheck enable NAT box # features/core/proxy_branch_network.feature:79
+ 0.1552225 /^I press "Add Item" in (A|NS|CNAME|for zones) section of (.*) zone$/ # features/step_definitions/retail_steps.rb:514
+ 0.1455106 And I press "Add Item" in A section of example.org zone # features/core/proxy_branch_network.feature:125
+ 0.1060174 And I press "Add Item" in A section of example.org zone # features/core/proxy_branch_network.feature:128
+ 0.1744526 And I press "Add Item" in NS section of example.org zone # features/core/proxy_branch_network.feature:131
+ 0.1949093 And I press "Add Item" in A section of example.org zone # features/core/proxy_branch_network.feature:170
+ 0.1549226 /^I uncheck "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:173
+ 0.1459037 And I uncheck "gpg_check" # features/core/srv_channels_add.feature:96
+ 0.1343487 And I uncheck "metadataSigned" # features/core/srv_create_repository.feature:25
+ 0.1845154 And I uncheck "metadataSigned" # features/core/srv_create_repository.feature:58
+ 0.1547890 /^I fetch "([^"]*)" to "([^"]*)"$/ # features/step_definitions/command_steps.rb:414
+ 0.3095779 When I fetch "pub/bootstrap/bootstrap-proxy.sh" to "proxy" # features/core/proxy_register_as_minion_with_script.feature:36
+ 0.1532393 /^I select the "([^"]*)" repo$/ # features/step_definitions/navigation_steps.rb:746
+ 0.1521476 And I select the "Test-Repository-x86_64" repo # features/core/srv_create_repository.feature:37
+ 0.1538591 And I select the "Test-Repository-i586" repo # features/core/srv_create_repository.feature:69
+ 0.1537112 And I select the "Test-Repository-Deb" repo # features/core/srv_create_repository.feature:97
+ 0.1457708 /^I check "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:169
+ 0.1402530 And I check "role_org_admin" # features/core/srv_first_settings.feature:44
+ 0.1361757 And I check "role_system_group_admin" # features/core/srv_first_settings.feature:45
+ 0.1354868 And I check "role_channel_admin" # features/core/srv_first_settings.feature:46
+ 0.1375853 And I check "role_activation_key_admin" # features/core/srv_first_settings.feature:47
+ 0.1373970 And I check "role_config_admin" # features/core/srv_first_settings.feature:48
+ 0.1581271 And I check "role_image_admin" # features/core/srv_osimage.feature:24
+ 0.1753707 And I check "role_image_admin" # features/core/srv_docker.feature:24
+ 0.1216067 /^I accept "([^"]*)" key$/ # features/step_definitions/salt_steps.rb:370
+ 0.1216067 And I accept "proxy" key # features/core/proxy_register_as_minion_with_script.feature:45
+ 0.0651991 /^I should see a "([^"]*)" link in the (left menu|tab bar|tabs|content area)$/ # features/step_definitions/navigation_steps.rb:708
+ 0.0865535 And I should see a "Configuration" link in the content area # features/core/srv_create_activationkey.feature:23
+ 0.0920397 And I should see a "Configuration" link in the content area # features/core/srv_create_activationkey.feature:38
+ 0.0822033 Then I should see a "Proxy" link in the content area # features/core/proxy_register_as_minion_with_script.feature:71
+ 0.0556663 /^I should see "([^"]*)" as checked$/ # features/step_definitions/navigation_steps.rb:903
+ 0.0556663 And I should see "metadataSigned" as checked # features/core/srv_create_repository.feature:20
+ 0.0491130 /^I should see a "([^"]*)" link$/ # features/step_definitions/navigation_steps.rb:625
+ 0.0424885 And I should see a "testing" link # features/core/srv_first_settings.feature:39
+ 0.0905495 And I should see a "Details" link # features/core/srv_create_activationkey.feature:21
+ 0.0724903 And I should see a "Packages" link # features/core/srv_create_activationkey.feature:22
+ 0.0357171 And I should see a "Groups" link # features/core/srv_create_activationkey.feature:24
+ 0.0363068 And I should see a "Activated Systems" link # features/core/srv_create_activationkey.feature:25
+ 0.0404578 And I should see a "Details" link # features/core/srv_create_activationkey.feature:36
+ 0.0401861 And I should see a "Packages" link # features/core/srv_create_activationkey.feature:37
+ 0.0588430 And I should see a "Groups" link # features/core/srv_create_activationkey.feature:39
+ 0.0291325 And I should see a "Activated Systems" link # features/core/srv_create_activationkey.feature:40
+ 0.0384480 And I should see a "kiwikiwi" link # features/core/srv_osimage.feature:21
+ 0.0556229 And I should see a "docker" link # features/core/srv_docker.feature:21
+ 0.0479203 /^I should see "([^"]*)" as unchecked$/ # features/step_definitions/navigation_steps.rb:910
+ 0.0479203 And I should see "metadataSigned" as unchecked # features/core/srv_create_repository.feature:28
+ 0.0000517 /^I should get "([^"]*)"$/ # features/step_definitions/command_steps.rb:134
+ 0.0000497 Then I should get "* bootstrap script (written):" # features/core/proxy_register_as_minion_with_script.feature:34
+ 0.0001573 And I should get " '/srv/www/htdocs/pub/bootstrap/bootstrap-proxy.sh'" # features/core/proxy_register_as_minion_with_script.feature:35

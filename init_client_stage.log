@@ -1,0 +1,204 @@
+
+ 250.0649249 /^I apply highstate on "([^"]*)"$/ # features/step_definitions/command_steps.rb:229
+ 250.0649249 And I apply highstate on "build_host" # features/init_clients/buildhost_bootstrap.feature:72
+ 65.7727450 /^I wait until file "([^"]*)" exists on "([^"]*)"$/ # features/step_definitions/command_steps.rb:712
+ 65.7727450 And I wait until file "/var/lib/Kiwi/repo/rhn-org-trusted-ssl-cert-osimage-1.0-1.noarch.rpm" exists on "build_host" # features/init_clients/buildhost_bootstrap.feature:74
+ 62.2450044 /^I check for failed events on history event page$/ # features/step_definitions/common_steps.rb:1101
+ 72.4031024 Then I check for failed events on history event page # features/init_clients/min_rhlike_salt.feature:60
+ 52.2299277 Then I check for failed events on history event page # features/init_clients/min_deblike_salt.feature:61
+ 62.1019832 Then I check for failed events on history event page # features/init_clients/buildhost_bootstrap.feature:84
+ 59.7944994 /^I wait until onboarding is completed for "([^"]*)"$/ # features/step_definitions/common_steps.rb:856
+ 26.5182172 And I wait until onboarding is completed for "sle_minion" # features/init_clients/sle_minion.feature:28
+ 97.6584044 And I wait until onboarding is completed for "ssh_minion" # features/init_clients/sle_ssh_minion.feature:21
+ 43.4674385 And I wait until onboarding is completed for "rhlike_minion" # features/init_clients/min_rhlike_salt.feature:26
+ 73.2826482 And I wait until onboarding is completed for "deblike_minion" # features/init_clients/min_deblike_salt.feature:26
+ 58.0457889 And I wait until onboarding is completed for "build_host" # features/init_clients/buildhost_bootstrap.feature:26
+ 57.2581453 /^I wait until I see "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:36
+ 55.5392569 And I wait until I see "Successfully bootstrapped host!" text # features/init_clients/sle_minion.feature:20
+ 71.9297407 And I wait until I see "Successfully bootstrapped host!" text # features/init_clients/sle_ssh_minion.feature:18
+ 41.2065344 And I wait until I see "Successfully bootstrapped host!" text # features/init_clients/min_rhlike_salt.feature:23
+ 84.3797858 And I wait until I see "Successfully bootstrapped host!" text # features/init_clients/min_deblike_salt.feature:23
+ 33.2354089 And I wait until I see "Successfully bootstrapped host!" text # features/init_clients/buildhost_bootstrap.feature:19
+ 52.9697115 /^I wait until I see the name of "([^"]*)", refreshing the page$/ # features/step_definitions/navigation_steps.rb:109
+ 63.9947910 And I wait until I see the name of "sle_minion", refreshing the page # features/init_clients/sle_minion.feature:27
+ 50.6025490 And I wait until I see the name of "ssh_minion", refreshing the page # features/init_clients/sle_ssh_minion.feature:20
+ 65.8032094 And I wait until I see the name of "rhlike_minion", refreshing the page # features/init_clients/min_rhlike_salt.feature:25
+ 35.4957011 And I wait until I see the name of "deblike_minion", refreshing the page # features/init_clients/min_deblike_salt.feature:25
+ 48.9523071 And I wait until I see the name of "build_host", refreshing the page # features/init_clients/buildhost_bootstrap.feature:25
+ 28.5045297 /^I wait until event "([^"]*)" is completed$/ # features/step_definitions/common_steps.rb:132
+ 28.5052539 And I wait until event "Subscribe channels scheduled by admin" is completed # features/init_clients/min_rhlike_salt.feature:53
+ 28.5038055 And I wait until event "Subscribe channels scheduled by admin" is completed # features/init_clients/min_deblike_salt.feature:54
+ 5.9464136 /^I am on the Systems overview page of this "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:407
+ 5.2995002 Given I am on the Systems overview page of this "sle_minion" # features/init_clients/sle_minion.feature:33
+ 4.8971515 Given I am on the Systems overview page of this "proxy" # features/init_clients/sle_minion.feature:40
+ 6.1221551 Given I am on the Systems overview page of this "ssh_minion" # features/init_clients/sle_ssh_minion.feature:25
+ 5.3040605 Given I am on the Systems overview page of this "proxy" # features/init_clients/sle_ssh_minion.feature:32
+ 5.8660450 Given I am on the Systems overview page of this "rhlike_minion" # features/init_clients/min_rhlike_salt.feature:30
+ 5.7038775 Given I am on the Systems overview page of this "proxy" # features/init_clients/min_rhlike_salt.feature:37
+ 5.5273757 Given I am on the Systems overview page of this "rhlike_minion" # features/init_clients/min_rhlike_salt.feature:43
+ 6.2952318 Given I am on the Systems overview page of this "rhlike_minion" # features/init_clients/min_rhlike_salt.feature:59
+ 6.5965687 Given I am on the Systems overview page of this "deblike_minion" # features/init_clients/min_deblike_salt.feature:31
+ 5.8513993 Given I am on the Systems overview page of this "proxy" # features/init_clients/min_deblike_salt.feature:38
+ 5.3434040 Given I am on the Systems overview page of this "deblike_minion" # features/init_clients/min_deblike_salt.feature:44
+ 6.0690506 Given I am on the Systems overview page of this "deblike_minion" # features/init_clients/min_deblike_salt.feature:60
+ 6.3533219 Given I am on the Systems overview page of this "build_host" # features/init_clients/buildhost_bootstrap.feature:31
+ 5.6537018 Given I am on the Systems overview page of this "proxy" # features/init_clients/buildhost_bootstrap.feature:38
+ 6.3587580 Given I am on the Systems overview page of this "build_host" # features/init_clients/buildhost_bootstrap.feature:47
+ 6.2653546 Given I am on the Systems overview page of this "build_host" # features/init_clients/buildhost_bootstrap.feature:58
+ 6.6342527 Given I am on the Systems overview page of this "build_host" # features/init_clients/buildhost_bootstrap.feature:69
+ 6.9560317 Given I am on the Systems overview page of this "build_host" # features/init_clients/buildhost_bootstrap.feature:78
+ 5.8846177 Given I am on the Systems overview page of this "build_host" # features/init_clients/buildhost_bootstrap.feature:83
+ 5.5021155 /^I enable repositories before installing Docker$/ # features/step_definitions/common_steps.rb:789
+ 5.5021155 And I enable repositories before installing Docker # features/init_clients/buildhost_bootstrap.feature:71
+ 3.5543344 /^the Salt master can reach "(.*?)"$/ # features/step_definitions/salt_steps.rb:8
+ 4.1325435 Then the Salt master can reach "sle_minion" # features/init_clients/sle_minion.feature:29
+ 2.9761253 Then the Salt master can reach "build_host" # features/init_clients/buildhost_bootstrap.feature:27
+ 3.0970439 /^I wait until no Salt job is running on "([^"]*)"$/ # features/step_definitions/salt_steps.rb:83
+ 3.0970439 When I wait until no Salt job is running on "build_host" # features/init_clients/buildhost_bootstrap.feature:70
+ 2.5180842 /^I am authorized for the "([^"]*)" section$/ # features/step_definitions/navigation_steps.rb:395
+ 5.6245939 Given I am authorized for the "Admin" section # features/init_clients/sle_minion.feature:8
+ 1.6152775 Given I am authorized for the "Admin" section # features/init_clients/sle_ssh_minion.feature:8
+ 1.6539719 Given I am authorized for the "Admin" section # features/init_clients/min_rhlike_salt.feature:11
+ 1.8831010 Given I am authorized for the "Admin" section # features/init_clients/min_deblike_salt.feature:11
+ 1.8134766 Given I am authorized for the "Admin" section # features/init_clients/buildhost_bootstrap.feature:8
+ 2.3025214 /^I wait until I do not see "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:40
+ 6.4386803 And I wait until I do not see "Loading..." text # features/init_clients/sle_minion.feature:24
+ 1.7476503 And I wait until I do not see "Loading..." text # features/init_clients/min_rhlike_salt.feature:46
+ 1.7292429 And I wait until I do not see "Loading..." text # features/init_clients/min_rhlike_salt.feature:48
+ 1.1265249 And I wait until I do not see "Loading..." text # features/init_clients/min_deblike_salt.feature:47
+ 0.4705087 And I wait until I do not see "Loading..." text # features/init_clients/min_deblike_salt.feature:49
+ 1.9771368 /^I query latest Salt changes on Debian-like system "(.*?)"$/ # features/step_definitions/command_steps.rb:197
+ 2.4539612 And I query latest Salt changes on Debian-like system "deblike_minion" # features/init_clients/min_deblike_salt.feature:27
+ 1.5003124 When I query latest Salt changes on Debian-like system "deblike_minion" # features/init_clients/min_deblike_salt.feature:57
+ 1.8175846 /^I disable repositories after installing Docker$/ # features/step_definitions/common_steps.rb:820
+ 1.8175846 And I disable repositories after installing Docker # features/init_clients/buildhost_bootstrap.feature:75
+ 1.0987996 /^I click on "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:260
+ 0.2208189 And I click on "Bootstrap" # features/init_clients/sle_minion.feature:19
+ 0.2356499 And I click on "Bootstrap" # features/init_clients/sle_ssh_minion.feature:17
+ 0.2229921 And I click on "Bootstrap" # features/init_clients/min_rhlike_salt.feature:22
+ 0.2465562 And I click on "Next" # features/init_clients/min_rhlike_salt.feature:49
+ 0.1757237 When I click on "Confirm" # features/init_clients/min_rhlike_salt.feature:51
+ 0.2070750 And I click on "Bootstrap" # features/init_clients/min_deblike_salt.feature:22
+ 0.3451134 And I click on "Next" # features/init_clients/min_deblike_salt.feature:50
+ 0.1367942 When I click on "Confirm" # features/init_clients/min_deblike_salt.feature:52
+ 0.2273487 And I click on "Bootstrap" # features/init_clients/buildhost_bootstrap.feature:18
+ 3.7348192 And I click on "Update Properties" # features/init_clients/buildhost_bootstrap.feature:51
+ 6.3339047 And I click on "Update Properties" # features/init_clients/buildhost_bootstrap.feature:62
+ 0.7491299 /^I query latest Salt changes on "(.*?)"$/ # features/step_definitions/command_steps.rb:184
+ 0.7113491 When I query latest Salt changes on "rhlike_minion" # features/init_clients/min_rhlike_salt.feature:56
+ 0.7869107 When I query latest Salt changes on "build_host" # features/init_clients/buildhost_bootstrap.feature:44
+ 0.7011052 /^I enter the hostname of "([^"]*)" as "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:425
+ 0.6607729 When I enter the hostname of "sle_minion" as "hostname" # features/init_clients/sle_minion.feature:13
+ 0.6537373 And I enter the hostname of "ssh_minion" as "hostname" # features/init_clients/sle_ssh_minion.feature:14
+ 0.7651963 When I enter the hostname of "rhlike_minion" as "hostname" # features/init_clients/min_rhlike_salt.feature:16
+ 0.7311383 When I enter the hostname of "deblike_minion" as "hostname" # features/init_clients/min_deblike_salt.feature:16
+ 0.6946813 When I enter the hostname of "build_host" as "hostname" # features/init_clients/buildhost_bootstrap.feature:13
+ 0.6690859 /^I should see a "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:570
+ 0.4296524 Then I should see a "Bootstrap Minions" text # features/init_clients/sle_minion.feature:12
+ 0.4174864 Then I should see a "accepted" text # features/init_clients/sle_minion.feature:25
+ 0.5573125 Then I should see a "Bootstrap Minions" text # features/init_clients/sle_ssh_minion.feature:12
+ 0.5895738 Then I should see a "Bootstrap Minions" text # features/init_clients/min_rhlike_salt.feature:15
+ 0.8684072 Then I should see a "Confirm Software Channel Change" text # features/init_clients/min_rhlike_salt.feature:50
+ 1.2485095 Then I should see a "Changing the channels has been scheduled." text # features/init_clients/min_rhlike_salt.feature:52
+ 0.4582306 Then I should see a "Bootstrap Minions" text # features/init_clients/min_deblike_salt.feature:15
+ 0.4889778 Then I should see a "Confirm Software Channel Change" text # features/init_clients/min_deblike_salt.feature:51
+ 1.0673506 Then I should see a "Changing the channels has been scheduled." text # features/init_clients/min_deblike_salt.feature:53
+ 0.4590194 Then I should see a "Bootstrap Minions" text # features/init_clients/buildhost_bootstrap.feature:12
+ 1.1606071 Then I should see a "accepted" text # features/init_clients/buildhost_bootstrap.feature:23
+ 0.7732653 Then I should see a "Container Build Host type has been applied." text # features/init_clients/buildhost_bootstrap.feature:52
+ 0.5999969 And I should see a "Note: This action will not result in state application" text # features/init_clients/buildhost_bootstrap.feature:53
+ 0.5940260 And I should see a "To apply the state, either use the states page or run state.highstate from the command line." text # features/init_clients/buildhost_bootstrap.feature:54
+ 0.6074914 And I should see a "System properties changed" text # features/init_clients/buildhost_bootstrap.feature:55
+ 0.7404155 Then I should see a "OS Image Build Host type has been applied." text # features/init_clients/buildhost_bootstrap.feature:63
+ 0.5865387 And I should see a "Note: This action will not result in state application" text # features/init_clients/buildhost_bootstrap.feature:64
+ 0.5804414 And I should see a "To apply the state, either use the states page or run state.highstate from the command line." text # features/init_clients/buildhost_bootstrap.feature:65
+ 0.5813928 And I should see a "System properties changed" text # features/init_clients/buildhost_bootstrap.feature:66
+ 0.5808742 Then I should see a "[Container Build Host]" text # features/init_clients/buildhost_bootstrap.feature:79
+ 0.6612352 Then I should see a "[OS Image Build Host]" text # features/init_clients/buildhost_bootstrap.feature:80
+ 0.6228396 /^I should see "([^"]*)" hostname$/ # features/step_definitions/navigation_steps.rb:583
+ 0.5040354 Then I should see "sle_minion" hostname # features/init_clients/sle_minion.feature:43
+ 0.5661532 Then I should see "ssh_minion" hostname # features/init_clients/sle_ssh_minion.feature:35
+ 0.5893949 Then I should see "rhlike_minion" hostname # features/init_clients/min_rhlike_salt.feature:40
+ 0.6306677 Then I should see "deblike_minion" hostname # features/init_clients/min_deblike_salt.feature:41
+ 0.8239467 Then I should see "build_host" hostname # features/init_clients/buildhost_bootstrap.feature:41
+ 0.4487576 /^I follow the left menu "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:341
+ 0.5770527 When I follow the left menu "Systems > Bootstrapping" # features/init_clients/sle_minion.feature:11
+ 0.3768122 When I follow the left menu "Salt > Keys" # features/init_clients/sle_minion.feature:23
+ 0.6111565 When I follow the left menu "Systems > System List > All" # features/init_clients/sle_minion.feature:26
+ 0.4633777 When I follow the left menu "Systems > Bootstrapping" # features/init_clients/sle_ssh_minion.feature:11
+ 0.4207420 And I follow the left menu "Systems > System List > All" # features/init_clients/sle_ssh_minion.feature:19
+ 0.4682246 When I follow the left menu "Systems > Bootstrapping" # features/init_clients/min_rhlike_salt.feature:14
+ 0.4051242 And I follow the left menu "Systems > System List > All" # features/init_clients/min_rhlike_salt.feature:24
+ 0.4078341 When I follow the left menu "Systems > Bootstrapping" # features/init_clients/min_deblike_salt.feature:14
+ 0.3950756 And I follow the left menu "Systems > System List > All" # features/init_clients/min_deblike_salt.feature:24
+ 0.4094669 When I follow the left menu "Systems > Bootstrapping" # features/init_clients/buildhost_bootstrap.feature:11
+ 0.3760707 When I follow the left menu "Salt > Keys" # features/init_clients/buildhost_bootstrap.feature:22
+ 0.4741537 When I follow the left menu "Systems > System List > All" # features/init_clients/buildhost_bootstrap.feature:24
+ 0.4341628 /^I should see "([^"]*)" short hostname$/ # features/step_definitions/navigation_steps.rb:578
+ 0.4406176 Then I should see "proxy" short hostname # features/init_clients/sle_minion.feature:36
+ 0.4297589 Then I should see "proxy" short hostname # features/init_clients/sle_ssh_minion.feature:28
+ 0.4330045 Then I should see "proxy" short hostname # features/init_clients/min_rhlike_salt.feature:33
+ 0.4391711 Then I should see "proxy" short hostname # features/init_clients/min_deblike_salt.feature:34
+ 0.4282618 Then I should see "proxy" short hostname # features/init_clients/buildhost_bootstrap.feature:34
+ 0.4053367 /^I wait until "([^"]*)" service is active on "([^"]*)"$/ # features/step_definitions/command_steps.rb:239
+ 0.4053367 And I wait until "docker" service is active on "build_host" # features/init_clients/buildhost_bootstrap.feature:73
+ 0.2859712 /^I select the hostname of "([^"]*)" from "([^"]*)"((?: if present)?)$/ # features/step_definitions/navigation_steps.rb:431
+ 0.2642189 And I select the hostname of "proxy" from "proxies" if present # features/init_clients/sle_minion.feature:18
+ 0.2423294 And I select the hostname of "proxy" from "proxies" if present # features/init_clients/sle_ssh_minion.feature:16
+ 0.3803247 And I select the hostname of "proxy" from "proxies" if present # features/init_clients/min_rhlike_salt.feature:21
+ 0.2995558 And I select the hostname of "proxy" from "proxies" if present # features/init_clients/min_deblike_salt.feature:21
+ 0.2434272 And I select the hostname of "proxy" from "proxies" if present # features/init_clients/buildhost_bootstrap.feature:17
+ 0.2264926 /^I enter "([^"]*)" as "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:230
+ 0.2474111 And I enter "22" as "port" # features/init_clients/sle_minion.feature:14
+ 0.2398725 And I enter "root" as "user" # features/init_clients/sle_minion.feature:15
+ 0.2402650 And I enter "linux" as "password" # features/init_clients/sle_minion.feature:16
+ 0.2099533 And I enter "linux" as "password" # features/init_clients/sle_ssh_minion.feature:15
+ 0.1788914 And I enter "22" as "port" # features/init_clients/min_rhlike_salt.feature:17
+ 0.2603850 And I enter "root" as "user" # features/init_clients/min_rhlike_salt.feature:18
+ 0.2556598 And I enter "linux" as "password" # features/init_clients/min_rhlike_salt.feature:19
+ 0.1692687 And I enter "22" as "port" # features/init_clients/min_deblike_salt.feature:17
+ 0.2415291 And I enter "root" as "user" # features/init_clients/min_deblike_salt.feature:18
+ 0.2480667 And I enter "linux" as "password" # features/init_clients/min_deblike_salt.feature:19
+ 0.1712448 And I enter "22" as "port" # features/init_clients/buildhost_bootstrap.feature:14
+ 0.2387866 And I enter "root" as "user" # features/init_clients/buildhost_bootstrap.feature:15
+ 0.2430701 And I enter "linux" as "password" # features/init_clients/buildhost_bootstrap.feature:16
+ 0.2202797 /^I select "([^"]*)" from "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:181
+ 0.2222169 And I select "1-SUSE-KEY-x86_64" from "activationKeys" # features/init_clients/sle_minion.feature:17
+ 0.2241247 And I select "1-SUSE-KEY-x86_64" from "activationKeys" # features/init_clients/min_rhlike_salt.feature:20
+ 0.2144975 And I select "1-DEBLIKE-KEY" from "activationKeys" # features/init_clients/min_deblike_salt.feature:20
+ 0.1859210 /^I check "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:169
+ 0.1803882 When I check "manageWithSSH" # features/init_clients/sle_ssh_minion.feature:13
+ 0.2337912 And I check "container_build_host" # features/init_clients/buildhost_bootstrap.feature:50
+ 0.1435836 And I check "osimage_build_host" # features/init_clients/buildhost_bootstrap.feature:61
+ 0.1731880 /^I follow "([^"]*)" in the (.+)$/ # features/step_definitions/navigation_steps.rb:303
+ 0.1694728 When I follow "Details" in the content area # features/init_clients/sle_minion.feature:34
+ 0.1691653 And I follow "Connection" in the content area # features/init_clients/sle_minion.feature:35
+ 0.1680107 When I follow "Details" in the content area # features/init_clients/sle_minion.feature:41
+ 0.1777839 And I follow "Proxy" in the content area # features/init_clients/sle_minion.feature:42
+ 0.1734363 When I follow "Details" in the content area # features/init_clients/sle_ssh_minion.feature:26
+ 0.1713546 And I follow "Connection" in the content area # features/init_clients/sle_ssh_minion.feature:27
+ 0.1693796 When I follow "Details" in the content area # features/init_clients/sle_ssh_minion.feature:33
+ 0.1733857 And I follow "Proxy" in the content area # features/init_clients/sle_ssh_minion.feature:34
+ 0.1708895 When I follow "Details" in the content area # features/init_clients/min_rhlike_salt.feature:31
+ 0.1742994 And I follow "Connection" in the content area # features/init_clients/min_rhlike_salt.feature:32
+ 0.1641528 When I follow "Details" in the content area # features/init_clients/min_rhlike_salt.feature:38
+ 0.1641397 And I follow "Proxy" in the content area # features/init_clients/min_rhlike_salt.feature:39
+ 0.1822263 When I follow "Software" in the content area # features/init_clients/min_rhlike_salt.feature:44
+ 0.1735475 And I follow "Software Channels" in the content area # features/init_clients/min_rhlike_salt.feature:45
+ 0.1750441 When I follow "Details" in the content area # features/init_clients/min_deblike_salt.feature:32
+ 0.1675474 And I follow "Connection" in the content area # features/init_clients/min_deblike_salt.feature:33
+ 0.1795766 When I follow "Details" in the content area # features/init_clients/min_deblike_salt.feature:39
+ 0.1741797 And I follow "Proxy" in the content area # features/init_clients/min_deblike_salt.feature:40
+ 0.1741970 When I follow "Software" in the content area # features/init_clients/min_deblike_salt.feature:45
+ 0.1714730 And I follow "Software Channels" in the content area # features/init_clients/min_deblike_salt.feature:46
+ 0.1848791 When I follow "Details" in the content area # features/init_clients/buildhost_bootstrap.feature:32
+ 0.1688437 And I follow "Connection" in the content area # features/init_clients/buildhost_bootstrap.feature:33
+ 0.1772745 When I follow "Details" in the content area # features/init_clients/buildhost_bootstrap.feature:39
+ 0.1695108 And I follow "Proxy" in the content area # features/init_clients/buildhost_bootstrap.feature:40
+ 0.1827854 When I follow "Details" in the content area # features/init_clients/buildhost_bootstrap.feature:48
+ 0.1712244 And I follow "Properties" in the content area # features/init_clients/buildhost_bootstrap.feature:49
+ 0.1738698 When I follow "Details" in the content area # features/init_clients/buildhost_bootstrap.feature:59
+ 0.1776140 And I follow "Properties" in the content area # features/init_clients/buildhost_bootstrap.feature:60
+ 0.1434269 /^I check radio button "(.*?)"$/ # features/step_definitions/common_steps.rb:208
+ 0.1510685 And I check radio button "Test Base Channel" # features/init_clients/min_rhlike_salt.feature:47
+ 0.1357854 And I check radio button "Test-Channel-Deb-AMD64" # features/init_clients/min_deblike_salt.feature:48
