@@ -1,7 +1,13 @@
+ 700.0005741 /^I wait for "(\d+)" seconds?$/ # features/step_definitions/common_steps.rb:13
+ 700.0005741 And I wait for "700" seconds # features/core/proxy_branch_network.feature:200
  140.6109940 /^I wait until onboarding is completed for "([^"]*)"$/ # features/step_definitions/common_steps.rb:856
  140.6109940 When I wait until onboarding is completed for "proxy" # features/core/proxy_register_as_minion_with_script.feature:48
  64.9930312 /^I wait until event "([^"]*)" is completed$/ # features/step_definitions/common_steps.rb:132
  100.4689069 And I wait until event "Apply highstate scheduled by admin" is completed # features/core/proxy_branch_network.feature:186
+ 1333.3083690 /^I kill all running spacewalk\-repo\-sync, excepted the ones needed to bootstrap$/ # features/step_definitions/command_steps.rb:335
+ 1333.3083690 When I kill all running spacewalk-repo-sync, excepted the ones needed to bootstrap # features/reposync/srv_wait_for_reposync.feature:17
+ 1005.2227495 /^I wait until all spacewalk\-repo\-sync finished$/ # features/step_definitions/command_steps.rb:308
+ 1005.2227495 And I wait until all spacewalk-repo-sync finished # features/reposync/srv_add_rocky8_repositories.feature:55
  82.4830964 /^I refresh SCC$/ # features/step_definitions/command_steps.rb:295
  82.4830964 When I refresh SCC # features/reposync/srv_sync_channels.feature:12
  60.7944658 /^I execute mgr\-sync refresh$/ # features/step_definitions/command_steps.rb:300
@@ -19,6 +25,8 @@
  84.3797858 And I wait until I see "Successfully bootstrapped host!" text # features/init_clients/min_deblike_salt.feature:23
  63.9947910 And I wait until I see the name of "sle_minion", refreshing the page # features/init_clients/sle_minion.feature:27
  65.8032094 And I wait until I see the name of "rhlike_minion", refreshing the page # features/init_clients/min_rhlike_salt.feature:25
+ 1772.2680558 /^I wait until the image build "([^"]*)" is completed$/ # features/step_definitions/retail_steps.rb:555
+ 1772.2680558 When I wait until the image build "suse_os_image" is completed # features/secondary/buildhost_osimage_build_image.feature:50
  251.5911643 /^the server starts mocking an IPMI host$/ # features/step_definitions/command_steps.rb:511
  251.5576596 When the server starts mocking an IPMI host # features/secondary/srv_power_management.feature:9
  251.6246690 When the server starts mocking an IPMI host # features/secondary/srv_power_management_api.feature:8
@@ -46,6 +54,7 @@
  114.7700303 /^I apply state "([^"]*)" to "([^"]*)"$/ # features/step_definitions/salt_steps.rb:119
  114.7700303 And I apply state "image-sync" to "proxy" # features/secondary/buildhost_osimage_build_image.feature:61
  111.7086310 /^I wait at most (\d+) seconds until Salt master sees "([^"]*)" as "([^"]*)"$/ # features/step_definitions/salt_steps.rb:71
+ 768.1878191 And I wait at most 1200 seconds until Salt master sees "pxeboot_minion" as "unaccepted" # features/secondary/proxy_cobbler_pxeboot.feature:89
  104.7155054 /^I wait at most (\d+) seconds until image "([^"]*)" with version "([^"]*)" is inspected successfully via API$/ # features/step_definitions/docker_steps.rb:54
  136.9612134 And I wait at most 300 seconds until image "suse_key" with version "latest" is inspected successfully via API # features/secondary/buildhost_docker_build_image.feature:60
  91.7877362 And I wait at most 300 seconds until image "suse_simple" with version "latest" is inspected successfully via API # features/secondary/buildhost_docker_build_image.feature:69
@@ -108,6 +117,7 @@
  64.8154863 And I wait until I see "Successfully bootstrapped host!" text # features/secondary/min_ssh_tunnel.feature:30
  63.9200115 And I wait until I see "Successfully bootstrapped host!" text # features/secondary/minssh_move_from_and_to_proxy.feature:30
  275.6252232 /^I wait at most (\d+) seconds until Salt master sees "([^"]*)" as "([^"]*)"$/ # features/step_definitions/salt_steps.rb:71
+ 779.0901466 And I wait at most 1000 seconds until Salt master sees "test-vm2" as "unaccepted" # features/secondary/minkvm_guests.feature:439
  197.2032020 /^I trigger cobbler system record on the "([^"]*)"$/ # features/step_definitions/common_steps.rb:299
  197.2032020 When I trigger cobbler system record on the "sle_minion" # features/secondary/srv_distro_cobbler.feature:143
  169.0685101 /^I create system "([^"]*)" for profile "([^"]*)" as user "([^"]*)" with password "([^"]*)"$/ # features/step_definitions/common_steps.rb:286
