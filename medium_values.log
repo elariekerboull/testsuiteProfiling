@@ -1,0 +1,838 @@
+ 29.5171555 When I wait until event "Hardware List Refresh scheduled by admin" is completed # features/core/proxy_branch_network.feature:221
+ 16.2185847 /^I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows$/ # features/step_definitions/navigation_steps.rb:678
+ 29.6525798 And I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/core/srv_create_repository.feature:117
+ 11.5887831 /^the SCC credentials should be valid$/ # features/step_definitions/common_steps.rb:477
+ 11.5887831 Then the SCC credentials should be valid # features/core/srv_organization_credentials.feature:13
+ 10.8748008 /^I wait until the channel "([^"]*)" has been synced$/ # features/step_definitions/command_steps.rb:382
+ 10.2769297 /^"([^"]*)" should not communicate with the server using private interface/ # features/step_definitions/command_steps.rb:49
+ 10.2769297 Then "sle_minion" should not communicate with the server using private interface # features/core/proxy_branch_network.feature:212
+ 10.1453531 /^the "([^"]*)" formula should be ([^ ]*)$/ # features/step_definitions/salt_steps.rb:235
+ 10.1163334 Then the "branch-network" formula should be checked # features/core/proxy_branch_network.feature:64
+ 10.1482375 And the "dhcpd" formula should be checked # features/core/proxy_branch_network.feature:65
+ 10.1714886 And the "bind" formula should be checked # features/core/proxy_branch_network.feature:66
+ 6.3692375 /^I access the host the first time$/ # features/step_definitions/navigation_steps.rb:389
+ 6.3692375 Given I access the host the first time # features/core/srv_first_settings.feature:10
+ 5.8984008 /^I manually install the "([^"]*)" formula on the server$/ # features/step_definitions/salt_steps.rb:189
+ 5.6176347 When I manually install the "branch-network" formula on the server # features/core/proxy_branch_network.feature:25
+ 5.5434133 And I manually install the "dhcpd" formula on the server # features/core/proxy_branch_network.feature:26
+ 6.5341544 And I manually install the "bind" formula on the server # features/core/proxy_branch_network.feature:27
+ 5.5601403 /^I synchronize all Salt dynamic modules on "([^"]*)"$/ # features/step_definitions/salt_steps.rb:198
+ 5.5601403 And I synchronize all Salt dynamic modules on "proxy" # features/core/proxy_branch_network.feature:28
+ 7.0325157 When I am on the Systems overview page of this "proxy" # features/core/proxy_register_as_minion_with_script.feature:69
+ 6.4826964 And I am on the Systems overview page of this "proxy" # features/core/proxy_branch_network.feature:50
+ 7.2117031 When I install pattern "uyuni_retail" on this "server" # features/core/proxy_branch_network.feature:43
+ 22.3579009 /^I wait until I see "(.*?)" product has been added$/ # features/step_definitions/common_steps.rb:584
+ 16.7030845 And I wait until I see "SUSE Linux Enterprise Server 12 SP5 x86_64" product has been added # features/reposync/srv_sync_products.feature:49
+ 28.0127173 And I wait until I see "SUSE Linux Enterprise Server 15 SP4 x86_64" product has been added # features/reposync/srv_sync_products.feature:65
+ 19.3814092 /^I enable product "([^"]*)"$/ # features/step_definitions/command_steps.rb:253
+ 19.3814092 When I enable product "SUSE Linux Enterprise Desktop 15 SP3 x86_64" # features/reposync/srv_enable_sync_products.feature:23
+ 9.4527221 /^I enable product "([^"]*)" without recommended$/ # features/step_definitions/command_steps.rb:268
+ 9.4527221 When I enable product "SUSE Linux Enterprise Server for SAP Applications 15 x86_64" without recommended # features/reposync/srv_enable_sync_products.feature:36
+ 8.7359817 /^"([^"]*)" package should have been stored$/ # features/step_definitions/command_steps.rb:374
+ 8.7359817 Then "orion-dummy-1.1-1.1.x86_64.rpm" package should have been stored # features/reposync/srv_check_reposync.feature:7
+ 6.2205998 /^I wait until I do not see "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:40
+ 6.5426122 And I wait until I do not see "Loading" text # features/reposync/srv_sync_products.feature:18
+ 7.0180688 And I wait until I do not see "Loading" text # features/reposync/srv_sync_products.feature:27
+ 6.3166447 And I wait until I do not see "Loading" text # features/reposync/srv_sync_products.feature:38
+ 8.8336171 And I wait until I do not see "Loading" text # features/reposync/srv_sync_products.feature:55
+ 7.6420936 And I wait until I see "Product Description" text # features/reposync/srv_sync_products.feature:10
+ 5.2960019 When I execute mgr-sync "add channel sles12-sp4-pool-x86_64" # features/reposync/srv_sync_channels.feature:52
+ 5.7078762 And I execute mgr-sync "add channel res-8-updates-x86_64" # features/reposync/srv_sync_channels.feature:75
+ 5.0098967 When I execute mgr-sync "add channel sle-module-containers12-pool-x86_64-sp4" # features/reposync/srv_sync_channels.feature:86
+ 26.5182172 And I wait until onboarding is completed for "sle_minion" # features/init_clients/sle_minion.feature:28
+ 28.5045297 /^I wait until event "([^"]*)" is completed$/ # features/step_definitions/common_steps.rb:132
+ 28.5052539 And I wait until event "Subscribe channels scheduled by admin" is completed # features/init_clients/min_rhlike_salt.feature:53
+ 28.5038055 And I wait until event "Subscribe channels scheduled by admin" is completed # features/init_clients/min_deblike_salt.feature:54
+ 5.9464136 /^I am on the Systems overview page of this "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:407
+ 5.2995002 Given I am on the Systems overview page of this "sle_minion" # features/init_clients/sle_minion.feature:33
+ 6.1221551 Given I am on the Systems overview page of this "ssh_minion" # features/init_clients/sle_ssh_minion.feature:25
+ 5.3040605 Given I am on the Systems overview page of this "proxy" # features/init_clients/sle_ssh_minion.feature:32
+ 5.8660450 Given I am on the Systems overview page of this "rhlike_minion" # features/init_clients/min_rhlike_salt.feature:30
+ 5.7038775 Given I am on the Systems overview page of this "proxy" # features/init_clients/min_rhlike_salt.feature:37
+ 5.5273757 Given I am on the Systems overview page of this "rhlike_minion" # features/init_clients/min_rhlike_salt.feature:43
+ 6.2952318 Given I am on the Systems overview page of this "rhlike_minion" # features/init_clients/min_rhlike_salt.feature:59
+ 6.5965687 Given I am on the Systems overview page of this "deblike_minion" # features/init_clients/min_deblike_salt.feature:31
+ 5.8513993 Given I am on the Systems overview page of this "proxy" # features/init_clients/min_deblike_salt.feature:38
+ 5.3434040 Given I am on the Systems overview page of this "deblike_minion" # features/init_clients/min_deblike_salt.feature:44
+ 6.0690506 Given I am on the Systems overview page of this "deblike_minion" # features/init_clients/min_deblike_salt.feature:60
+ 6.3533219 Given I am on the Systems overview page of this "build_host" # features/init_clients/buildhost_bootstrap.feature:31
+ 5.6537018 Given I am on the Systems overview page of this "proxy" # features/init_clients/buildhost_bootstrap.feature:38
+ 6.3587580 Given I am on the Systems overview page of this "build_host" # features/init_clients/buildhost_bootstrap.feature:47
+ 6.2653546 Given I am on the Systems overview page of this "build_host" # features/init_clients/buildhost_bootstrap.feature:58
+ 6.6342527 Given I am on the Systems overview page of this "build_host" # features/init_clients/buildhost_bootstrap.feature:69
+ 6.9560317 Given I am on the Systems overview page of this "build_host" # features/init_clients/buildhost_bootstrap.feature:78
+ 5.8846177 Given I am on the Systems overview page of this "build_host" # features/init_clients/buildhost_bootstrap.feature:83
+ 5.5021155 /^I enable repositories before installing Docker$/ # features/step_definitions/common_steps.rb:789
+ 5.5021155 And I enable repositories before installing Docker # features/init_clients/buildhost_bootstrap.feature:71
+ 5.6245939 Given I am authorized for the "Admin" section # features/init_clients/sle_minion.feature:8
+ 6.4386803 And I wait until I do not see "Loading..." text # features/init_clients/sle_minion.feature:24
+ 6.3339047 And I click on "Update Properties" # features/init_clients/buildhost_bootstrap.feature:62
+ 13.9208075 And I wait at most 500 seconds until event "OpenSCAP xccdf scanning" is completed # features/secondary/min_deblike_openscap_audit.feature:36
+ 22.5117583 And I wait until onboarding is completed for "sle_minion" # features/secondary/min_activationkey.feature:65
+ 25.3217546 And I wait until onboarding is completed for "sle_minion" # features/secondary/min_salt_mgrcompat_state.feature:55
+ 29.0919601 And I wait until onboarding is completed for "pxeboot_minion" # features/secondary/proxy_cobbler_pxeboot.feature:93
+ 15.0002009 When I wait for "15" seconds # features/secondary/min_rhlike_remote_command.feature:20
+ 15.0003244 When I wait for "15" seconds # features/secondary/min_rhlike_ssh.feature:75
+ 28.9103194 And I wait until event "Package List Refresh scheduled by admin" is completed # features/secondary/srv_maintenance_windows.feature:98
+ 28.7413773 And I wait until event "Subscribe channels scheduled by admin" is completed # features/secondary/min_rhlike_openscap_audit.feature:27
+ 29.6581319 And I wait until event "Subscribe channels scheduled by admin" is completed # features/secondary/min_rhlike_openscap_audit.feature:104
+ 27.7246063 And I wait until event "Subscribe channels scheduled by admin" is completed # features/secondary/min_rhlike_ssh.feature:117
+ 27.8793837 And I wait until event "Package List Refresh" is completed # features/secondary/min_deblike_openscap_audit.feature:25
+ 27.7217067 And I wait until event "Subscribe channels scheduled by admin" is completed # features/secondary/min_deblike_ssh.feature:117
+ 27.9422606 And I wait until event "Subscribe channels scheduled by admin" is completed # features/secondary/min_bootstrap_script.feature:49
+ 27.4228135 When I wait until event "Package Install/Upgrade scheduled by admin" is completed # features/secondary/min_bootstrap_script.feature:59
+ 27.8495068 And I wait until event "Subscribe channels scheduled by admin" is completed # features/secondary/min_salt_minions_page.feature:94
+ 29.4378961 And I wait until event "Hardware List Refresh scheduled by admin" is completed # features/secondary/min_salt_mgrcompat_state.feature:18
+ 28.9575950 And I wait until event "Hardware List Refresh scheduled by admin" is completed # features/secondary/min_salt_mgrcompat_state.feature:29
+ 27.8227991 And I wait until event "Hardware List Refresh scheduled by admin" is completed # features/secondary/min_salt_mgrcompat_state.feature:68
+ 27.7096173 And I wait until event "Subscribe channels scheduled by admin" is completed # features/secondary/min_salt_mgrcompat_state.feature:103
+ 7.5287210 When I wait until event "Lock packages scheduled by admin" is completed # features/secondary/min_salt_lock_packages.feature:23
+ 7.4055845 When I wait until event "Lock packages scheduled by admin" is completed # features/secondary/min_salt_lock_packages.feature:54
+ 7.8500865 When I wait until event "Lock packages scheduled by admin" is completed # features/secondary/min_salt_lock_packages.feature:76
+ 8.9044223 When I wait until event "Lock packages scheduled by admin" is completed # features/secondary/min_salt_lock_packages.feature:98
+ 9.5658127 When I wait until event "Lock packages scheduled by admin" is completed # features/secondary/min_salt_lock_packages.feature:116
+ 11.5360766 When I wait until event "Subscribe channels scheduled by admin" is completed # features/secondary/min_change_software_channel.feature:42
+ 27.6074517 When I wait until event "Package Install/Upgrade scheduled by admin" is completed # features/secondary/proxy_cobbler_pxeboot.feature:109
+ 27.2611647 /^I should see "([^"]*)" via spacecmd$/ # features/step_definitions/common_steps.rb:867
+ 27.4775404 Then I should see "sle_minion" via spacecmd # features/secondary/min_bootstrap_script.feature:28
+ 27.0447890 Then I should see "ssh_minion" via spacecmd # features/secondary/min_ssh_tunnel.feature:86
+ 26.5271335 /^I wait until I see the event "([^"]*)" completed during last minute, refreshing the page$/ # features/step_definitions/common_steps.rb:155
+ 24.5832967 And I wait until I see the event "Package Install/Upgrade scheduled by admin" completed during last minute, refreshing the page # features/secondary/min_salt_lock_packages.feature:41
+ 12.3936816 And I wait until I see the event "Apply states [bootstrap.set_proxy] scheduled by admin" completed during last minute, refreshing the page # features/secondary/min_move_from_and_to_proxy.feature:59
+ 25.4091783 /^I set power management value "([^"]*)" for "([^"]*)"$/ # features/step_definitions/api_common.rb:436
+ 21.2302669 When I set power management value "" for "powerAddress" # features/secondary/srv_power_management.feature:87
+ 29.0169557 And I set power management value "" for "powerUsername" # features/secondary/srv_power_management.feature:88
+ 19.6919345 When I set power management value "127.0.0.1" for "powerAddress" # features/secondary/srv_power_management_api.feature:17
+ 21.8232578 And I set power management value "ipmiusr" for "powerUsername" # features/secondary/srv_power_management_api.feature:18
+ 28.3540118 And I set power management value "test" for "powerPassword" # features/secondary/srv_power_management_api.feature:19
+ 20.6700526 And I set power management value "ipmilan" for "powerType" # features/secondary/srv_power_management_api.feature:20
+ 24.2288291 When I set power management value "" for "powerAddress" # features/secondary/srv_power_management_api.feature:35
+ 21.3236660 And I set power management value "" for "powerUsername" # features/secondary/srv_power_management_api.feature:36
+ 29.2704391 When I set power management value "" for "powerAddress" # features/secondary/srv_power_management_redfish.feature:83
+ 22.0354246 And I set power management value "" for "powerUsername" # features/secondary/srv_power_management_redfish.feature:84
+ 26.5331115 And I set power management value "" for "powerPassword" # features/secondary/srv_power_management_redfish.feature:85
+ 25.5734339 And I set power management value "ipmilan" for "powerType" # features/secondary/srv_power_management_redfish.feature:86
+ 24.7351556 /^I (install|remove) OpenSCAP dependencies (on|from) "([^"]*)"$/ # features/step_definitions/command_steps.rb:847
+ 11.4637374 When I remove OpenSCAP dependencies from "rhlike_minion" # features/secondary/min_rhlike_openscap_audit.feature:89
+ 12.0268710 And I install OpenSCAP dependencies on "deblike_minion" # features/secondary/min_deblike_openscap_audit.feature:22
+ 21.9950860 /^I export config channels "([^"]*)" with ISS v2 to "([^"]*)"$/ # features/step_definitions/command_steps.rb:1531
+ 21.9950860 When I export config channels "testconfigchannel" with ISS v2 to "/tmp/export_iss_v2" # features/secondary/srv_handle_config_channels_with_ISS_v2.feature:38
+ 21.7530406 /^I wait until I see "([^"]*)" (text|regex), refreshing the page$/ # features/step_definitions/navigation_steps.rb:52
+ 18.2824150 And I wait until I see "1 system successfully completed this action." text, refreshing the page # features/secondary/min_change_software_channel.feature:37
+ 18.3886062 And I wait until I see "1 system successfully completed this action." text, refreshing the page # features/secondary/min_change_software_channel.feature:72
+ 20.7618658 /^I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows$/ # features/step_definitions/navigation_steps.rb:678
+ 8.2436514 And I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/secondary/min_action_chain.feature:214
+ 26.9145418 And I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/secondary/minssh_action_chain.feature:38
+ 26.8596899 And I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/secondary/minssh_action_chain.feature:206
+ 17.6915311 And I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/secondary/allcli_action_chain.feature:58
+ 8.1061669 And I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/secondary/allcli_action_chain.feature:65
+ 15.7374166 /^I refresh page until I do not see "(.*?)" hostname as text$/ # features/step_definitions/salt_steps.rb:382
+ 15.7374166 And I refresh page until I do not see "sle_minion" hostname as text # features/secondary/min_salt_minions_page.feature:42
+ 14.3558881 /^I wait until button "([^"]*)" becomes enabled$/ # features/step_definitions/navigation_steps.rb:496
+ 14.2367037 And I wait until button "Disable" becomes enabled # features/secondary/srv_monitoring.feature:24
+ 14.4750724 And I wait until button "Enable" becomes enabled # features/secondary/srv_monitoring.feature:60
+ 14.0378610 /^I wait until refresh package list on "(.*?)" is finished$/ # features/step_definitions/command_steps.rb:1410
+ 13.6109485 And I wait until refresh package list on "sle_minion" is finished # features/secondary/min_action_chain.feature:21
+ 9.2755265 And I wait until refresh package list on "sle_minion" is finished # features/secondary/min_action_chain.feature:205
+ 10.9374418 And I wait until refresh package list on "ssh_minion" is finished # features/secondary/minssh_action_chain.feature:22
+ 14.0776832 And I wait until refresh package list on "sle_minion" is finished # features/secondary/allcli_action_chain.feature:39
+ 12.1334958 And I wait until refresh package list on "rhlike_minion" is finished # features/secondary/allcli_action_chain.feature:42
+ 16.0031231 And I wait until refresh package list on "sle_minion" is finished # features/secondary/min_retracted_patches.feature:13
+ 19.9997454 And I wait until refresh package list on "sle_minion" is finished # features/secondary/min_retracted_patches.feature:33
+ 16.2649234 And I wait until refresh package list on "sle_minion" is finished # features/secondary/min_retracted_patches.feature:44
+ 12.7992097 /^I wait until package "([^"]*)" is removed from "([^"]*)" via spacecmd$/ # features/step_definitions/command_steps.rb:1458
+ 14.9453676 And I wait until package "rute-dummy" is removed from "sle_minion" via spacecmd # features/secondary/min_retracted_patches.feature:21
+ 13.0072018 And I wait until package "rute-dummy" is removed from "sle_minion" via spacecmd # features/secondary/min_retracted_patches.feature:39
+ 10.4450597 And I wait until package "rute-dummy" is removed from "sle_minion" via spacecmd # features/secondary/min_retracted_patches.feature:52
+ 11.8637547 /^I refresh the page$/ # features/step_definitions/navigation_steps.rb:1024
+ 12.5872899 And I refresh the page # features/secondary/buildhost_docker_auth_registry.feature:42
+ 11.1402195 And I refresh the page # features/secondary/srv_restart.feature:17
+ 11.0216208 /^I (enable|disable) Debian-like "([^"]*)" repository on "([^"]*)"$/ # features/step_definitions/command_steps.rb:769
+ 17.8608955 When I enable Debian-like "universe" repository on "deblike_minion" # features/secondary/min_deblike_openscap_audit.feature:16
+ 10.9621555 /^I wait until I see "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:36
+ 6.8850929 And I wait until I see "Server self monitoring" text # features/secondary/srv_monitoring.feature:22
+ 6.0486775 And I wait until I see "Server self monitoring" text # features/secondary/srv_monitoring.feature:39
+ 5.7601608 And I wait until I see "Server self monitoring" text # features/secondary/srv_monitoring.feature:58
+ 6.2962284 And I wait until I see "Server self monitoring" text # features/secondary/srv_monitoring.feature:75
+ 9.5485406 And I wait until I see "has been deleted" text # features/secondary/min_rhlike_ssh.feature:20
+ 19.1495282 And I wait until I see "has been deleted" text # features/secondary/min_rhlike_ssh.feature:89
+ 29.0637123 And I wait until I see "Successfully bootstrapped host!" text # features/secondary/min_rhlike_ssh.feature:101
+ 9.0132473 And I wait until I see "has been deleted" text # features/secondary/min_deblike_ssh.feature:21
+ 5.5517598 When I wait until I see "show response" text # features/secondary/min_deblike_ssh.feature:76
+ 20.0725160 And I wait until I see "has been deleted" text # features/secondary/min_deblike_ssh.feature:89
+ 26.8974940 And I wait until I see "Successfully bootstrapped host!" text # features/secondary/min_deblike_ssh.feature:101
+ 20.1428506 And I wait until I see "has been deleted" text # features/secondary/minssh_bootstrap_api.feature:17
+ 9.5360315 And I wait until I see "has been deleted" text # features/secondary/min_bootstrap_ssh_key.feature:15
+ 14.9894129 And I wait until I see "An error has occurred during salt execution: unable to establish ssh connection." text # features/secondary/min_bootstrap_ssh_key.feature:32
+ 8.5093111 And I wait until I see "has been deleted" text # features/secondary/min_bootstrap_script.feature:21
+ 19.8028520 And I wait until I see "has been deleted" text # features/secondary/min_ssh_tunnel.feature:16
+ 8.1828326 And I wait until I see "show response" text # features/secondary/min_ssh_tunnel.feature:70
+ 23.2324981 And I wait until I see "has been deleted" text # features/secondary/min_ssh_tunnel.feature:79
+ 9.1597812 And I wait until I see "has been deleted" text # features/secondary/min_activationkey.feature:15
+ 26.7128383 And I wait until I see "Successfully bootstrapped host!" text # features/secondary/min_activationkey.feature:62
+ 8.6625814 And I wait until I see "has been deleted" text # features/secondary/min_salt_minions_page.feature:18
+ 8.2577332 Then I wait until I see "Cleanup timed out. Please check if the machine is reachable." text # features/secondary/min_salt_minions_page.feature:66
+ 26.8508537 And I wait until I see "Successfully bootstrapped host!" text # features/secondary/min_salt_minions_page.feature:80
+ 8.8233843 And I wait until I see "has been deleted" text # features/secondary/min_salt_mgrcompat_state.feature:36
+ 28.0320095 And I wait until I see "Successfully bootstrapped host!" text # features/secondary/min_salt_mgrcompat_state.feature:49
+ 9.1842901 And I wait until I see "has been deleted" text # features/secondary/min_salt_mgrcompat_state.feature:77
+ 28.8097794 And I wait until I see "Successfully bootstrapped host!" text # features/secondary/min_salt_mgrcompat_state.feature:89
+ 6.6016483 And I wait until I see "has been deleted" text # features/secondary/min_empty_system_profiles.feature:52
+ 9.6197480 And I wait until I see "has been deleted" text # features/secondary/proxy_cobbler_pxeboot.feature:132
+ 9.6448457 And I wait until I see "has been deleted" text # features/secondary/min_move_from_and_to_proxy.feature:16
+ 9.3218972 And I wait until I see "has been deleted" text # features/secondary/minssh_move_from_and_to_proxy.feature:17
+ 10.9546430 /^I wait at most (\d+) seconds until all "([^"]*)" container images are built correctly on the Image List page$/ # features/step_definitions/docker_steps.rb:77
+ 10.9546430 And I wait at most 60 seconds until all "3" container images are built correctly on the Image List page # features/secondary/buildhost_docker_build_image.feature:76
+ 10.1535371 /^I should not see "([^"]*)" hostname$/ # features/step_definitions/navigation_steps.rb:588
+ 10.1535371 Then I should not see "sle_minion" hostname # features/secondary/min_retracted_patches.feature:68
+ 9.7380604 /^I wait for "([^"]*)" to be (uninstalled|installed) on "([^"]*)"$/ # features/step_definitions/command_steps.rb:159
+ 28.8708108 When I wait for "virgo-dummy" to be installed on "sle_minion" # features/secondary/min_action_chain.feature:175
+ 26.7331183 When I wait for "virgo-dummy" to be installed on "ssh_minion" # features/secondary/minssh_action_chain.feature:165
+ 9.6068875 /^I bootstrap "([^"]*)" using bootstrap script with activation key "([^"]*)" from the (server|proxy)$/ # features/step_definitions/common_steps.rb:691
+ 11.6242845 When I bootstrap "sle_minion" using bootstrap script with activation key "1-SUSE-KEY-x86_64" from the proxy # features/secondary/min_bootstrap_script.feature:25
+ 7.5894905 When I bootstrap "ssh_minion" using bootstrap script with activation key "1-SUSE-KEY-x86_64" from the proxy # features/secondary/min_ssh_tunnel.feature:83
+ 9.5753091 /^I apply "([^"]*)" local salt state on "([^"]*)"$/ # features/step_definitions/command_steps.rb:1488
+ 10.1119206 And I apply "setup_users_configuration" local salt state on "server" # features/secondary/srv_user_configuration_salt_states.feature:10
+ 9.0386977 When I apply "teardown_users_configuration" local salt state on "server" # features/secondary/srv_user_configuration_salt_states.feature:66
+ 9.3870274 /^I import data with ISS v2 from "([^"]*)"$/ # features/step_definitions/command_steps.rb:1535
+ 17.8918948 When I import data with ISS v2 from "/tmp/export_iss_v2" # features/secondary/srv_handle_software_channels_with_ISS_v2.feature:51
+ 8.3725070 /^I do power management reboot$/ # features/step_definitions/api_common.rb:448
+ 8.3725070 When I do power management reboot # features/secondary/srv_power_management_api.feature:31
+ 8.0249060 /^I wait until the image inspection for "([^"]*)" is completed$/ # features/step_definitions/retail_steps.rb:559
+ 8.0249060 And I wait until the image inspection for "pxeboot_minion" is completed # features/secondary/buildhost_osimage_build_image.feature:51
+ 7.8172876 /^I install the GPG key of the test packages repository on the PXE boot minion$/ # features/step_definitions/retail_steps.rb:282
+ 7.8172876 When I install the GPG key of the test packages repository on the PXE boot minion # features/secondary/proxy_cobbler_pxeboot.feature:102
+ 7.5738740 /^package "(.*?)" is reported as unlocked$/ # features/step_definitions/lock_packages_on_client.rb:21
+ 10.0482426 Then package "hoag-dummy-1.1-1.1" is reported as unlocked # features/secondary/min_salt_lock_packages.feature:58
+ 10.0420159 Then package "hoag-dummy-1.1-1.1" is reported as unlocked # features/secondary/min_salt_lock_packages.feature:121
+ 10.0918041 And package "orion-dummy-1.1-1.1" is reported as unlocked # features/secondary/min_salt_lock_packages.feature:122
+ 7.5089940 /^I manually install the "([^"]*)" formula on the server$/ # features/step_definitions/salt_steps.rb:189
+ 7.9623527 When I manually install the "uyuni-config" formula on the server # features/secondary/srv_user_configuration_salt_states.feature:9
+ 7.0556354 When I manually install the "image-sync" formula on the server # features/secondary/buildhost_osimage_build_image.feature:58
+ 7.0583319 /^I wait until file "([^"]*)" exists on "([^"]*)"$/ # features/step_definitions/command_steps.rb:712
+ 9.4840293 And I wait until file "/tmp/action_chain_done" exists on "sle_minion" # features/secondary/min_action_chain.feature:242
+ 8.3775252 When I wait until file "/tmp/action_chain_done" exists on "ssh_minion" # features/secondary/minssh_action_chain.feature:234
+ 16.8820349 When I wait until file "/tmp/action_chain_done" exists on "rhlike_minion" # features/secondary/allcli_action_chain.feature:112
+ 6.5871524 /^I am on the Systems overview page of this "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:407
+ 8.4292237 Given I am on the Systems overview page of this "sle_minion" # features/secondary/srv_power_management.feature:15
+ 7.2735095 Given I am on the Systems overview page of this "sle_minion" # features/secondary/srv_power_management_redfish.feature:15
+ 6.4662382 Given I am on the Systems overview page of this "sle_minion" # features/secondary/srv_maintenance_windows.feature:60
+ 6.8009333 Given I am on the Systems overview page of this "sle_minion" # features/secondary/srv_maintenance_windows.feature:79
+ 5.8196161 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/srv_maintenance_windows.feature:95
+ 6.2061489 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/srv_maintenance_windows.feature:101
+ 6.9890859 Given I am on the Systems overview page of this "build_host" # features/secondary/buildhost_osimage_build_image.feature:48
+ 7.4913295 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/allcli_reboot.feature:18
+ 7.2270723 Given I am on the Systems overview page of this "sle_minion" # features/secondary/allcli_reboot.feature:26
+ 5.9358952 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/allcli_reboot.feature:37
+ 6.5794175 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/allcli_reboot.feature:48
+ 6.8520928 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_openscap_audit.feature:16
+ 6.3034291 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_openscap_audit.feature:33
+ 5.7080517 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_openscap_audit.feature:40
+ 6.6080895 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_openscap_audit.feature:51
+ 5.8511455 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_openscap_audit.feature:72
+ 6.0049608 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_openscap_audit.feature:94
+ 6.9647801 When I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_ssh.feature:16
+ 5.6276606 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_ssh.feature:38
+ 5.5028901 Given I am on the Systems overview page of this "proxy" # features/secondary/min_rhlike_ssh.feature:45
+ 5.6249052 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_ssh.feature:51
+ 6.1839354 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_ssh.feature:64
+ 5.7661834 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_ssh.feature:81
+ 6.5940621 When I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_ssh.feature:85
+ 5.7440180 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_ssh.feature:107
+ 6.9894958 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_openscap_audit.feature:20
+ 5.8893233 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_openscap_audit.feature:28
+ 6.6745349 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_openscap_audit.feature:39
+ 6.6202882 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_openscap_audit.feature:59
+ 7.9641712 When I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_ssh.feature:17
+ 5.8364487 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_ssh.feature:39
+ 6.0027713 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_ssh.feature:52
+ 5.9008615 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_ssh.feature:65
+ 5.7132398 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_ssh.feature:81
+ 6.9405738 When I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_ssh.feature:85
+ 6.3326540 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_ssh.feature:107
+ 7.6180302 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_bootstrap_api.feature:13
+ 6.1333844 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_bootstrap_api.feature:35
+ 6.2831021 Given I am on the Systems overview page of this "proxy" # features/secondary/minssh_bootstrap_api.feature:40
+ 5.5389875 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_bootstrap_api.feature:46
+ 6.5524723 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_bootstrap_api.feature:50
+ 6.2973471 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_bootstrap_api.feature:54
+ 7.9630275 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_ssh_key.feature:11
+ 6.2820804 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_ssh_key.feature:62
+ 6.9024617 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_script.feature:17
+ 6.4541798 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_script.feature:39
+ 6.6275294 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_script.feature:52
+ 6.5796972 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_script.feature:75
+ 7.9323473 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/min_ssh_tunnel.feature:12
+ 6.8214819 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/min_ssh_tunnel.feature:34
+ 6.0250813 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/min_ssh_tunnel.feature:38
+ 6.0352921 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/min_ssh_tunnel.feature:50
+ 6.4625909 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/min_ssh_tunnel.feature:75
+ 7.5532852 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_activationkey.feature:11
+ 6.1093769 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_activationkey.feature:75
+ 5.3334979 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_activationkey.feature:92
+ 5.5776697 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_activationkey.feature:119
+ 7.9011637 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_minions_page.feature:14
+ 6.4281192 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_minions_page.feature:61
+ 6.7769049 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_minions_page.feature:84
+ 8.0080246 And I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_mgrcompat_state.feature:14
+ 6.6830475 And I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_mgrcompat_state.feature:25
+ 5.8976333 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_mgrcompat_state.feature:32
+ 5.8618442 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_mgrcompat_state.feature:58
+ 8.1717292 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_mgrcompat_state.feature:64
+ 6.2852219 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_mgrcompat_state.feature:71
+ 6.3218265 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_mgrcompat_state.feature:93
+ 7.6046399 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_lock_packages.feature:17
+ 5.8243781 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_lock_packages.feature:30
+ 6.2713218 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_lock_packages.feature:47
+ 6.3596340 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_lock_packages.feature:61
+ 5.8146218 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_lock_packages.feature:70
+ 5.8061346 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_lock_packages.feature:85
+ 5.8196838 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_lock_packages.feature:109
+ 8.1210195 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_action_chain.feature:25
+ 9.5695840 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_action_chain.feature:45
+ 6.5297619 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_action_chain.feature:55
+ 6.4946388 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_action_chain.feature:104
+ 6.1673342 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_action_chain.feature:125
+ 5.9506727 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_action_chain.feature:131
+ 6.8189483 And I am on the Systems overview page of this "sle_minion" # features/secondary/min_action_chain.feature:169
+ 6.8172603 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_action_chain.feature:179
+ 7.6712553 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_action_chain.feature:26
+ 8.5662437 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_action_chain.feature:47
+ 6.8815951 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_action_chain.feature:96
+ 6.8309180 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_action_chain.feature:117
+ 5.5517441 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_action_chain.feature:123
+ 7.2922013 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_action_chain.feature:169
+ 6.0333642 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_action_chain.feature:187
+ 7.6240086 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/allcli_action_chain.feature:13
+ 6.3635522 Given I am on the Systems overview page of this "sle_minion" # features/secondary/allcli_action_chain.feature:46
+ 9.4947554 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/allcli_action_chain.feature:59
+ 6.2927216 Given I am on the Systems overview page of this "sle_minion" # features/secondary/allcli_action_chain.feature:102
+ 6.1888050 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/allcli_action_chain.feature:128
+ 6.3123836 Given I am on the Systems overview page of this "build_host" # features/secondary/buildhost_docker_build_image.feature:54
+ 7.0047110 Given I am on the Systems overview page of this "build_host" # features/secondary/buildhost_docker_build_image.feature:65
+ 6.8008962 Given I am on the Systems overview page of this "build_host" # features/secondary/buildhost_docker_build_image.feature:73
+ 6.2696779 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_change_software_channel.feature:12
+ 6.9453695 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_change_software_channel.feature:41
+ 6.7301259 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_cobbler_pxeboot.feature:18
+ 7.5550428 Given I am on the Systems overview page of this "pxeboot_minion" # features/secondary/proxy_cobbler_pxeboot.feature:128
+ 6.5480510 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_cobbler_pxeboot.feature:137
+ 8.4872764 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_timezone.feature:42
+ 7.7066073 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_timezone.feature:64
+ 7.8045408 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_move_from_and_to_proxy.feature:12
+ 6.8536612 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_move_from_and_to_proxy.feature:38
+ 6.1444738 Given I am on the Systems overview page of this "proxy" # features/secondary/min_move_from_and_to_proxy.feature:44
+ 6.0403812 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_move_from_and_to_proxy.feature:50
+ 6.2727197 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_move_from_and_to_proxy.feature:63
+ 6.8001024 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_move_from_and_to_proxy.feature:82
+ 7.1782190 Given I am on the Systems overview page of this "proxy" # features/secondary/min_move_from_and_to_proxy.feature:89
+ 6.2249991 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_move_from_and_to_proxy.feature:95
+ 5.7524734 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_move_from_and_to_proxy.feature:101
+ 7.7635807 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_move_from_and_to_proxy.feature:13
+ 6.1531795 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_move_from_and_to_proxy.feature:34
+ 5.4847448 Given I am on the Systems overview page of this "proxy" # features/secondary/minssh_move_from_and_to_proxy.feature:40
+ 5.9205862 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_move_from_and_to_proxy.feature:46
+ 6.2713209 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_move_from_and_to_proxy.feature:58
+ 7.0533795 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_move_from_and_to_proxy.feature:66
+ 6.3169281 Given I am on the Systems overview page of this "proxy" # features/secondary/minssh_move_from_and_to_proxy.feature:78
+ 5.7260994 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_move_from_and_to_proxy.feature:84
+ 5.2579691 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_move_from_and_to_proxy.feature:90
+ 6.4315028 /^I am on the "([^"]*)" page of this "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:418
+ 7.2750627 When I am on the "States" page of this "sle_minion" # features/secondary/min_recurring_action.feature:11
+ 5.8718958 When I am on the "States" page of this "sle_minion" # features/secondary/min_recurring_action.feature:27
+ 6.0307718 When I am on the "States" page of this "sle_minion" # features/secondary/min_recurring_action.feature:36
+ 6.0624713 When I am on the "States" page of this "sle_minion" # features/secondary/min_recurring_action.feature:235
+ 7.1865232 And I am on the "Software" page of this "sle_minion" # features/secondary/min_retracted_patches.feature:14
+ 5.9759795 When I am on the "Software" page of this "sle_minion" # features/secondary/min_retracted_patches.feature:24
+ 6.6178155 And I am on the "Software" page of this "sle_minion" # features/secondary/min_retracted_patches.feature:34
+ 6.1612084 /^I start tftp on the proxy$/ # features/step_definitions/retail_steps.rb:123
+ 6.1612084 And I start tftp on the proxy # features/secondary/proxy_cobbler_pxeboot.feature:77
+ 5.7319839 /^I restart salt-minion on "(.*?)"$/ # features/step_definitions/salt_steps.rb:53
+ 5.7319839 And I restart salt-minion on "sle_minion" # features/secondary/min_salt_minions_page.feature:26
+ 5.7014691 /^I synchronize all Salt dynamic modules on "([^"]*)"$/ # features/step_definitions/salt_steps.rb:198
+ 5.7014691 And I synchronize all Salt dynamic modules on "proxy" # features/secondary/buildhost_osimage_build_image.feature:60
+ 5.6969321 /^I click on run$/ # features/step_definitions/salt_steps.rb:163
+ 7.9635996 And I click on run # features/secondary/min_rhlike_ssh.feature:73
+ 7.8579851 And I click on run # features/secondary/min_deblike_ssh.feature:74
+ 12.0796249 And I click on run # features/secondary/min_ssh_tunnel.feature:69
+ 5.3901546 /^the "([^\"]*)" checkbox should be disabled$/ # features/step_definitions/navigation_steps.rb:917
+ 10.0017488 When the "role_satellite_admin" checkbox should be disabled # features/secondary/srv_users.feature:96
+ 10.0048164 Then the "role_satellite_admin" checkbox should be disabled # features/secondary/srv_users.feature:103
+ 10.0185625 And the "role_system_group_admin" checkbox should be disabled # features/secondary/srv_users.feature:107
+ 10.0270283 And the "role_channel_admin" checkbox should be disabled # features/secondary/srv_users.feature:109
+ 10.0186342 And the "role_activation_key_admin" checkbox should be disabled # features/secondary/srv_users.feature:111
+ 10.0005910 And the "role_config_admin" checkbox should be disabled # features/secondary/srv_users.feature:113
+ 10.0006281 And the "role_satellite_admin" checkbox should be disabled # features/secondary/min_timezone.feature:29
+ 15.0098983 And I click on the filter button until page does contain "rute-dummy" text # features/secondary/min_retracted_patches.feature:18
+ 5.0424733 Given I am authorized as "docker" with password "docker" # features/secondary/buildhost_docker_build_image.feature:122
+ 5.2178353 Given I am authorized as "admin" with password "admin" # features/secondary/buildhost_docker_build_image.feature:133
+ 5.9245675 When I click on "Delete Profile Without Cleanup" in "An error occurred during cleanup" modal # features/secondary/min_salt_minions_page.feature:67
+ 5.7383378 Given I am authorized for the "Admin" section # features/secondary/srv_users.feature:12
+ 23.7250610 Given I am authorized for the "Admin" section # features/secondary/srv_monitoring.feature:37
+ 19.4069277 Given I am authorized for the "Admin" section # features/secondary/srv_monitoring.feature:73
+ 5.5956003 Given I am authorized for the "Admin" section # features/secondary/buildhost_osimage_build_image.feature:45
+ 13.8724037 When I install packages "inter-server-sync" on this "server" # features/secondary/srv_handle_software_channels_with_ISS_v2.feature:9
+ 22.6782523 And I click on "Get status" # features/secondary/srv_power_management.feature:37
+ 25.2439116 When I click on "Power Off" # features/secondary/srv_power_management.feature:39
+ 24.1054508 When I click on "Get status" # features/secondary/srv_power_management.feature:42
+ 24.7199895 When I click on "Get status" # features/secondary/srv_power_management.feature:46
+ 23.9008631 When I click on "Get status" # features/secondary/srv_power_management.feature:50
+ 29.7673973 And I click on "Save" # features/secondary/srv_power_management_redfish.feature:22
+ 23.1295088 And I click on "Power On" # features/secondary/srv_power_management_redfish.feature:32
+ 23.4874974 When I click on "Power Off" # features/secondary/srv_power_management_redfish.feature:35
+ 28.5393372 When I click on "Get status" # features/secondary/srv_power_management_redfish.feature:38
+ 26.4738567 When I click on "Power On" # features/secondary/srv_power_management_redfish.feature:40
+ 26.6095060 When I click on "Get status" # features/secondary/srv_power_management_redfish.feature:42
+ 27.4744847 When I click on "Get status" # features/secondary/srv_power_management_redfish.feature:46
+ 23.4424506 And I click on "Update" # features/secondary/srv_power_management_redfish.feature:65
+ 6.2014325 And I click on "Delete Channel" # features/secondary/srv_delete_channel_from_ui.feature:46
+ 5.5056484 And I click on "Delete Channel" # features/secondary/srv_delete_channel_from_ui.feature:85
+ 6.0874120 And I click on "Delete Channel" # features/secondary/srv_handle_software_channels_with_ISS_v2.feature:47
+ 5.6473634 And I click on "Delete Channel" # features/secondary/srv_handle_software_channels_with_ISS_v2.feature:68
+ 5.4240354 And I click on "Confirm" # features/secondary/min_rhlike_openscap_audit.feature:77
+ 10.0016342 And I click on "Select All" # features/secondary/min_deblike_openscap_audit.feature:62
+ 5.7119134 And I click on "Single Run Schedule" # features/secondary/min_action_chain.feature:35
+ 5.6641024 And I click on "Single Run Schedule" # features/secondary/min_action_chain.feature:212
+ 5.5809463 And I click on "Single Run Schedule" # features/secondary/minssh_action_chain.feature:36
+ 5.6786460 And I click on "Single Run Schedule" # features/secondary/minssh_action_chain.feature:204
+ 5.7676763 And I click on "Single Run Schedule" # features/secondary/allcli_action_chain.feature:56
+ 5.5714352 And I click on "Single Run Schedule" # features/secondary/allcli_action_chain.feature:63
+ 8.7880182 And I click on "Create" # features/secondary/proxy_cobbler_pxeboot.feature:62
+ 6.0950956 And I click on "Update" # features/secondary/proxy_cobbler_pxeboot.feature:68
+ 13.6406341 And I refresh the metadata for "rhlike_minion" # features/secondary/min_rhlike_openscap_audit.feature:30
+ 7.0071843 And I remove package "tftpboot-installation-SLE-15-SP4-x86_64" from this "server" # features/secondary/proxy_cobbler_pxeboot.feature:123
+ 10.0200197 And I follow "xccdf_org.open-scap_testresult_standard" # features/secondary/min_deblike_openscap_audit.feature:41
+ 5.0381520 And I follow "List / Remove" # features/secondary/min_salt_mgrcompat_state.feature:60
+ 6.5877171 And I wait until I do not see "pending" text # features/secondary/min_bootstrap_script.feature:68
+ 25.4931257 And I wait until onboarding is completed for "sle_minion" # features/secondary/min_bootstrap_api.feature:26
+ 10.6948245 And I wait at most 500 seconds until event "OpenSCAP xccdf scanning" is completed # features/secondary/min_salt_openscap_audit.feature:33
+ 10.3845061 And I wait at most 600 seconds until I see "Built" text in the environment "dev_name" # features/secondary/srv_content_lifecycle.feature:96
+ 25.2643924 And I wait until event "Package List Refresh scheduled by (none)" is completed # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:198
+ 28.4604442 When I wait until event "Package Install/Upgrade scheduled by admin" is completed # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:216
+ 28.1413128 When I wait until event "Package Removal scheduled by admin" is completed # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:228
+ 25.4901077 When I wait until event "Package Install/Upgrade scheduled by admin" is completed # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:339
+ 28.3651358 When I wait until event "Package Removal scheduled by admin" is completed # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:352
+ 29.4931430 And I wait until event "Hardware List Refresh scheduled by admin" is completed # features/secondary/allcli_overview_systems_details.feature:16
+ 9.3057625 And I wait until event "Hardware List Refresh scheduled by admin" is completed # features/secondary/allcli_overview_systems_details.feature:37
+ 8.2594667 And I wait until event "Hardware List Refresh scheduled by admin" is completed # features/secondary/allcli_overview_systems_details.feature:58
+ 7.8240294 When I wait until event "Show differences between profiled config files and deployed config files scheduled by admin" is completed # features/secondary/allcli_config_channel.feature:167
+ 29.8453482 And I wait until event "Package Removal scheduled by admin" is completed # features/secondary/min_rhlike_salt_install_package_and_patch.feature:78
+ 28.2123863 And I wait until event "Apply highstate scheduled by admin" is completed # features/secondary/min_deblike_monitoring.feature:65
+ 29.4666117 When I wait until event "Package Install/Upgrade scheduled by admin" is completed # features/secondary/min_deblike_salt_install_package.feature:31
+ 29.7048427 When I wait until event "Package Install/Upgrade scheduled by admin" is completed # features/secondary/min_deblike_salt_install_package.feature:41
+ 28.0634160 And I wait until event "Subscribe channels scheduled by admin" is completed # features/secondary/min_bootstrap_api.feature:55
+ 8.1768061 And I wait until event "Apply states [certs, channels, packages, services.salt-minion] scheduled by admin" is completed # features/secondary/min_bootstrap_reactivation.feature:63
+ 27.9996698 When I wait until event "Subscribe channels scheduled by admin" is completed # features/secondary/min_bootstrap_reactivation.feature:97
+ 12.2816022 And I wait until event "Hardware List Refresh scheduled by admin" is completed # features/secondary/min_salt_minion_details.feature:26
+ 11.0846548 When I wait until event "Apply states [custom] scheduled by admin" is completed # features/secondary/min_config_state_channel.feature:52
+ 11.4886929 When I wait until event "Apply states [custom] scheduled by admin" is completed # features/secondary/min_config_state_channel_subscriptions.feature:76
+ 14.6419859 And I wait for "virgo-dummy-2.0-1.1" to be installed on "rhlike_minion" # features/secondary/min_rhlike_salt_install_package_and_patch.feature:55
+ 9.9327624 And I wait for "milkyway-dummy" to be uninstalled on "sle_minion" # features/secondary/min_salt_software_states.feature:55
+ 12.1273861 And I wait for "milkyway-dummy" to be installed on "sle_minion" # features/secondary/min_salt_software_states.feature:70
+ 11.9318820 And I wait for "andromeda-dummy-2.0-1.1" to be installed on "sle_minion" # features/secondary/min_salt_software_states.feature:100
+ 10.3034986 And I wait for "virgo-dummy-2.0-1.1" to be installed on "sle_minion" # features/secondary/min_salt_install_package.feature:42
+ 28.7146108 /^I wait for "(\d+)" seconds?$/ # features/step_definitions/common_steps.rb:13
+ 6.0002249 And I wait for "6" seconds # features/secondary/min_salt_software_states.feature:114
+ 6.0002360 And I wait for "6" seconds # features/secondary/min_salt_user_states.feature:16
+ 6.0001818 And I wait for "6" seconds # features/secondary/min_salt_user_states.feature:32
+ 28.4937906 /^I wait (\d+) seconds until the event is picked up and (\d+) seconds until the event "([^"]*)" is completed$/ # features/step_definitions/common_steps.rb:136
+ 9.0520246 And I wait 180 seconds until the event is picked up and 300 seconds until the event "Creates a virtual domain: test-vm2" is completed # features/secondary/minkvm_guests.feature:198
+ 8.9928759 And I wait 180 seconds until the event is picked up and 300 seconds until the event "Creates a virtual domain: test-vm2" is completed # features/secondary/minkvm_guests.feature:237
+ 9.8144920 And I wait 180 seconds until the event is picked up and 300 seconds until the event "Creates a virtual network: test-net2" is completed # features/secondary/minkvm_guests.feature:357
+ 27.8925946 /^I schedule a task to update ReportDB$/ # features/step_definitions/common_steps.rb:1276
+ 27.0078434 When I schedule a task to update ReportDB # features/secondary/srv_reportdb.feature:14
+ 28.7773457 When I schedule a task to update ReportDB # features/secondary/srv_reportdb.feature:50
+ 25.1080284 /^I push package "([^"]*)" into "([^"]*)" channel$/ # features/step_definitions/common_steps.rb:439
+ 25.1080284 And I push package "/root/subscription-tools-1.0-0.noarch.rpm" into "test_base_channel" channel # features/secondary/srv_push_package.feature:14
+ 24.8846125 /^I run Cobbler buildiso "([^"]*)" for distro "([^"]*)"$/ # features/step_definitions/common_steps.rb:1343
+ 24.8478066 When I run Cobbler buildiso "airgapped" for distro "testdistro" # features/secondary/srv_cobbler_buildiso.feature:57
+ 24.9214183 When I run Cobbler buildiso "standalone" for distro "testdistro" # features/secondary/srv_cobbler_buildiso.feature:62
+ 23.6957192 /^I have a combobox property "([^"]*)" with value "([^"]*)" on "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:1051
+ 23.6957192 Given I have a combobox property "Country" with value "Portugal (PT)" on "sle_minion" # features/secondary/srv_advanced_search.feature:41
+ 23.1121280 /^I have a property "([^"]*)" with value "([^"]*)" on "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:1040
+ 25.2385109 Given I have a property "City" with value "Little Whinging" on "sle_minion" # features/secondary/srv_advanced_search.feature:23
+ 22.7191010 Given I have a property "State/Province" with value "Surrey" on "sle_minion" # features/secondary/srv_advanced_search.feature:32
+ 21.3787721 Given I have a property "City" with value "Arrakeen" on "sle_minion" # features/secondary/srv_reportdb.feature:48
+ 22.7536524 /^I wait until I see "([^"]*)" (text|regex), refreshing the page$/ # features/step_definitions/navigation_steps.rb:52
+ 18.4838422 And I wait until I see "Server reactivated as Salt minion" text, refreshing the page # features/secondary/min_bootstrap_reactivation.feature:62
+ 17.9198966 And I wait until I see "1 system successfully completed this action." text, refreshing the page # features/secondary/min_custom_pkg_download_endpoint.feature:27
+ 17.5903766 And I wait until I see "1 system successfully completed this action." text, refreshing the page # features/secondary/min_custom_pkg_download_endpoint.feature:53
+ 17.8798686 And I wait until I see "1 system successfully completed this action." text, refreshing the page # features/secondary/min_custom_pkg_download_endpoint.feature:77
+ 18.2677622 /^I apply highstate on "([^"]*)"$/ # features/step_definitions/command_steps.rb:229
+ 13.9594011 And I apply highstate on "sle_minion" # features/secondary/allcli_config_channel.feature:106
+ 14.1932730 And I apply highstate on "rhlike_minion" # features/secondary/allcli_config_channel.feature:112
+ 11.9689684 And I apply highstate on "deblike_minion" # features/secondary/allcli_config_channel.feature:118
+ 13.6702045 Then I apply highstate on "sle_minion" # features/secondary/min_salt_software_states.feature:8
+ 17.3916719 /^I wait until refresh package list on "(.*?)" is finished$/ # features/step_definitions/command_steps.rb:1410
+ 20.9687202 And I wait until refresh package list on "rhlike_minion" is finished # features/secondary/min_rhlike_salt_install_package_and_patch.feature:16
+ 22.8110907 And I wait until refresh package list on "ssh_minion" is finished # features/secondary/minssh_salt_install_package.feature:35
+ 20.1593544 And I wait until refresh package list on "deblike_minion" is finished # features/secondary/min_deblike_salt_install_with_staging.feature:26
+ 13.8189666 And I wait until refresh package list on "sle_minion" is finished # features/secondary/min_salt_software_states.feature:17
+ 7.8920919 And I wait until refresh package list on "sle_minion" is finished # features/secondary/min_salt_install_with_staging.feature:24
+ 15.6608852 And I wait until refresh package list on "sle_minion" is finished # features/secondary/min_salt_install_package.feature:14
+ 20.2544991 And I wait until refresh package list on "sle_minion" is finished # features/secondary/min_salt_install_package.feature:50
+ 17.5677673 And I wait until refresh package list on "sle_minion" is finished # features/secondary/min_salt_pkgset_beacon.feature:14
+ 16.7184041 /^I click on the filter button until page does not contain "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:775
+ 23.3588921 And I click on the filter button until page does not contain "milkyway-dummy" text # features/secondary/min_salt_pkgset_beacon.feature:41
+ 10.0779161 And I click on the filter button until page does not contain "milkyway-dummy" text # features/secondary/min_salt_pkgset_beacon.feature:50
+ 14.4428032 /^I run Cobbler buildiso for distro "([^"]*)" and all profiles$/ # features/step_definitions/common_steps.rb:1305
+ 14.4428032 When I run Cobbler buildiso for distro "testdistro" and all profiles # features/secondary/srv_cobbler_buildiso.feature:40
+ 14.2788265 /^I install package tftpboot-installation on the server$/ # features/step_definitions/command_steps.rb:916
+ 14.2788265 And I install package tftpboot-installation on the server # features/secondary/minkvm_guests.feature:385
+ 11.9447132 /^I click on the filter button until page does contain "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:783
+ 14.7079111 And I click on the filter button until page does contain "virgo-dummy" text # features/secondary/min_rhlike_salt_install_package_and_patch.feature:39
+ 15.5746195 And I click on the filter button until page does contain "virgo-dummy" text # features/secondary/min_salt_install_package.feature:25
+ 15.3683186 And I click on the filter button until page does contain "milkyway-dummy-1.0" text # features/secondary/min_salt_pkgset_beacon.feature:25
+ 11.9201088 /^I clean the search index on the server$/ # features/step_definitions/command_steps.rb:626
+ 11.9201088 When I clean the search index on the server # features/secondary/min_check_patches_install.feature:53
+ 10.7692016 /^I prepare Cobbler for the buildiso command$/ # features/step_definitions/common_steps.rb:1297
+ 10.7692016 When I prepare Cobbler for the buildiso command # features/secondary/srv_cobbler_buildiso.feature:37
+ 10.5542550 /^I run Cobbler buildiso for distro "([^"]*)" and profile "([^"]*)" without dns entries$/ # features/step_definitions/common_steps.rb:1333
+ 10.5542550 When I run Cobbler buildiso for distro "testdistro" and profile "orchid" without dns entries # features/secondary/srv_cobbler_buildiso.feature:52
+ 10.4787950 /^I run Cobbler buildiso for distro "([^"]*)" and profile "([^"]*)"$/ # features/step_definitions/common_steps.rb:1326
+ 10.4787950 When I run Cobbler buildiso for distro "testdistro" and profile "orchid" # features/secondary/srv_cobbler_buildiso.feature:46
+ 10.4562223 /^I click on "([^"]*)" and confirm$/ # features/step_definitions/navigation_steps.rb:275
+ 10.4092902 And I click on "Clear values" and confirm # features/secondary/min_salt_formulas.feature:78
+ 10.5007667 And I click on "Clear values" and confirm # features/secondary/min_salt_formulas_advanced.feature:103
+ 10.4586101 And I click on "Clear values" and confirm # features/secondary/min_salt_formulas_advanced.feature:206
+ 10.1785210 /^the date picker title should be the current month and year$/ # features/step_definitions/datepicker_steps.rb:72
+ 10.1785210 Then the date picker title should be the current month and year # features/secondary/srv_datepicker.feature:17
+ 10.1439637 /^the "([^"]*)" formula should be ([^ ]*)$/ # features/step_definitions/salt_steps.rb:235
+ 10.1860638 Then the "tftpd" formula should be checked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:47
+ 10.1214825 And the "vsftpd" formula should be checked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:48
+ 10.1538739 And the "pxe" formula should be checked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:49
+ 10.1264452 Then the "saltboot" formula should be checked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:159
+ 10.2123422 Then the "tftpd" formula should be unchecked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:246
+ 10.1389496 And the "pxe" formula should be unchecked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:247
+ 10.1490920 Then the "pxe" formula should be checked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:295
+ 10.1476033 And the "saltboot" formula should be checked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:296
+ 10.1668781 And the "tftpd" formula should be checked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:297
+ 10.1294070 And the "vsftpd" formula should be checked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:298
+ 10.1387147 Then the "pxe" formula should be unchecked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:404
+ 10.1985678 And the "saltboot" formula should be unchecked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:405
+ 10.1194994 And the "tftpd" formula should be unchecked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:406
+ 10.1448794 And the "vsftpd" formula should be unchecked # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:407
+ 10.1438593 And the "locale" formula should be unchecked # features/secondary/allcli_system_group.feature:73
+ 10.1117686 Then the "locale" formula should be checked # features/secondary/min_salt_formulas.feature:32
+ 10.1154428 Then the "locale" formula should be unchecked # features/secondary/min_salt_formulas.feature:106
+ 10.1083588 Then the "testform" formula should be unchecked # features/secondary/min_salt_formulas_advanced.feature:227
+ 10.1220814 Then the "virtualization-host" formula should be checked # features/secondary/minkvm_guests.feature:47
+ 10.1080984 /^I should not see a "([^"]*)" text in element "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:652
+ 10.0439536 And I should not see a "passwordFull" text in element "Instance-panel-wrapper" # features/secondary/srv_payg_ssh_connection.feature:47
+ 10.0369357 And I should not see a "keyFull" text in element "Instance-panel-wrapper" # features/secondary/srv_payg_ssh_connection.feature:48
+ 10.2099270 And I should not see a "keyPasswordFull" text in element "Instance-panel-wrapper" # features/secondary/srv_payg_ssh_connection.feature:49
+ 10.0963684 And I should not see a "b_passwordFull" text in element "Bastion-panel-wrapper" # features/secondary/srv_payg_ssh_connection.feature:53
+ 10.0445695 And I should not see a "b_keyFull" text in element "Bastion-panel-wrapper" # features/secondary/srv_payg_ssh_connection.feature:54
+ 10.0911160 And I should not see a "b_keyPasswordFull" text in element "Bastion-panel-wrapper" # features/secondary/srv_payg_ssh_connection.feature:55
+ 10.0420005 And I should not see a "NewPasswordFull" text in element "Instance-panel-wrapper" # features/secondary/srv_payg_ssh_connection.feature:87
+ 10.0651686 And I should not see a "newKeyFull" text in element "Instance-panel-wrapper" # features/secondary/srv_payg_ssh_connection.feature:88
+ 10.1148470 And I should not see a "newKeyPasswordFull" text in element "Instance-panel-wrapper" # features/secondary/srv_payg_ssh_connection.feature:89
+ 10.1429866 And I should not see a "b_new_passwordFull" text in element "Bastion-panel-wrapper" # features/secondary/srv_payg_ssh_connection.feature:106
+ 10.0747005 And I should not see a "b_new_keyFull" text in element "Bastion-panel-wrapper" # features/secondary/srv_payg_ssh_connection.feature:107
+ 10.0985378 And I should not see a "b_new_keyPasswordFull" text in element "Bastion-panel-wrapper" # features/secondary/srv_payg_ssh_connection.feature:108
+ 10.3441683 Then I should not see a "user_defined_state" text in element "highstate" # features/secondary/min_salt_user_states.feature:33
+ 10.1046535 /^I wait until option "([^"]*)" appears in list "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:884
+ 10.0960424 And I wait until option "bridge" appears in list "type" # features/secondary/minkvm_guests.feature:346
+ 10.1132646 And I wait until option "isolated" appears in list "type" # features/secondary/minkvm_guests.feature:374
+ 10.0823098 /^option "([^"]*)" is selected as "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:872
+ 10.0950446 And option "VNC" is selected as "graphicsType" # features/secondary/minkvm_guests.feature:115
+ 10.0646775 And option "test-net0" is selected as "network0_source" # features/secondary/minkvm_guests.feature:116
+ 10.0872073 And option "virtio" is selected as "disk0_bus" # features/secondary/minkvm_guests.feature:117
+ 10.0442824 /^I make a list of the existing systems$/ # features/step_definitions/navigation_steps.rb:1034
+ 10.0442824 And I make a list of the existing systems # features/secondary/srv_reportdb.feature:43
+ 10.0311517 /^I should not be authorized$/ # features/step_definitions/navigation_steps.rb:531
+ 10.0449631 Then I should not be authorized # features/secondary/srv_change_password.feature:47
+ 10.0173404 Then I should not be authorized # features/secondary/srv_mainpage.feature:47
+ 10.0210399 /^I should see the text "(.*?)" in the (Operating System|Architecture|Channel Label) field/ # features/step_definitions/navigation_steps.rb:1109
+ 10.0303702 Then I should see the text "SUSE Linux Enterprise Server 15 SP 4" in the Operating System field # features/secondary/srv_dist_channel_mapping.feature:54
+ 10.0179199 And I should see the text "x86_64" in the Architecture field # features/secondary/srv_dist_channel_mapping.feature:55
+ 10.0231094 And I should see the text "sle-product-sles15-sp4-pool-x86_64" in the Channel Label field # features/secondary/srv_dist_channel_mapping.feature:56
+ 10.0026636 Then I should see the text "SUSE Linux Enterprise Server 15 SP 4 modified" in the Operating System field # features/secondary/srv_dist_channel_mapping.feature:62
+ 10.0331176 And I should see the text "test-channel-x86_64" in the Channel Label field # features/secondary/srv_dist_channel_mapping.feature:63
+ 10.0012786 Then I should see the text "Ubuntu 22.04.01 LTS" in the Operating System field # features/secondary/srv_dist_channel_mapping.feature:67
+ 10.0749293 And I should see the text "x86_64" in the Architecture field # features/secondary/srv_dist_channel_mapping.feature:68
+ 10.0048945 And I should see the text "sle-product-sles15-sp4-pool-x86_64" in the Channel Label field # features/secondary/srv_dist_channel_mapping.feature:69
+ 10.0290909 Then I should see the text "Ubuntu 22.04.01 LTS modified" in the Operating System field # features/secondary/srv_dist_channel_mapping.feature:74
+ 10.0151582 And I should see the text "test_base_channel" in the Channel Label field # features/secondary/srv_dist_channel_mapping.feature:75
+ 10.0396600 Then I should see the text "SUSE Linux Enterprise Server 15 SP 4 iSeries" in the Operating System field # features/secondary/srv_dist_channel_mapping.feature:79
+ 10.0134652 And I should see the text "iSeries" in the Architecture field # features/secondary/srv_dist_channel_mapping.feature:80
+ 10.0052261 And I should see the text "test-channel-i586" in the Channel Label field # features/secondary/srv_dist_channel_mapping.feature:81
+ 10.0315215 Then I should see the text "SUSE Linux Enterprise Server 15 SP 4 iSeries modified" in the Operating System field # features/secondary/srv_dist_channel_mapping.feature:86
+ 10.0058819 And I should see the text "test-channel-deb-amd64" in the Channel Label field # features/secondary/srv_dist_channel_mapping.feature:87
+ 10.0324694 Then I should see the text "SUSE Linux Enterprise Server 15 SP 4 modified" in the Operating System field # features/secondary/srv_dist_channel_mapping.feature:91
+ 10.0044887 And I should see the text "x86_64" in the Architecture field # features/secondary/srv_dist_channel_mapping.feature:92
+ 10.0276037 Then I should see the text "Ubuntu 22.04.01 LTS modified" in the Operating System field # features/secondary/srv_dist_channel_mapping.feature:103
+ 10.0179856 And I should see the text "x86_64" in the Architecture field # features/secondary/srv_dist_channel_mapping.feature:104
+ 10.0159051 Then I should see the text "SUSE Linux Enterprise Server 15 SP 4 iSeries modified" in the Operating System field # features/secondary/srv_dist_channel_mapping.feature:115
+ 10.0150983 And I should see the text "x86_64" in the Architecture field # features/secondary/srv_dist_channel_mapping.feature:116
+ 10.0149239 /^I wait at most (\d+) seconds until the tree item "([^"]+)" has no sub-list$/ # features/step_definitions/common_steps.rb:537
+ 10.0149239 And I wait at most 600 seconds until the tree item "test-pool0" has no sub-list # features/secondary/minkvm_guests.feature:256
+ 9.8568461 /^I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows$/ # features/step_definitions/navigation_steps.rb:678
+ 8.2322351 And I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/secondary/min_rhlike_salt_install_package_and_patch.feature:45
+ 8.0603958 And I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/secondary/minssh_salt_install_package.feature:18
+ 8.2889051 Then I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/secondary/min_deblike_salt_install_with_staging.feature:38
+ 8.3065723 Then I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/secondary/min_salt_software_states.feature:34
+ 8.2167092 Then I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/secondary/min_salt_install_with_staging.feature:36
+ 8.4519843 And I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/secondary/min_salt_install_package.feature:31
+ 18.4531538 When I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/secondary/min_salt_pkgset_beacon.feature:31
+ 8.2706769 And I wait until the table contains "FINISHED" or "SKIPPED" followed by "FINISHED" in its first rows # features/secondary/min_cve_audit.feature:23
+ 9.4878503 /^I remove kickstart profiles and distros$/ # features/step_definitions/common_steps.rb:326
+ 11.5171007 When I remove kickstart profiles and distros # features/secondary/srv_distro_cobbler.feature:155
+ 7.4585998 And I remove kickstart profiles and distros # features/secondary/srv_cobbler_buildiso.feature:69
+ 9.3751586 /^I should see "([^"]*)" virtual machine (shut off|running|paused) on "([^"]*)"$/ # features/step_definitions/command_steps.rb:1172
+ 10.4782900 Then I should see "test-vm" virtual machine running on "kvm_server" # features/secondary/minkvm_guests.feature:84
+ 6.7840395 Then I should see "test-vm" virtual machine paused on "kvm_server" # features/secondary/minkvm_guests.feature:96
+ 6.6828695 Then I should see "test-vm" virtual machine running on "kvm_server" # features/secondary/minkvm_guests.feature:101
+ 13.5554355 Then I should see "test-vm" virtual machine shut off on "kvm_server" # features/secondary/minkvm_guests.feature:108
+ 9.1723821 /^I ([^ ]*) the "([^"]*)" formula$/ # features/step_definitions/salt_steps.rb:220
+ 8.9791977 /^I bootstrap pxeboot minion via bootstrap script on the proxy$/ # features/step_definitions/retail_steps.rb:258
+ 8.9791977 And I bootstrap pxeboot minion via bootstrap script on the proxy # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:316
+ 8.5477711 /^I create "([^"]*)" virtual machine on "([^"]*)"$/ # features/step_definitions/command_steps.rb:1074
+ 8.5477711 And I create "test-vm" virtual machine on "kvm_server" # features/secondary/minkvm_guests.feature:75
+ 8.2328932 /^I should not see any terminals imported from the configuration file$/ # features/step_definitions/retail_steps.rb:332
+ 8.2328932 Then I should not see any terminals imported from the configuration file # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:357
+ 8.0302570 /^I install the GPG key of the test packages repository on the PXE boot minion$/ # features/step_definitions/retail_steps.rb:282
+ 8.0302570 When I install the GPG key of the test packages repository on the PXE boot minion # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:209
+ 7.7104036 /^I wait until I see "([^"]*)" text$/ # features/step_definitions/navigation_steps.rb:36
+ 9.7887542 And I wait until I see "has been deleted" text # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:235
+ 14.4444518 Then I wait until I see "myself" text # features/secondary/minssh_ansible_control_node.feature:56
+ 11.2234015 Then I wait until I see "/srv/playbooks/orion_dummy/playbook_orion_dummy.yml" text # features/secondary/minssh_ansible_control_node.feature:64
+ 11.8265459 And I wait until I see "/srv/playbooks/orion_dummy/playbook_orion_dummy.yml" text # features/secondary/minssh_ansible_control_node.feature:72
+ 6.7183821 And I wait until I see "Playbook Content" text # features/secondary/minssh_ansible_control_node.feature:74
+ 9.1399707 And I wait until I see "has been deleted" text # features/secondary/min_bootstrap_api.feature:13
+ 22.3243754 And I wait until I see "An error has occurred during salt execution: unable to establish ssh connection." text # features/secondary/min_bootstrap_negative.feature:50
+ 5.0308161 And I wait until I see "An error has occurred during salt execution: unable to establish ssh connection." text # features/secondary/min_bootstrap_negative.feature:66
+ 8.8887182 And I wait until I see "has been deleted" text # features/secondary/min_bootstrap_reactivation.feature:70
+ 12.8580316 And I wait until I see "No reply from minion" text # features/secondary/min_salt_software_states.feature:123
+ 8.8895869 Then I wait until I see "myself" text # features/secondary/min_ansible_control_node.feature:54
+ 7.0872699 Then I wait until I see "/srv/playbooks/orion_dummy/playbook_orion_dummy.yml" text # features/secondary/min_ansible_control_node.feature:62
+ 6.7105354 And I wait until I see "/srv/playbooks/orion_dummy/playbook_orion_dummy.yml" text # features/secondary/min_ansible_control_node.feature:70
+ 9.3260648 And I wait until I see "General" text # features/secondary/minkvm_guests.feature:188
+ 5.5826787 And I wait until I see "Hosted Virtual Systems" text # features/secondary/minkvm_guests.feature:197
+ 11.0046601 And I wait until I see "General" text # features/secondary/minkvm_guests.feature:228
+ 5.9089025 And I wait until I see "Hosted Virtual Systems" text # features/secondary/minkvm_guests.feature:236
+ 6.1092671 And I wait until I see "Virtual Networks" text # features/secondary/minkvm_guests.feature:356
+ 10.2761269 And I wait until I see "General" text # features/secondary/minkvm_guests.feature:425
+ 7.1171837 /^the pillar data for "([^"]*)" should be empty on "([^"]*)"$/ # features/step_definitions/salt_steps.rb:318
+ 15.6770862 Then the pillar data for "formulas" should be empty on "ssh_minion" # features/secondary/min_salt_formulas.feature:53
+ 8.4484865 And the pillar data for "timezone" should be empty on "ssh_minion" # features/secondary/min_salt_formulas.feature:54
+ 9.0335545 And the pillar data for "keyboard_and_language" should be empty on "ssh_minion" # features/secondary/min_salt_formulas.feature:55
+ 9.4054087 Then the pillar data for "formulas" should be empty on "ssh_minion" # features/secondary/min_salt_formulas.feature:142
+ 8.8982387 And the pillar data for "timezone" should be empty on "ssh_minion" # features/secondary/min_salt_formulas.feature:143
+ 8.6265553 And the pillar data for "keyboard_and_language" should be empty on "ssh_minion" # features/secondary/min_salt_formulas.feature:144
+ 7.0106216 /^I should not see a "([^"]*)" virtual machine on "([^"]*)"$/ # features/step_definitions/command_steps.rb:1190
+ 6.9410381 Then I should not see a "test-vm" virtual machine on "kvm_server" # features/secondary/minkvm_guests.feature:182
+ 7.2242214 Then I should not see a "test-vm2" virtual machine on "kvm_server" # features/secondary/minkvm_guests.feature:224
+ 6.8666054 Then I should not see a "test-vm2" virtual machine on "kvm_server" # features/secondary/minkvm_guests.feature:250
+ 6.8777008 /^I check "([^"]*)" exporter$/ # features/step_definitions/navigation_steps.rb:989
+ 10.2946936 And I check "apache" exporter # features/secondary/min_rhlike_monitoring.feature:36
+ 10.2309184 And I check "postgres" exporter # features/secondary/min_rhlike_monitoring.feature:37
+ 10.2771804 And I check "apache" exporter # features/secondary/min_deblike_monitoring.feature:36
+ 10.2296480 And I check "postgres" exporter # features/secondary/min_deblike_monitoring.feature:37
+ 10.2582200 And I check "apache" exporter # features/secondary/min_monitoring.feature:46
+ 10.3997366 And I check "postgres" exporter # features/secondary/min_monitoring.feature:47
+ 6.4928442 /^I am on the Systems overview page of this "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:407
+ 7.9604604 And I am on the Systems overview page of this "sle_minion" # features/secondary/srv_datepicker.feature:12
+ 7.9552500 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:37
+ 6.0449026 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:52
+ 6.5478160 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:70
+ 6.5095802 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:80
+ 6.4075503 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:90
+ 6.4301190 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:100
+ 5.7181667 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:107
+ 7.9552471 Given I am on the Systems overview page of this "pxeboot_minion" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:202
+ 7.4381256 Given I am on the Systems overview page of this "pxeboot_minion" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:208
+ 8.2865779 Given I am on the Systems overview page of this "pxeboot_minion" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:219
+ 8.3664510 Given I am on the Systems overview page of this "pxeboot_minion" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:231
+ 5.6643925 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:240
+ 5.8382648 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:250
+ 5.9842176 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:280
+ 6.1361309 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:287
+ 6.7776353 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:307
+ 6.4387816 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:382
+ 6.1099149 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:396
+ 5.9578738 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:411
+ 5.3194366 Given I am on the Systems overview page of this "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:420
+ 7.5293483 Given I am on the Systems overview page of this "sle_minion" # features/secondary/allcli_overview_systems_details.feature:12
+ 5.9492606 Given I am on the Systems overview page of this "sle_minion" # features/secondary/allcli_overview_systems_details.feature:20
+ 6.7835736 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/allcli_overview_systems_details.feature:33
+ 5.7999126 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/allcli_overview_systems_details.feature:41
+ 5.7834674 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/allcli_overview_systems_details.feature:54
+ 6.5426462 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/allcli_overview_systems_details.feature:62
+ 6.2500439 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/allcli_overview_systems_details.feature:75
+ 6.2472575 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/allcli_overview_systems_details.feature:83
+ 6.6236102 Given I am on the Systems overview page of this "sle_minion" # features/secondary/allcli_system_group.feature:41
+ 6.1611061 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/allcli_system_group.feature:89
+ 5.3901730 Given I am on the Systems overview page of this "sle_minion" # features/secondary/allcli_system_group.feature:96
+ 6.5097712 When I am on the Systems overview page of this "sle_minion" # features/secondary/allcli_config_channel.feature:32
+ 5.9629251 When I am on the Systems overview page of this "rhlike_minion" # features/secondary/allcli_config_channel.feature:43
+ 6.1379313 When I am on the Systems overview page of this "deblike_minion" # features/secondary/allcli_config_channel.feature:54
+ 5.8373550 When I am on the Systems overview page of this "ssh_minion" # features/secondary/allcli_config_channel.feature:65
+ 6.6244652 When I am on the Systems overview page of this "sle_minion" # features/secondary/allcli_config_channel.feature:159
+ 6.1698015 Given I am on the Systems overview page of this "sle_minion" # features/secondary/allcli_software_channels.feature:38
+ 6.7721222 Given I am on the Systems overview page of this "sle_minion" # features/secondary/allcli_software_channels.feature:57
+ 6.3996678 Given I am on the Systems overview page of this "sle_minion" # features/secondary/allcli_software_channels.feature:63
+ 5.4037526 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/allcli_software_channels.feature:103
+ 5.3649909 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/allcli_software_channels.feature:133
+ 5.7050103 Given I am on the Systems overview page of this "sle_minion" # features/secondary/allcli_software_channels.feature:140
+ 7.3002750 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_salt_install_package_and_patch.feature:23
+ 8.7980918 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_salt_install_package_and_patch.feature:48
+ 7.9682705 Given I am on the Systems overview page of this "rhlike_minion" # features/secondary/min_rhlike_monitoring.feature:22
+ 9.4412264 When I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_salt_install_package.feature:21
+ 7.1952402 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_ansible_control_node.feature:13
+ 5.7391135 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_ansible_control_node.feature:17
+ 5.6479177 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_ansible_control_node.feature:23
+ 6.5181394 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_ansible_control_node.feature:30
+ 6.5652165 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_ansible_control_node.feature:37
+ 5.7602857 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_ansible_control_node.feature:42
+ 5.6817363 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_ansible_control_node.feature:51
+ 5.8982629 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_ansible_control_node.feature:59
+ 5.8879338 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_ansible_control_node.feature:67
+ 6.0095868 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_ansible_control_node.feature:82
+ 6.5557800 Given I am on the Systems overview page of this "ssh_minion" # features/secondary/minssh_ansible_control_node.feature:91
+ 6.8632777 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_monitoring.feature:22
+ 6.8342709 Given I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_salt_install_with_staging.feature:49
+ 7.2378090 And I am on the Systems overview page of this "deblike_minion" # features/secondary/min_deblike_salt_install_package.feature:16
+ 6.6535453 And I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_api.feature:9
+ 5.6290442 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_api.feature:30
+ 5.2826068 Given I am on the Systems overview page of this "proxy" # features/secondary/min_bootstrap_api.feature:35
+ 5.6518780 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_api.feature:41
+ 5.2416843 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_api.feature:45
+ 6.2308263 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_api.feature:58
+ 7.7951946 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_reactivation.feature:15
+ 5.0458353 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_reactivation.feature:59
+ 5.8088966 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_reactivation.feature:66
+ 5.1717212 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_bootstrap_reactivation.feature:87
+ 7.9232955 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_software_states.feature:24
+ 9.0966678 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_software_states.feature:37
+ 6.1469612 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_install_with_staging.feature:47
+ 6.8053587 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_formulas.feature:24
+ 6.1336540 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_formulas.feature:58
+ 6.4658216 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_formulas.feature:156
+ 6.0865858 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_formulas_advanced.feature:156
+ 8.3811306 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_install_package.feature:21
+ 8.6668011 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_install_package.feature:34
+ 8.1974419 And I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_openscap_audit.feature:12
+ 6.0531365 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_openscap_audit.feature:74
+ 6.5343804 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_user_states.feature:11
+ 6.7409609 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_minion_details.feature:13
+ 6.6920733 When I am on the Systems overview page of this "sle_minion" # features/secondary/min_config_state_channel.feature:27
+ 6.2741604 When I am on the Systems overview page of this "sle_minion" # features/secondary/min_config_state_channel.feature:46
+ 7.6356412 When I am on the Systems overview page of this "sle_minion" # features/secondary/min_config_state_channel_subscriptions.feature:53
+ 6.9970203 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_pkgset_beacon.feature:21
+ 9.1835257 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_salt_pkgset_beacon.feature:34
+ 7.6631183 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_custom_pkg_download_endpoint.feature:15
+ 6.0126453 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_custom_pkg_download_endpoint.feature:30
+ 5.6350148 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_custom_pkg_download_endpoint.feature:35
+ 6.0470672 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_custom_pkg_download_endpoint.feature:56
+ 6.9221750 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_monitoring.feature:22
+ 7.0591811 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_ansible_control_node.feature:11
+ 6.0966835 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_ansible_control_node.feature:15
+ 5.4329356 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_ansible_control_node.feature:21
+ 6.4896888 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_ansible_control_node.feature:28
+ 6.6278163 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_ansible_control_node.feature:35
+ 5.2272056 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_ansible_control_node.feature:40
+ 5.2720832 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_ansible_control_node.feature:49
+ 5.2857201 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_ansible_control_node.feature:57
+ 5.2847683 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_ansible_control_node.feature:65
+ 5.9885029 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_ansible_control_node.feature:80
+ 6.0324328 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_ansible_control_node.feature:89
+ 6.1943331 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_cve_audit.feature:91
+ 5.9777957 Given I am on the Systems overview page of this "sle_minion" # features/secondary/min_check_patches_install.feature:46
+ 5.7546358 Given I am on the Systems overview page of this "kvm_server" # features/secondary/minkvm_guests.feature:31
+ 6.4588526 /^I wait until there is no pillar refresh salt job active$/ # features/step_definitions/salt_steps.rb:278
+ 6.4588526 And I wait until there is no pillar refresh salt job active # features/secondary/min_salt_formulas_advanced.feature:237
+ 6.4488956 /^I (install|remove) OpenSCAP dependencies (on|from) "([^"]*)"$/ # features/step_definitions/command_steps.rb:847
+ 10.5236485 And I install OpenSCAP dependencies on "sle_minion" # features/secondary/min_salt_openscap_audit.feature:19
+ 6.4213044 /^I am on the "([^"]*)" page of this "([^"]*)"$/ # features/step_definitions/navigation_steps.rb:418
+ 5.8765459 Given I am on the "Virtualization" page of this "kvm_server" # features/secondary/minkvm_guests.feature:367
+ 6.9660630 Given I am on the "Virtualization" page of this "kvm_server" # features/secondary/minkvm_guests.feature:422
+ 6.2036118 /^I manually install the "([^"]*)" formula on the server$/ # features/step_definitions/salt_steps.rb:189
+ 6.8019115 When I manually install the "tftpd" formula on the server # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:27
+ 5.9648724 And I manually install the "vsftpd" formula on the server # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:28
+ 5.9043515 And I manually install the "saltboot" formula on the server # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:29
+ 5.7533094 And I manually install the "pxe" formula on the server # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:30
+ 6.2228033 When I manually install the "locale" formula on the server # features/secondary/allcli_system_group.feature:64
+ 6.5744227 When I manually install the "locale" formula on the server # features/secondary/min_salt_formulas.feature:14
+ 5.9034335 /^I should see several text fields for "([^"]*)"$/ # features/step_definitions/common_steps.rb:115
+ 6.0005059 And I should see several text fields for "sle_minion" # features/secondary/allcli_overview_systems_details.feature:29
+ 5.8160710 And I should see several text fields for "rhlike_minion" # features/secondary/allcli_overview_systems_details.feature:50
+ 5.9194683 And I should see several text fields for "deblike_minion" # features/secondary/allcli_overview_systems_details.feature:71
+ 5.8776889 And I should see several text fields for "ssh_minion" # features/secondary/allcli_overview_systems_details.feature:92
+ 5.7837578 /^I should see package "([^"]*)" in channel "([^"]*)"$/ # features/step_definitions/common_steps.rb:446
+ 5.7837578 Then I should see package "subscription-tools-1.0-0.noarch" in channel "Test Base Channel" # features/secondary/srv_push_package.feature:15
+ 5.5291860 /^I synchronize all Salt dynamic modules on "([^"]*)"$/ # features/step_definitions/salt_steps.rb:198
+ 5.5152383 And I synchronize all Salt dynamic modules on "proxy" # features/secondary/proxy_retail_pxeboot_and_mass_import.feature:31
+ 5.2934900 And I synchronize all Salt dynamic modules on "sle_minion" # features/secondary/allcli_system_group.feature:65
+ 5.7788298 And I synchronize all Salt dynamic modules on "sle_minion" # features/secondary/min_salt_formulas.feature:15
+ 5.4569516 /^I call system\.bootstrap\(\) on unknown host, I should get an API fault$/ # features/step_definitions/api_common.rb:35
+ 5.4569516 When I call system.bootstrap() on unknown host, I should get an API fault # features/secondary/min_bootstrap_api.feature:63
+ 5.1907661 /^I follow "([^"]*)" on "(.*?)" row$/ # features/step_definitions/navigation_steps.rb:325
+ 5.1907661 Then I follow "Install a new patch on this system" on "sle_minion" row # features/secondary/min_cve_audit.feature:51
+ 5.0786432 /^I should see "([^"]*)" or "([^"]*)" in the textarea$/ # features/step_definitions/navigation_steps.rb:602
+ 10.1075666 And I should see "Permission denied (publickey,keyboard-interactive)." or "Password authentication failed" in the textarea # features/secondary/min_bootstrap_negative.feature:55
+ 5.0230700 /^I wait at most (\d+) seconds until the tree item "([^"]+)" contains "([^"]+)" text$/ # features/step_definitions/common_steps.rb:549
+ 6.2505584 And I wait at most 600 seconds until the tree item "test-pool0" contains "inactive" text # features/secondary/minkvm_guests.feature:262
+ 6.3197519 And I wait at most 600 seconds until the tree item "test-pool0" contains "running" text # features/secondary/minkvm_guests.feature:268
+ 5.1512673 When I manually uninstall the "locale" formula from the server # features/secondary/min_salt_formulas.feature:166
+ 7.4731056 And I wait until I do not see "Loading..." text # features/secondary/minkvm_guests.feature:112
+ 5.8952918 And I wait until I do not see "Loading..." text # features/secondary/minkvm_guests.feature:134
+ 6.6676381 And I wait until I do not see "Loading..." text # features/secondary/minkvm_guests.feature:143
+ 5.2099012 And I wait until I do not see "Loading..." text # features/secondary/minkvm_guests.feature:151
+ 5.7090337 And I wait until I do not see "Loading..." text # features/secondary/minkvm_guests.feature:163
+ 8.0853899 And I wait until I do not see "Loading..." text # features/secondary/minkvm_guests.feature:173
+ 6.1585320 Then I wait until I do not see "test-pool0" text # features/secondary/minkvm_guests.feature:276
+ 7.3716279 Then I wait until I do not see "test-net0.xml" text # features/secondary/minkvm_guests.feature:311
+ 5.9881201 Then I wait until I do not see "test-net1" text # features/secondary/minkvm_guests.feature:340
+ 5.3156279 When I click on "Edit" in row "test-vm" # features/secondary/minkvm_guests.feature:111
+ 5.2763054 When I click on "Edit" in row "test-vm" # features/secondary/minkvm_guests.feature:133
+ 7.4208357 When I click on "Edit" in row "test-vm" # features/secondary/minkvm_guests.feature:142
+ 6.9054751 When I click on "Edit" in row "test-vm" # features/secondary/minkvm_guests.feature:150
+ 5.2362120 When I click on "Edit" in row "test-vm" # features/secondary/minkvm_guests.feature:162
+ 6.1100122 When I click on "Edit" in row "test-vm" # features/secondary/minkvm_guests.feature:172
+ 5.2053726 When I click on "Edit" in row "test-net2" # features/secondary/minkvm_guests.feature:373
+ 5.6808479 Then I wait until table row for "test-net1" contains button "Start" # features/secondary/minkvm_guests.feature:325
+ 5.9403461 Then I wait until table row for "test-net1" contains button "Stop" # features/secondary/minkvm_guests.feature:332
+ 5.7013197 Then I wait until table row for "test-net2" contains button "Start" # features/secondary/minkvm_guests.feature:372
+ 6.6534114 When I wait until file "/etc/s-mgr/config" exists on "ssh_minion" # features/secondary/allcli_config_channel.feature:100
+ 6.8407536 And I wait until file "/root/statechannel3" exists on "sle_minion" # features/secondary/min_config_state_channel_subscriptions.feature:96
+ 8.4229407 Given I am authorized for the "Admin" section # features/secondary/srv_advanced_search.feature:12
+ 9.2421510 And I follow "CL-hoag-dummy-7890" # features/secondary/srv_clone_channel_npn.feature:79
+ 9.5706088 And I follow "CL-virgo-dummy-3456" # features/secondary/srv_clone_channel_npn.feature:87
+ 5.1268298 And I follow "List / Remove" # features/secondary/min_salt_pkgset_beacon.feature:36
+ 5.3151618 And I follow "errata-cache-bunch" # features/secondary/min_cve_audit.feature:20
+ 5.4164238 When I follow "Create Guest" # features/secondary/minkvm_guests.feature:227
+ 5.4024629 When I follow "Storage" # features/secondary/minkvm_guests.feature:253
+ 5.4884442 When I follow "Networks" # features/secondary/minkvm_guests.feature:368
+ 5.7802348 And I remove package "tftpboot-installation-SLE-15-SP4-x86_64" from this "server" # features/secondary/minkvm_guests.feature:462
+ 6.6039904 And I click on "Delete Channel" # features/secondary/srv_clone_channel_npn.feature:108
+ 6.5209543 And I click on "Delete Channel" # features/secondary/srv_clone_channel_npn.feature:115
+ 5.5257445 And I click on "Delete Channel" # features/secondary/srv_clone_channel_npn.feature:122
+ 7.2981296 And I click on "Finish" # features/secondary/srv_distro_cobbler.feature:58
+ 13.0635584 And I click on "Create" # features/secondary/srv_distro_cobbler.feature:67
+ 6.4638591 And I click on "Add IP Range" # features/secondary/srv_distro_cobbler.feature:83
+ 8.0658644 And I click on "Update" # features/secondary/srv_distro_cobbler.feature:99
+ 10.5610926 And I click on "Update" # features/secondary/srv_distro_cobbler.feature:106
+ 5.6602332 And I click on "Single Run Schedule" # features/secondary/min_rhlike_salt_install_package_and_patch.feature:43
+ 5.5705724 And I click on "Single Run Schedule" # features/secondary/minssh_salt_install_package.feature:16
+ 5.8527685 Then I click on "Single Run Schedule" # features/secondary/min_deblike_salt_install_with_staging.feature:36
+ 5.8037208 Then I click on "Single Run Schedule" # features/secondary/min_salt_software_states.feature:32
+ 5.7140951 Then I click on "Single Run Schedule" # features/secondary/min_salt_install_with_staging.feature:34
+ 5.8219803 And I click on "Single Run Schedule" # features/secondary/min_salt_install_package.feature:29
+ 5.9722732 And I click on "Single Run Schedule" # features/secondary/min_salt_pkgset_beacon.feature:29
+ 5.8113125 And I click on "Single Run Schedule" # features/secondary/min_cve_audit.feature:21
+ 6.2559374 And I click on "Update Properties" # features/secondary/minkvm_guests.feature:37
+ 6.3902364 And I click on "Create" # features/secondary/minkvm_guests.feature:406
+ 5.1195169 And I click on "Update" # features/secondary/minkvm_guests.feature:413
+ 5.3644652 And I click on "Edit Pool" in tree item "test-pool1" # features/secondary/minkvm_guests.feature:296
+ 5.3284684 And I select "500" from "1154021400_PAGE_SIZE_LABEL" # features/secondary/srv_clone_channel_npn.feature:70
+ 5.1799474 And I select "500" from "1154021400_PAGE_SIZE_LABEL" # features/secondary/srv_clone_channel_npn.feature:78
+ 5.0419715 And I select "500" from "1154021400_PAGE_SIZE_LABEL" # features/secondary/srv_clone_channel_npn.feature:86
+ 6.1859332 And I should not see a "my-host.local" text # features/secondary/srv_payg_ssh_connection.feature:116
+ 10.2357526 Then I should see a "There are no entries to show." text # features/secondary/srv_content_lifecycle.feature:159
+ 6.0213816 Then I should see a "Hosted Virtual Systems" text # features/secondary/minkvm_guests.feature:125
+ 5.6393737 Then I should see a "Hosted Virtual Systems" text # features/secondary/minkvm_guests.feature:138
+ 5.6277237 Then I should see a "Hosted Virtual Systems" text # features/secondary/minkvm_guests.feature:146
+ 7.0252789 Then I should see a "Hosted Virtual Systems" text # features/secondary/minkvm_guests.feature:157
+ 6.5207791 Then I should see a "Hosted Virtual Systems" text # features/secondary/minkvm_guests.feature:168
+ 5.8947709 Then I should see a "Hosted Virtual Systems" text # features/secondary/minkvm_guests.feature:176
+ 6.5288491 Then I should see a "Virtual Networks" text # features/secondary/minkvm_guests.feature:378
