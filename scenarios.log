@@ -1,0 +1,1659 @@
+Scenario: The server is healthy
+Scenario: The proxy is healthy
+Scenario: The minion is healthy
+Scenario: The build host is healthy
+Scenario: The SSH minion is healthy
+Scenario: The Red Hat-like minion is healthy
+Scenario: The Debian-like minion is healthy
+Scenario: The KVM host is healthy
+Scenario: The external resources can be reached
+Scenario: The HTTP proxy is working
+Scenario: The registry with authentication is healthy
+Scenario: The registry without authentication is healthy
+Scenario: The custom download endpoint is working
+
+
+Scenario: Create admin user and first organization
+Scenario: Log in as admin user
+Scenario: Wait for refresh of list of products to finish
+Scenario: Create testing username
+Scenario: Grant testing user administrative priviledges
+Scenario: Setup HTTP proxy
+Scenario: Detect latest Salt changes on the server
+
+
+Scenario: Create custom pillar to turn off "disable_local_repos"
+
+
+Scenario: Enter valid SCC credentials
+
+
+Scenario: Change page size to 100 per page in admin user
+Scenario: Change page size to 100 per page in testing user
+
+
+Scenario: Log in as admin user
+Scenario: Add a base channel
+Scenario: Add a child channel
+Scenario: Add a base test channel for i586
+Scenario: Add a child channel to the i586 test channel
+Scenario: Add a test base channel for x86_64
+Scenario: Add a child channel to the x86_64 test channel
+Scenario: Add Debian-like AMD64 base channel
+Scenario: Add a RedHat-like base channel
+Scenario: Wait for Channels generated initial metadata
+
+
+Scenario: Log in as admin user
+Scenario: Add a test repository for x86_64
+Scenario: Disable metadata check for the x86_64 test repository
+Scenario: Add the repository to the x86_64 channel
+Scenario: Synchronize the repository in the x86_64 channel
+Scenario: Add a test repository for i586
+Scenario: Add the repository to the i586 channel
+Scenario: Synchronize the repository in the i586 channel
+Scenario: Add a test repository for Debian-like
+Scenario: Add the Debian-like repository to the AMD64 channel
+Scenario: Synchronize the Debian-like repository in the AMD64 channel
+Scenario: Add the repository to the RedHat-like channel
+Scenario: Synchronize the repository in the x86_64 channel
+Scenario: Refresh the errata cache
+Scenario: Refresh the channel's repository data
+Scenario: Reposync handles wrong encoding on RPM attributes
+Scenario: Reposync handles wrong encoding on DEB attributes
+Scenario: Cleanup disable source package syncing
+
+
+Scenario: Log in as admin user
+Scenario: Create an activation key with a channel
+Scenario: Create an activation key for RedHat-like minion
+Scenario: Create an activation key for Debian-like minion
+Scenario: Create an activation key with a channel for salt-ssh
+Scenario: Create an activation key with a channel for salt-ssh via tunnel
+
+
+Scenario: Log in as admin user
+Scenario: Create a Kiwi user with image administrators rights
+
+
+Scenario: Log in as admin user
+Scenario: Create a Docker user with image administrators rights
+Scenario: Create an image store without credentials
+
+
+Scenario: Install proxy software
+Scenario: Create the bootstrap script for the proxy and use it
+Scenario: Create the bundle-aware bootstrap script for the proxy and use it
+Scenario: Log in as admin user
+Scenario: Accept the key for the proxy
+Scenario: Wait until the proxy appears
+Scenario: Detect latest Salt changes on the proxy
+Scenario: Copy the keys and configure the proxy
+Scenario: Check proxy system details
+Scenario: Check proxy system details
+Scenario: Install expect package on proxy for bootstrapping minion via script
+Scenario: Cleanup: remove proxy bootstrap scripts
+
+
+Scenario: Remove DHCP packages on the proxy
+Scenario: Install or update branch network formulas on the server
+Scenario: Install the Retail pattern on the SUSE Manager server
+Scenario: Install the Retail pattern on the Uyuni server
+Scenario: Restart spacewalk services
+Scenario: Show the overview page of the proxy
+Scenario: Enable the branch network formulas on the branch server
+Scenario: Parametrize the branch network
+Scenario: Parametrize DHCP on the branch server
+Scenario: Parametrize DNS on the branch server
+Scenario: Enable repositories for installing branch services
+Scenario: Parametrize DHCP and DNS for the PXE boot minion
+Scenario: Let avahi work on the branch server
+Scenario: Apply the branch network formulas via the highstate
+Scenario: Disable repositories after installing branch services
+Scenario: Set up the terminals too
+Scenario: The terminals should not reach the server
+Scenario: Let the server know about the new IP and FQDN of the proxy
+
+
+Scenario: List available channels
+Scenario: List available mandatory channels
+Scenario: List products
+Scenario: List all products for SUSE Manager
+Scenario: List products with filter
+Scenario: Run spacewalk-repo-sync with custom URLs
+Scenario: Enable a real base channel
+Scenario: Enable RHEL 8 channels for Rocky 8
+Scenario: Enable RHEL 8 channels for Rocky 8
+Scenario: Enable a real child channel
+Scenario: Let mgr-sync time out
+
+
+Scenario: Let the products page appear
+Scenario: Use the products and architecture filters
+Scenario: View the channels list in the products page
+Scenario: Add a product and one of its modules
+Scenario: Add a product with recommended enabled
+Scenario: Installer update channels got enabled when products were added
+Scenario: Detect product loading issues from the UI
+
+
+Scenario: List available products
+Scenario: List all available products
+Scenario: Enable "SUSE Linux Enterprise Desktop 15 SP3 x86_64" with recommended modules
+Scenario: Enable "SUSE Linux Enterprise Server for SAP Applications 15 x86_64" without recommended modules
+
+
+Scenario: Log in as admin user
+Scenario: Delete scheduled reposyncs
+Scenario: Kill running reposyncs or wait for them to finish
+Scenario: Wait until all synchronized channels have finished
+
+
+Scenario: Download the iso of Rocky 8 DVD and mount it on the server
+Scenario: Log in as admin user
+Scenario: Add a child channel for Rocky 8 DVD repositories
+Scenario: Add the Rocky 8 Appstream DVD repository
+Scenario: Add the Rocky 8 BaseOS DVD repository
+Scenario: Add both repositories to the custom channel for Rocky 8 DVD
+Scenario: Synchronize the repositories in the custom channel for Rocky 8 DVD
+Scenario: The custom channel for Rocky 8 has been synced
+Scenario: Create CLM filters to remove AppStream metadata
+Scenario: Create a CLM project to remove AppStream metadata
+Scenario: Create the bootstrap repository for the Rocky 8 minion
+
+
+Scenario: Log in as admin user
+Scenario: Add a child channel to the base product channel
+Scenario: Add the repository to the x86_64 child channel
+Scenario: Synchronize the repository in the x86_64 channel
+Scenario: Update SLE key with synced base product
+Scenario: Check that sub-channels are automatically selected
+Scenario: Update SSH key with synced base product
+Scenario: Update SSH tunnel key with synced base product
+
+
+Scenario: Check reposync of custom channel
+
+
+Scenario: Log in as admin user
+Scenario: Bootstrap a SLES minion
+Scenario: Check the new bootstrapped minion in System List page
+Scenario: Check connection from minion to proxy
+Scenario: Check registration on proxy of minion
+
+
+Scenario: Log in as admin user
+Scenario: Register this SSH minion for service pack migration
+Scenario: Check connection from SSH minion to proxy
+Scenario: Check registration on proxy of SSH minion
+
+
+Scenario: Log in as admin user
+Scenario: Bootstrap a Red Hat-like minion
+Scenario: Check connection from Red Hat-like minion to proxy
+Scenario: Check registration on proxy of Red Hat-like minion
+Scenario: Subscribe the Red Hat-like minion to a base channel
+Scenario: Detect latest Salt changes on the Red Hat-like minion
+Scenario: Check events history for failures on Red Hat-like minion
+
+
+Scenario: Log in as admin user
+Scenario: Bootstrap a Debian-like minion
+Scenario: Check connection from the Debian-like minion to proxy
+Scenario: Check registration on proxy of the Debian-like minion
+Scenario: Subscribe the Debian-like minion to a base channel
+Scenario: Detect latest Salt changes on the Debian-like minion
+Scenario: Check events history for failures on Debian-like minion
+
+
+Scenario: Log in as admin user
+Scenario: Create KVM activation key
+Scenario: Bootstrap KVM virtual host
+Scenario: Show the KVM host system overview
+Scenario: Set the virtualization entitlement for KVM
+Scenario: Enable the virtualization host formula for KVM
+Scenario: Parametrize the KVM virtualization host
+Scenario: Apply the KVM virtualization host formula via the highstate
+Scenario: Restart the minion to enable libvirt_events engine configuration
+
+
+Scenario: Log in as admin user
+Scenario: Bootstrap a SLES build host
+Scenario: Check the new bootstrapped build host in System Overview page
+Scenario: Check connection from build host to proxy
+Scenario: Check registration on build host of minion
+Scenario: Detect latest Salt changes on the SLES build host
+Scenario: Turn the SLES build host into a container build host
+Scenario: Turn the SLES build host into an OS image build host
+Scenario: Apply the highstate to the build host
+Scenario: Check that the build host is now a build host
+Scenario: Check events history for failures on SLES build host
+
+
+Scenario: Log in as admin user
+Scenario: Display active users page
+Scenario: Create a new user
+Scenario: Login as the new user
+Scenario: Access user details
+Scenario: Add roles
+Scenario: Add roles
+Scenario: Verify user list
+Scenario: Fail to deactivate organization administrator
+Scenario: Remove role
+Scenario: Deactivate ordinary user
+Scenario: Reactivate user
+Scenario: Reactivate user
+Scenario: Delete user
+Scenario: Display the CSV separator preference
+Scenario: Configure the CSV separator char to semicolon
+Scenario: Cleanup: configure the CSV separator char to comma
+
+
+Scenario: Log in as admin user
+Scenario: The Home menu
+Scenario: The user account submenu under the Home menu
+Scenario: The my orginization menu under the Home menu
+Scenario: The Salt menu
+Scenario: The content lifeycle menu
+Scenario: The images menu
+Scenario: The audit menu
+Scenario: The OpenSCAP submenu menu
+Scenario: The configuration menu
+Scenario: The files menu under the configuration menu
+Scenario: The systems submenu in the configuration menu
+Scenario: The schedule menu
+Scenario: The users menu
+Scenario: The admin menu
+Scenario: The Setup Wizard submenu of the admin menu
+Scenario: The manager configuration submenu of the admin menu
+Scenario: The ISS configuration submenu of the admin menu
+Scenario: The Task Engine Status submenu of the admin menu
+Scenario: The menu direct link accesses the first submenu level only
+Scenario: Idempotency of complete menu path and direct link
+Scenario: Completeness of the side navigation bar and the content frame
+Scenario: Sidebar link destination for Systems
+Scenario: Sidebar link destination for Systems => Virtual Systems
+Scenario: Sidebar link destination for Systems => Duplicate Systems
+Scenario: Sidebar link destination for Systems => System Currency
+Scenario: Sidebar link destination for Systems => System Types
+Scenario: Sidebar link destination for Systems => System Groups
+Scenario: Sidebar link destination for Systems => System Set Manager
+Scenario: Sidebar link destination for Systems => Advanced Search
+Scenario: Sidebar link destination for Systems => Activation Keys
+Scenario: Sidebar link destination for Systems => Stored Profiles
+Scenario: Sidebar link destination for Systems => Custom System Info
+Scenario: Sidebar link destination for Systems => Autoinstallation
+Scenario: Sidebar link destination for Systems => Autoinstallation => Profiles
+Scenario: Sidebar link destination for Systems => Autoinstallation => Unprovisioned
+Scenario: Sidebar link destination for Systems => Autoinstallation => GPG and SSL Keys
+Scenario: Sidebar link destination for Systems => Autoinstallation => Distributions
+Scenario: Sidebar link destination for Systems => Autoinstallation => File Preservation
+Scenario: Sidebar link destination for Systems => Autoinstallation => Autoinstallation Snippets
+Scenario: "Create Kickstart Profile" page Systems => Autoinstallation => Profiles => Create Kickstart Profile
+Scenario: "Upload Kickstart/AutoYaST File" page Systems => Autoinstallation => Profiles => Upload Kickstart/AutoYaST File
+Scenario: "Create kickstart distribution" page Systems => Autoinstallation => Distributions => create new kickstart distribution
+
+
+Scenario: Log in as admin user
+Scenario: Disable monitoring from the UI
+Scenario: Restart spacewalk services to apply config changes after disabling monitoring
+Scenario: Check that monitoring is disabled
+Scenario: Enable monitoring from the UI
+Scenario: Restart spacewalk services to apply config changes after enabling monitoring
+Scenario: Check that monitoring is enabled
+
+
+Scenario: Log in as admin user
+Scenario: Check the VHM page
+Scenario: Check VMware page
+Scenario: Create Virtual Host
+Scenario: Run virtual-host-gatherer
+Scenario: Check new virtual hosts
+Scenario: Delete Virtual Host Manager
+Scenario: Cleanup: delete virtual host 10.162.186.111
+Scenario: Cleanup: delete virtual host 10.162.186.112
+
+
+Scenario: Fake an IPMI host
+Scenario: Log in as admin user
+Scenario: Check the power management page
+Scenario: Save power management values
+Scenario: Test IPMI functions
+Scenario: Check power management SSM configuration
+Scenario: Check power management SSM operation
+Scenario: Cleanup: reset IPMI values
+Scenario: Cleanup: tear down the IPMI host
+Scenario: Cleanup: remove remaining systems from SSM after power management tests
+
+
+Scenario: Setup an IPMI host for API test
+Scenario: Check the power management settings for API test
+Scenario: Save power management values for API test
+Scenario: Test IPMI functions for API test
+Scenario: Cleanup: reset IPMI values for API test
+Scenario: Cleanup: tear down the IPMI host for API test
+
+
+Scenario: Setup a Redfish host
+Scenario: Log in as admin user
+Scenario: Save power management values for Redfish
+Scenario: Test Redfish functions
+Scenario: Check power management SSM configuration for Redfish
+Scenario: Check power management SSM operation for Redfish
+Scenario: Cleanup: reset Redfish values
+Scenario: Cleanup: tear down the Redfish host
+Scenario: Cleanup: remove remaining systems from SSM after Redfish power management tests
+
+
+Scenario: Log in as admin user
+Scenario: Clone the first channel before deletion from UI test
+Scenario: Clone the second channel using first channel as base
+Scenario: Try to delete channel with clone
+Scenario: Delete channel without clones neither children
+Scenario: Clone a child channel to the clone of x86_64 test channel
+Scenario: Try delete channel with child
+Scenario: Cleanup: remove cloned child channel
+Scenario: Cleanup: remove cloned parent channel
+
+
+Scenario: Log in as admin user
+Scenario: Clone the first channel before deletion from tool test
+Scenario: Clone a second channel using first channel as base
+Scenario: Verify if both clone channels exists
+Scenario: Delete channel with one clone
+Scenario: Delete base channel and clone
+
+
+Scenario: Log in as admin user
+Scenario: Create single calendar
+Scenario: Create multi calendar
+Scenario: Create a single schedule
+Scenario: Create multi schedules
+Scenario: Assign a single system to the single schedule
+Scenario: Assign systems to a multi schedule using SSM
+Scenario: Schedule channel change action
+Scenario: Remove a package and update package list
+Scenario: Schedule package installation action
+Scenario: Detach systems from schedules
+Scenario: Cleanup: cancel all scheduled actions
+Scenario: Delete maintenance schedules
+Scenario: Delete calendars
+
+
+Scenario: Apply configuration salt state to server
+Scenario: Organization my_org was correctly created
+Scenario: Organization my_org2 was correctly created
+Scenario: Group was correctly created
+Scenario: User was correctly created
+Scenario: User channels permissions were assigned
+Scenario: User Roles were assigned
+Scenario: Activation Key was correctly created
+Scenario: Cleanup: apply configuration teardown salt state to server
+Scenario: Cleanup: all organizations were successfully removed
+Scenario: Cleanup: user was successfully removed
+Scenario: Cleanup: activation key was successfully removed
+
+
+Scenario: Install inter server sync package
+Scenario: Log in as admin user
+Scenario: Clone a channel with patches
+Scenario: Check that this channel has patches
+Scenario: Export data with ISS v2
+Scenario: Cleanup: remove cloned channels
+Scenario: Import data with ISS v2
+Scenario: Check that this channel was imported and has patches
+Scenario: Cleanup: remove imported channel
+Scenario: Cleanup: remove ISS v2 export folder
+
+
+Scenario: Install inter server sync package
+Scenario: Log in as admin user
+Scenario: Create a configuration channel
+Scenario: Add a configuration file to the test configuration channel
+Scenario: Export data with ISS v2
+Scenario: Cleanup: remove the test configuration channel
+Scenario: Import data with ISS v2
+Scenario: Check that the config channel was imported
+Scenario: Cleanup: remove the test configuration channel
+Scenario: Cleanup: remove ISS v2 export folder
+
+
+Scenario: Create an OS image profile with activation key
+Scenario: Work around issue https://github.com/SUSE/spacewalk/issues/10360
+Scenario: Login as Kiwi image administrator and build an image
+Scenario: Log in as admin user
+Scenario: Check the built OS image
+Scenario: Cleanup: remove remaining systems from SSM after OS image tests
+Scenario: Cleanup: remove OS image profile
+
+
+Scenario: Log in as admin user
+Scenario: Reboot the SSH-managed SLES minion
+Scenario: Schedule a reboot on a SLES Salt minion
+Scenario: Reboot the Red Hat-like minion and wait until reboot is completed
+Scenario: Reboot the Debian-like minion and wait until reboot is completed
+
+
+Scenario: Log in as admin user
+Scenario: Enable repositories for openSCAP on the Red Hat-like minion
+Scenario: Install the OpenSCAP packages on the Red Hat-like minion
+Scenario: Schedule an OpenSCAP audit job on the Red Hat-like minion
+Scenario: Check the results of the OpenSCAP scan on the Red Hat-like minion
+Scenario: Cleanup: remove audit scans retention period from Red Hat-like minion
+Scenario: Cleanup: delete audit results from Red Hat-like minion
+Scenario: Cleanup: restore audit scans retention period on Red Hat-like minion
+Scenario: Cleanup: remove the OpenSCAP packages from the Red Hat-like minion
+Scenario: Cleanup: restore the base channel for the Red Hat-like minion
+
+
+Scenario: Run a remote command on the Red Hat-like minion
+
+
+Scenario: Log in as admin user
+Scenario: Delete the Red Hat-like minion before SSH minion tests
+Scenario: Bootstrap a SSH-managed Red Hat-like minion
+Scenario: Check connection from SSH-managed Red Hat-like minion to proxy
+Scenario: Check registration on proxy of SSH-managed Red Hat-like minion
+Scenario: Subscribe the SSH-managed Red Hat-like minion to a base channel
+Scenario: Check events history for failures on SSH-managed Red Hat-like minion
+Scenario: Run a remote command on the SSH-managed Red Hat-like minion
+Scenario: Check events history for failures on SSH-managed Red Hat-like minion
+Scenario: Cleanup: delete the SSH-managed Red Hat-like minion
+Scenario: Cleanup: bootstrap a Red Hat-like minion after SSH minion tests
+Scenario: Cleanup: re-subscribe the Red Hat-like minion to a base channel
+
+
+Scenario: Log in as admin user
+Scenario: Enable all the necessary repositories for OpenSCAP on Debian-like minion
+Scenario: Install the OpenSCAP packages on the Debian-like minion
+Scenario: Schedule an OpenSCAP audit job on the Debian-like minion
+Scenario: Check the results of the OpenSCAP scan on the Debian-like minion
+Scenario: Cleanup: remove audit scans retention period from Debian-like minion
+Scenario: Cleanup: delete audit results from Debian-like minion
+Scenario: Cleanup: restore audit scans retention period on Debian-like minion
+Scenario: Cleanup: remove the OpenSCAP packages from the Debian-like minion
+Scenario: Cleanup: remove all the necessary repositories for OpenSCAP on Debian-like minion
+
+
+Scenario: Run a remote command on the Debian-like minion
+
+
+Scenario: Log in as admin user
+Scenario: Delete the Debian-like minion
+Scenario: Bootstrap a SSH-managed Debian-like minion
+Scenario: Check connection from SSH-managed Debian-like minion to proxy
+Scenario: Check registration on proxy of SSH-managed Debian-like minion
+Scenario: Subscribe the SSH-managed Debian-like minion to a base channel
+Scenario: Check events history for failures on SSH-managed Debian-like minion
+Scenario: Run a remote command on the SSH-managed Debian-like minion
+Scenario: Check events history for failures on SSH-managed Debian-like minion
+Scenario: Cleanup: delete the SSH-managed Debian-like minion
+Scenario: Cleanup: bootstrap a Debian-like minion
+Scenario: Cleanup: re-subscribe the Debian-like minion to a base channel
+
+
+Scenario: Log in as admin user
+Scenario: Delete SSH minion system profile before API bootstrap test
+Scenario: block direct access from server to sshminion to test proxy as jumphost
+Scenario: Bootstrap a SLES SSH minion via API
+Scenario: Check new API bootstrapped salt-ssh system in System Overview page
+Scenario: Check contact method of this Salt SSH system
+Scenario: Check registration on proxy of SSH minion bootstrapped via API
+Scenario: Check spacecmd system ID of SSH minion bootstrapped via API
+Scenario: Check events history for failures on SSH minion after API bootstrap
+Scenario: API bootstrap: subscribe SSH minion to base channel
+Scenario: cleanup and flush the firewall rules
+
+
+Scenario: Log in as admin user
+Scenario: Delete SLES minion system profile before bootstrap with SSH key test
+Scenario: Prepare the minion for SSH key authentication
+Scenario: Bootstrap a SLES minion using SSH key with wrong passphrase
+Scenario: Bootstrap a SLES minion using SSH key
+Scenario: Check new minion bootstrapped with SSH key in System Overview page
+Scenario: Also check contact method of this minion
+Scenario: Cleanup: restore authorized keys
+
+
+Scenario: Log in as admin user
+Scenario: Delete SLES minion system profile before script bootstrap test
+Scenario: Bootstrap the minion using the script
+Scenario: Check if onboarding for the script-bootstrapped minion was successful
+Scenario: Detect latest Salt changes on the script-bootstrapped SLES minion
+Scenario: Subscribe the script-bootstrapped SLES minion to a base channel
+Scenario: Install a package to the script-bootstrapped SLES minion
+Scenario: Run a remote command on normal SLES minion
+Scenario: Check spacecmd system ID of bootstrapped minion
+Scenario: Cleanup: remove package from script-bootstrapped SLES minion
+
+
+Scenario: Log in as admin user
+Scenario: Delete the Salt minion for SSH tunnel bootstrap
+Scenario: Register this minion for push via SSH tunnel
+Scenario: The contact method is SSH tunnel on this minion
+Scenario: Install a package from this SSH tunnel minion
+Scenario: Remove a package from this SSH tunnel minion
+Scenario: Run a remote command on this SSH tunnel minion
+Scenario: Cleanup: delete the SSH tunnel minion
+Scenario: Cleanup: register a Salt minion after SSH tunnel tests
+
+
+Scenario: Log in as admin user
+Scenario: Delete SLES minion system profile
+Scenario: Create a configuration channel for the activation key
+Scenario: Add a configuration file to the key configuration channel
+Scenario: Create a complete minion activation key
+Scenario: Bootstrap a SLES minion with an activation key
+Scenario: Verify that minion bootstrapped with Salt key and packages
+Scenario: Check system ID of bootstrapped minion
+Scenario: Verify that minion bootstrapped with base channel
+Scenario: Verify that minion bootstrapped with configuration channel
+Scenario: Cleanup: remove the package states
+Scenario: Cleanup: remove the key configuration channel
+Scenario: Cleanup: delete the activation key
+Scenario: Check events history for failures on SLES minion with activation key
+
+
+Scenario: Log in as admin user
+Scenario: Delete SLES minion system profile before exploring the onboarding page
+Scenario: Completeness of the onboarding page
+Scenario: Minion is visible in the Pending section
+Scenario: Reject and delete the pending key
+Scenario: Accepted minion shows up as a registered system
+Scenario: The minion communicates with the Salt master
+Scenario: Delete profile of unreacheable minion
+Scenario: Cleanup: bootstrap again the minion
+
+
+Scenario: Log in as admin user
+Scenario: Remove mgrcompat module from minion synced modules and schedule Hardware Refresh
+Scenario: Remove saltutil grain and mgrcompat module from minion and schedule Hardware Refresh
+Scenario: Delete SLES minion system profile before mgrcompat test
+Scenario: Enable new module.run syntax on the minion and perform registration
+Scenario: Check if onboarding for the minion with the new module.run syntax was successful
+Scenario: Check that installed packages are visible with the new module.run syntax
+Scenario: Check that Hardware Refresh button works on a SLE minion with new module.run syntax
+Scenario: Cleanup: Delete profile of the minion and disable new module.run syntax
+Scenario: Cleanup: bootstrap again the minion after mgrcompat tests
+
+
+Scenario: Log in as admin user
+Scenario: Pre-requisite: install packages needed for locking test
+Scenario: Lock a package on the client
+Scenario: Attempt to install a locked package on the client
+Scenario: Unlock a package on the client
+Scenario: Schedule a package lock
+Scenario: Schedule another package lock
+Scenario: Mix package locks and unlock events
+Scenario: Mix package locks and unlock events part 2
+Scenario: Cleanup: remove packages after testing locks
+
+
+Scenario: Log in as admin user
+Scenario: Create an empty minion profile with HW address via API
+Scenario: Create an empty minion profile with hostname via API
+Scenario: Check the created empty minion profiles in Unprovisioned Systems page
+Scenario: Check the empty profiles has the hostname set
+Scenario: Check the empty minion profiles visible via API
+Scenario: Cleanup: Delete first empty minion profile
+Scenario: Cleanup: Delete second empty minion profiles
+
+
+Scenario: Log in as admin user
+Scenario: Pre-requisite: downgrade repositories to lower version on Salt minion
+Scenario: Pre-requisite: refresh package list and check installed packages after downgrade on SLE minion
+Scenario: Pre-requisite: wait until downgrade is finished on SLE minion
+Scenario: Pre-requisite: ensure the errata cache is computed before testing on Salt minion
+Scenario: Pre-requisite: remove all action chains before testing on Salt minion
+Scenario: Add a patch installation to the action chain on Salt minion
+Scenario: Add a package removal to the action chain on Salt minion
+Scenario: Add a package installation to an action chain on Salt minion
+Scenario: Create a configuration channel for testing action chain on Salt minion
+Scenario: Add a configuration file to configuration channel for testing action chain on Salt minion
+Scenario: Download the configuration file from configuration channel
+Scenario: Subscribe system to configuration channel for testing action chain on Salt minion
+Scenario: Add a configuration file deployment to the action chain on Salt minion
+Scenario: Add apply highstate to action chain on Salt minion
+Scenario: Add a reboot action to the action chain on Salt minion
+Scenario: Add a remote command to the action chain on Salt minion
+Scenario: Verify the action chain list on Salt minion
+Scenario: Check that a different user cannot see the action chain for Salt minion
+Scenario: Execute the action chain from the web UI on Salt minion
+Scenario: Add a remote command to the new action chain on Salt minion
+Scenario: Delete the action chain for Salt minion
+Scenario: Downgrade again repositories to lower version on Salt minion
+Scenario: Refresh package list and check installed packages after second downgrade on SLE minion
+Scenario: Ensure again the errata cache is computed before testing on Salt minion
+Scenario: Add operations to the action chain via API for Salt minions
+Scenario: Run an action chain via API on Salt minion
+Scenario: Cleanup: remove Salt minion from configuration channel
+Scenario: Cleanup: remove configuration channel for Salt minion
+Scenario: Cleanup: remove packages and repository used in action chain for Salt minion
+Scenario: Cleanup: remove temporary files for testing action chains on Salt minion
+Scenario: Cleanup: remove downloaded files
+
+
+Scenario: Log in as admin user
+Scenario: Pre-requisite: downgrade repositories to lower version on SSH minion
+Scenario: Pre-requisite: refresh package list and check newly installed packages on SSH minion
+Scenario: Pre-requisite: wait until downgrade is finished on SSH minion
+Scenario: Pre-requisite: ensure the errata cache is computed before testing on SSH minion
+Scenario: Pre-requisite: remove all action chains before testing on SSH minion
+Scenario: Add a patch installation to the action chain on SSH minion
+Scenario: Add a package removal to the action chain on SSH minion
+Scenario: Add a package installation to an action chain on SSH minion
+Scenario: Create a configuration channel for testing action chain on SSH minion
+Scenario: Add a configuration file to configuration channel for testing action chain on SSH minion
+Scenario: Subscribe system to configuration channel for testing action chain on SSH minion
+Scenario: Add a configuration file deployment to the action chain on SSH minion
+Scenario: Add apply highstate to action chain on SSH minion
+Scenario: Add a reboot action to the action chain on SSH minion
+Scenario: Add a remote command to the action chain on SSH minion
+Scenario: Verify the action chain list on SSH minion
+Scenario: Check that a different user cannot see the action chain for SSH minion
+Scenario: Execute the action chain from the web UI on SSH minion
+Scenario: Verify that the action chain was executed successfully
+Scenario: Add a remote command to the new action chain on SSH minion
+Scenario: Delete the action chain for SSH minion
+Scenario: Cleanup: roll back action chain effects on SSH minion
+Scenario: Add operations to the action chain via API for SSH minions
+Scenario: Run an action chain via API on SSH minion
+Scenario: Cleanup: remove SSH minion from configuration channel
+Scenario: Cleanup: remove configuration channel for SSH minion
+Scenario: Cleanup: remove packages and repository used in action chain for SSH minion
+Scenario: Cleanup: remove temporary files for testing action chains on SSH minion
+
+
+Scenario: Log in as admin user
+Scenario: Pre-requisite: downgrade packages before action chain test on several systems
+Scenario: Pre-requisite: refresh package list and check installed packages before action chain test on several systems
+Scenario: Pre-requisite: wait until downgrade is finished before action chain test on several systems
+Scenario: Pre-requisite: ensure the errata cache is computed before action chain test on several systems
+Scenario: Pre-requisite: remove all action chains before testing on several systems
+Scenario: Add an action chain using system set manager for Red Hat-like minion and SLE minion
+Scenario: Verify action chain for two systems
+Scenario: Verify that the action chain from the system set manager was executed successfully
+Scenario: Cleanup: remove package and repository used in action chain for several systems
+Scenario: Cleanup: remove temporary files for testing action chains on several systems
+Scenario: Cleanup: remove remaining systems from SSM after action chain tests on several systems
+
+
+Scenario: Log in as admin user
+Scenario: Create a simple image profile without activation key
+Scenario: Create a simple real image profile without activation key
+Scenario: Create an image profile with activation key
+Scenario: Create a simple real image profile with activation key
+Scenario: Build the suse_key image with and without activation key
+Scenario: Build the suse_simple image with and without activation key
+Scenario: Build the suse_real_key image with and without activation key
+Scenario: Build suse_key images with different versions
+Scenario: Build suse_simple image with different versions
+Scenario: Delete image via API calls
+Scenario: Rebuild suse_simple image
+Scenario: Rebuild suse_key image
+Scenario: Build an image via the GUI
+Scenario: Login as Docker image administrator and build an image
+Scenario: Cleanup: delete all images
+Scenario: Cleanup: delete all profiles
+
+
+Scenario: Log in as docker user
+Scenario: Create an authenticated image store as Docker admin
+Scenario: Create a profile for the authenticated image store as Docker admin
+Scenario: Build an image in the authenticated image store
+Scenario: Cleanup: remove Docker profile for the authenticated image store
+Scenario: Cleanup: remove authenticated image store
+Scenario: Cleanup: delete registry image
+
+
+Scenario: Test "image.store" namespace
+Scenario: Test "image.profiles" namespace
+Scenario: Cleanup: remove custom system info
+
+
+Scenario: Log in as admin user
+Scenario: Create a minion Recurring Action
+Scenario: View a minion recurring actions details
+Scenario: Edit a minion Recurring Action
+Scenario: Create a System group for testing
+Scenario: Create a group Recurring Action
+Scenario: View a group recurring actions details
+Scenario: Edit a group Recurring Action
+Scenario: Create a yourorg Recurring Action
+Scenario: View a yourorg recurring actions details
+Scenario: Edit a yourorg Recurring Action
+Scenario: Delete a yourorg Recurring Action
+Scenario: Create an admin org Recurring Action
+Scenario: View an admin org recurring actions details
+Scenario: Edit an admin org Recurring Action
+Scenario: Check list of all actions
+Scenario: View details in list of all actions
+Scenario: Edit in list of all actions
+Scenario: Delete from list of all actions
+Scenario: Delete a minion Recurring Action
+Scenario: Delete a group Recurring Action
+Scenario: Cleanup after running the tests
+
+
+Scenario: Log in as admin user
+Scenario: Check the system is still subscribed to old channels before channel change completes
+Scenario: Check old channels are still enabled on the system before channel change completes
+Scenario: Assign a child channel to the system
+Scenario: Check channel change has completed for the system
+Scenario: Check the system is subscribed to the new channels
+Scenario: Check the new channels are enabled on the system
+Scenario: Cleanup: subscribe the system back to previous channels
+
+
+Scenario: Log in as admin user
+Scenario: Installed retracted package should show icon in the system packages list
+Scenario: Retracted package should not be available for installation
+Scenario: Retracted package should not be available for upgrade
+Scenario: Retracted patch should not affect any system
+Scenario: Target systems for stable packages should not be empty
+Scenario: Target systems for retracted packages should be empty
+Scenario: Retracted packages in the patch detail
+Scenario: Retracted packages in the patches list
+Scenario: Retracted patches in the channel patches list
+Scenario: Retracted packages in the channel packages list
+Scenario: SSM: Retracted package should not be available for installation
+
+
+Scenario: Log in as admin user
+Scenario: Configure PXE part of DHCP on the proxy
+Scenario: Apply the highstate after the formula setup
+Scenario: Install TFTP boot package on the server
+Scenario: Create auto installation distribution
+Scenario: Fix kernel parameters
+Scenario: Create auto installation profile
+Scenario: Configure auto installation profile
+Scenario: Set up tftp installation
+Scenario: Restart squid so proxy.example.org is recognized
+Scenario: PXE boot the PXE boot minion
+Scenario: Check connection from PXE boot minion to the proxy
+Scenario: Install a package on the PXE boot minion
+Scenario: Cleanup: remove the auto installation profile
+Scenario: Cleanup: remove the auto installation distribution
+Scenario: Cleanup: delete the PXE boot minion
+Scenario: Cleanup: the PXE boot minion prefers booting via saltboot
+Scenario: Cleanup: apply the highstate after the formula cleanup changes
+
+
+Scenario: Restart the SUSE Manager through the WebUI Admin option
+
+
+Scenario: Log in as admin user
+Scenario: Create a new user in a timezone different than server's timezone
+Scenario: Add roles for the Malaysian user
+Scenario: Login as the new Malaysian user
+Scenario: Schedule a remote script to run now and see the correct timezone details in history
+Scenario: Login as the new Malaysian user if the previous scenario failed
+Scenario: Schedule a remote script in the future and see the correct timezone as a pop up
+Scenario: Login as the new Malaysian user if the previous scenario failed
+Scenario: Cleanup: Log in as admin user again
+Scenario: Cleanup: Remove role
+Scenario: Cleanup: Delete user
+
+
+Scenario: Log in as admin user
+Scenario: Delete minion system profile before bootstrap
+Scenario: Bootstrap a minion
+Scenario: Check the new bootstrapped minion in System Overview page
+Scenario: Check initial connection from minion to proxy
+Scenario: Check initial registration on proxy of minion
+Scenario: Change from proxy to direct connection
+Scenario: Check direct connection
+Scenario: Change connection back to a proxy via SSM
+Scenario: Check events on the minion
+Scenario: Check registration on proxy of minion
+Scenario: Check connection from minion to proxy
+Scenario: Check events history for failures on the minion
+
+
+Scenario: Log in as admin user
+Scenario: Delete minion system profile before bootstrap
+Scenario: Bootstrap a minion
+Scenario: Check initial connection from minion to proxy
+Scenario: Check initial registration on proxy of minion
+Scenario: Change from proxy to direct connection
+Scenario: Check direct connection
+Scenario: Change connection to a proxy
+Scenario: Check registration on proxy of minion
+Scenario: Check connection from minion to proxy
+Scenario: Check events history for failures on the minion
+
+
+Scenario: Log in as admin user
+Scenario: Change hostname and reboot server
+Scenario: Change hostname back
+Scenario: Cleanup after hostname rename test
+
+
+Scenario: Log in as admin user
+Scenario: Pre-requisite: Unregister Salt minion in the traditional proxy
+Scenario: Pre-requisite: Stop traditional proxy service
+Scenario: Generate Containerized Proxy configuration
+Scenario: Set-up the Containerized Proxy service to support Avahi
+Scenario: Start Containerized Proxy services
+Scenario: Containerized Proxy should be registered automatically
+Scenario: Remove the offending key in salt known hosts
+Scenario: Bootstrap a Salt minion in the Containerized Proxy
+Scenario: Check the new bootstrapped minion in System Overview page
+Scenario: Check connection from minion to Containerized Proxy
+Scenario: Check registration on Containerized Proxy of minion
+Scenario: Salt minion grains are displayed correctly on the details page
+Scenario: Install a patch on the Salt minion
+Scenario: Remove package from Salt minion
+Scenario: Run a remote command on Salt minion
+Scenario: Check that Software package refresh works on a Salt minion
+Scenario: Check that Hardware Refresh button works on a Salt minion
+Scenario: Create a configuration channel named "Pod Proxy Channel"
+Scenario: Add a configuration file into the "Pod Proxy Channel" configuration channel
+Scenario: Subscribe a Salt minion to the configuration channel
+Scenario: Deploy the configuration file to Salt minion
+Scenario: Reboot the Salt minion and wait until reboot is completed
+Scenario: Cleanup: Unregister a Salt minion in the Containerized Proxy
+Scenario: Cleanup: Unregister Containerized Proxy
+Scenario: Cleanup: Stop Containerized Proxy services
+Scenario: Cleanup: Remove Containerized Proxy configuration
+Scenario: Cleanup: Remove "Pod Proxy Channel" configuration channel
+Scenario: Cleanup: Start traditional proxy service
+Scenario: Cleanup: Bootstrap a Salt minion in the traditional proxy
+Scenario: Cleanup: Check the new bootstrapped minion in System Overview page
+
+
+Scenario: All logfiles should be available
+
+
+Scenario: Log in as admin user
+Scenario: No search results - inverse results
+Scenario: One search result for City
+Scenario: One search result for State/Province
+Scenario: One search result for Country
+Scenario: One search result for hostname using "Fine grained search results"
+Scenario: List results for hostname
+
+
+Scenario: Log in as admin user
+Scenario: Check sources for noarch package
+Scenario: Check sources for x86_64 package
+
+
+Scenario: Log in as admin user
+Scenario: Change the password to a new password
+Scenario: Revert the new password to a valid standard password
+Scenario: Try an invalid password
+
+
+Scenario: Log in as admin user
+Scenario: Clone a channel without patches
+Scenario: Check that this channel has no patches
+Scenario: Clone a channel with patches
+Scenario: Check that this channel has patches
+Scenario: Clone a channel with selected patches
+Scenario: Check that new patches exists
+Scenario: Check CL-hoag-dummy-7890 patches
+Scenario: Check CM-virgo-dummy-3456 patches
+Scenario: Compare channel packages
+Scenario: Cleanup: remove cloned channels
+Scenario: Cleanup: remove remaining systems from SSM after channel cloning tests
+
+
+Scenario: Log in as admin user
+Scenario: Create an activation key for i586
+Scenario: Change limit of the i586 activation key
+Scenario: Change the base channel of the i586 activation key
+Scenario: Delete the i586 activation key
+Scenario: Create an activation key with a channel and a package list for i586
+Scenario: Delete the i586 activation key with packages
+Scenario: Create an activation key with a channel and a package list for x86_64
+Scenario: Delete the x86_64 activation key with packages
+
+
+Scenario: List all activation keys
+Scenario: Create activation key
+Scenario: Activation key details
+Scenario: Cleanup: delete activation key
+
+
+Scenario: Log in as testing user
+Scenario: Copy cobbler profiles on the server
+Scenario: Ask cobbler to create a distribution via API
+Scenario: Create dummy profile
+Scenario: Check cobbler created distro and profile
+Scenario: Create SUSE distribution with installer updates
+Scenario: Create a distribution via the UI
+Scenario: Create a profile via the UI
+Scenario: Upload a profile via the UI
+Scenario: Add an unprovisioned range to the created profile
+Scenario: Add a variable to the uploaded profile
+Scenario: Add a kernel option to the created profile
+Scenario: Add a kernel option to the uploaded profile
+Scenario: Check default snippets
+Scenario: Create a snippet
+Scenario: Delete a snippet
+Scenario: Test for PXE environment files
+Scenario: Trigger the creation of a cobbler system record
+Scenario: Create a cobbler system record via API
+Scenario: Cleanup: delete test distro and profiles
+
+
+Scenario: Log in as testing user in the cobbler buildiso context
+Scenario: Copy cobbler profiles on the server in the cobbler buildiso context
+Scenario: Create a dummy distro in the cobbler buildiso context
+Scenario: Create dummy profiles in the cobbler buildiso context
+Scenario: Check cobbler created a distro and profiles in the cobbler buildiso context
+Scenario: Create dummy system in the Cobbler buildiso context
+Scenario: Prepare the cobbler buildiso context
+Scenario: Run Cobbler buildiso with all profiles and check isolinux config file in the cobbler buildiso context
+Scenario: Run Cobbler buildiso with selected profile in the cobbler buildiso context
+Scenario: Run Cobbler buildiso with selected profile and without dns entries in the cobbler buildiso context
+Scenario: Run Cobbler buildiso airgapped with all profiles in the cobbler buildiso context
+Scenario: Run Cobbler buildiso standalone with all profiles in the cobbler buildiso context
+Scenario: Cleanup: delete test distro and profiles in the cobbler buildiso context
+Scenario: Cleanup: Remove buildiso tmpdir and built ISO file in the cobbler buildiso context
+
+
+Scenario: Clear browser cookies for main landing page validation
+Scenario: Access the Login page
+Scenario: Access the About page
+Scenario: Access the Copyright Notice
+Scenario: Access the EULA
+Scenario: Log into Uyuni
+Scenario: Log out of Uyuni
+Scenario: Top level bar
+Scenario: Main menu as regular user
+Scenario: Log in as admin user
+Scenario: Main menu as administrator
+Scenario: Main content
+
+
+Scenario: List users
+Scenario: List roles
+Scenario: Create user
+Scenario: Role operations
+Scenario: Cleanup: user tests
+
+
+Scenario: Download package user without token
+Scenario: Download package user with a valid token for the org
+Scenario: Download package user with an invalid token for the org
+Scenario: Download package user with an expired valid token for the org
+Scenario: Download package user with an non expired valid token for the org
+Scenario: Download package user with a valid token that cant be used until tomorrow for the org
+Scenario: Download package user with a valid token for the org and specific channels
+
+
+Scenario: Log in as docker user
+Scenario: Create an image store as Docker admin
+Scenario: Create a profile as Docker admin
+Scenario: Create a user without rights nor roles
+Scenario: Log in as docker user
+Scenario: Cleanup: remove Docker profile
+Scenario: Cleanup: remove image store
+Scenario: Cleanup: delete no role user
+
+
+Scenario: Log in as admin user
+Scenario: Schedule channel data refresh for content management
+Scenario: Audit images searching for a known CVE number
+Scenario: Audit images searching for an unknown CVE number
+
+
+Scenario: Log in as admin user
+Scenario: Date picker is by default set to today
+Scenario: Picking a time sets the hidden fields
+
+
+Scenario: Log in as admin user
+Scenario: Create a sles group
+Scenario: Add systems to the sles group
+Scenario: Create a rhlike group
+Scenario: Add systems to the rhlike group
+Scenario: Create a deblike group
+Scenario: Add systems to the deblike group
+Scenario: Add the sles group to SSM
+Scenario: Add a union of 2 groups to SSM - Red Hat-like
+Scenario: Add an intersection of 2 groups to SSM - Red Hat-like
+Scenario: Add a union of 2 groups to SSM - Debian-like
+Scenario: Add an intersection of 2 groups to SSM - Debian-like
+Scenario: Cleanup: remove the sles group
+Scenario: Cleanup: remove the rhlike group
+Scenario: Cleanup: remove the deblike group
+Scenario: Cleanup: remove remaining systems from SSM after group union and intersection tests
+
+
+Scenario: Log in as admin user
+Scenario: Create a new key
+Scenario: Add a value to a system
+Scenario: Edit the value
+Scenario: Edit the key description
+Scenario: Delete the value
+Scenario: Delete the key
+
+
+Scenario: Clear browser cookies for Basic web security measures
+Scenario: Caching should be enabled for static content
+Scenario: Obsolete and problematic headers for static content
+
+
+Scenario: salt-api is properly configured
+Scenario: salt-master and salt-api are listening
+Scenario: There are no top.sls files in certain folders
+
+
+Scenario: Log in as admin user
+Scenario: Completeness of the channels page
+Scenario: Popular channels
+Scenario: Check packages in test channel
+Scenario: Check package metadata
+Scenario: Check package dependencies page
+Scenario: Check package change log page
+Scenario: Check package file list page
+
+
+Scenario: Log in as admin user
+Scenario: Fail when trying to add a duplicate channel
+Scenario: Fail when trying to use invalid characters in the channel label
+Scenario: Fail when trying to use invalid characters in the channel name
+Scenario: Fail when trying to use reserved names for channels
+Scenario: Fail when trying to use reserved labels for channels
+Scenario: Create a channel that will be changed
+Scenario: Fail when trying to change the channel name to a reserved name
+
+
+Scenario: Log in as admin user
+Scenario: Search a word and expect the right result
+Scenario: Search a partial word and expect the right result
+Scenario: Search a word with a different case and expect the right result
+Scenario: Search a word and expect several results
+Scenario: Search a word and expect several results
+Scenario: Search a non-existing word and expect no results
+
+
+Scenario: Create a custom software channel
+Scenario: Create a repository
+Scenario: Create a custom software channel as the child of another one
+Scenario: List software channels
+Scenario: Delete a child software channel
+Scenario: Delete a software channel
+Scenario: Check last synchronization of a synced channel
+
+
+Scenario: Log in as admin user
+Scenario: Patches left menu
+Scenario: Create new bugfix patch with bnc URL
+Scenario: Create new enhancement patch with no bnc URL
+Scenario: Delete enhancement patch
+Scenario: Verify patch presence in web UI
+Scenario: Assert that patch is now in test base channel
+Scenario: Delete patch
+
+
+Scenario: Log in as admin user
+Scenario: Create a content lifecycle project
+Scenario: Verify the content lifecycle project page
+Scenario: Add a source to the project
+Scenario: Verify added sources for Uyuni
+Scenario: Verify added sources for SUSE Manager
+Scenario: Add environments to the project
+Scenario: Build the sources in the project for Uyuni
+Scenario: Build the sources in the project for SUSE Manager
+Scenario: Promote the sources in the project
+Scenario: Add new sources and promote again
+Scenario: Cleanup: remove the Content Lifecycle Management project
+Scenario: Cleanup: remove the created channels for Uyni
+Scenario: Cleanup: remove the created channels for SUSE Manager
+
+
+Scenario: Log in as admin user
+Scenario: Change the schedule of task sandbox-cleanup-default to weekly
+Scenario: Change the schedule of task sandbox-cleanup-default to monthly
+Scenario: Change the schedule of task sandbox-cleanup-default back to daily
+
+
+Scenario: Log in as admin user
+Scenario: Check the unread notification counter is correct
+Scenario: Delete notification-messages
+Scenario: Flag a notification-message as read
+
+
+Scenario: Log in as admin user
+Scenario: Enter minimal information for payg ssh connection data
+Scenario: Enter full information for payg ssh connection data
+Scenario: Check pay-as-you-go list
+Scenario: Edit connection description
+Scenario: Edit instance ssh connection data
+Scenario: Edit bastion ssh connection data
+Scenario: Cleanup: delete minimal information for payg ssh connection data
+Scenario: Cleanup: delete full information for payg ssh connection data
+
+
+Scenario: Log in as admin user
+Scenario: Push a package with unset vendor
+Scenario: Check vendor of package displayed in web UI
+
+
+Scenario: Log in as admin user
+Scenario: Populate the report database after bootstrapping minions
+Scenario: Connect to the ReportDB on the server with admin user
+Scenario: Create read-only user
+Scenario: External read-only user can connect to ReportDB and make queries
+Scenario: Read-only user can't make changes in the ReportDB
+Scenario: ReportDB admin user can't access product database from external machine
+Scenario: The systems should match between the UI and the ReportDB
+Scenario: System changes should be reflected in systems on ReportDB
+Scenario: Cleanup: delete read-only user
+
+
+Scenario: Log in as admin user
+Scenario: Check if Distribution Channel Mapping page exists
+Scenario: Create new map for x86_64 SUSE clients
+Scenario: Create new map for x86_64 Ubuntu clients with test base channel
+Scenario: Create new map for iSeries SUSE clients using test channel
+Scenario: Update map for x86_64 SUSE clients using test-x86_64 channel
+Scenario: Update map for x86_64 Ubuntu clients using test base channel
+Scenario: Update map for IA-32 SUSE clients using amd deb test channel
+Scenario: Cleanup: delete the map created for x68_64 SUSE clients
+Scenario: Cleanup: delete the map created for x68_64 Ubuntu clients
+Scenario: Cleanup: delete the map created for i586 clients
+Scenario: Sanity check whether the page is in its default state
+
+
+Scenario: Login as admin
+Scenario: Check if the Task Engine Status page exists
+Scenario: Check if the Task Engine Status page exists
+Scenario: Check if the Runtime Status Page exists
+Scenario: Run a remote command on the server to check if it shows up on Last Execution Times page
+Scenario: Resync a product to trigger a new task and check if it is visible on the Runtime Status page
+
+
+Scenario: Login as admin
+Scenario: Check that the Cobbler Settings Page exists
+Scenario: Check that the Cobbler Settings Page exists
+Scenario: Run Cobbler Sync via button and validate UI output
+Scenario: Run Cobbler Sync via button and verify task timestamp in Last Execution Times Page
+
+
+Scenario: Log in as admin user
+Scenario: Enable the PXE formulas on the branch server
+Scenario: Configure general info for PXE part of DNS on the branch server
+Scenario: Configure PXE part of DHCP on the branch server
+Scenario: Parametrize TFTP on the branch server
+Scenario: Parametrize vsFTPd on the branch server
+Scenario: Configure PXE itself on the branch server
+Scenario: Apply the PXE formulas via the highstate
+Scenario: Create hardware type group
+Scenario: Create branch terminals group
+Scenario: Create all terminals group
+Scenario: Create all branch servers group
+Scenario: Move the image to the branch server
+Scenario: Enable Saltboot formula for hardware type group
+Scenario: Parametrize the Saltboot formula
+Scenario: PXE boot the PXE boot minion
+Scenario: Check connection from terminal to branch server
+Scenario: Install a package on the new Retail terminal
+Scenario: Cleanup: remove a package on the new Retail terminal
+Scenario: Cleanup: delete the new Retail terminal
+Scenario: Cleanup: undo TFTP and PXE formulas
+Scenario: Cleanup: undo CNAME aliases
+Scenario: Cleanup: delete the terminal groups
+Scenario: Cleanup: apply the highstate to clear PXE formulas
+Scenario: Enable the formulas needed for mass import on the branch server
+Scenario: Mass import of terminals
+Scenario: Apply the highstate to take into account the imported formulas
+Scenario: Bootstrap the PXE boot minion
+Scenario: Check connection from bootstrapped terminal to proxy
+Scenario: Install a package on the bootstrapped terminal
+Scenario: Cleanup: remove a package on the bootstrapped terminal
+Scenario: Cleanup: delete all imported Retail terminals
+Scenario: Cleanup: make sure salt-minion is stopped after mass import
+Scenario: Cleanup: delete the terminal groups generated by retail_yaml command
+Scenario: Cleanup: remove DNS records added by mass import
+Scenario: Cleanup: disable the formulas needed for mass import
+Scenario: Cleanup: reset to proper branch ID for pxeboot
+Scenario: Cleanup: apply the highstate after the mass import cleanup changes
+Scenario: Reset TFTP defaults
+
+
+Scenario: Log in as admin user
+Scenario: SLE minion hardware refresh
+Scenario: Minion grains are displayed correctly on the details page
+Scenario: Red Hat-like minion hardware refresh
+Scenario: Red Hat-like minion grains are displayed correctly on the details page
+Scenario: Debian-like minion hardware refresh
+Scenario: Debian-like minion grains are displayed correctly on the details page
+Scenario: SSH-managed minion hardware refresh
+Scenario: SSH-managed minion grains are displayed correctly on the details page
+
+
+Scenario: Log in as admin user
+Scenario: Fail to create a group with only its name
+Scenario: Fail to create a group with only its description
+Scenario: Create a group
+Scenario: Add the SLE minion system to the group
+Scenario: Check that the SLE minion is part of the new group
+Scenario: Add the Red Hat-like minion to the group in a different way
+Scenario: Add the new group to SSM
+Scenario: Install some formula on the server
+Scenario: New formula page is rendered for the system group
+Scenario: Apply the highstate to the group
+Scenario: Remove SLE client from new group
+Scenario: Remove SLE minion from new group
+Scenario: Cleanup: uninstall formula from the server
+Scenario: Cleanup: remove the new group
+
+
+Scenario: Log in as admin user
+Scenario: Create a configuration channel for mixed client types
+Scenario: Add a configuration file to the mixed configuration channel
+Scenario: Subscribe a Salt minion to the configuration channel
+Scenario: Subscribe a Red Hat-like minion to the configuration channel
+Scenario: Subscribe a Debian-like minion to the configuration channel
+Scenario: Subscribe a SSH minion to the configuration channel
+Scenario: Deploy the file to all systems
+Scenario: Check that file has been created on SLE minion
+Scenario: Check that file has been created on Red Hat-like minion
+Scenario: Check that file has been created on Debian-like minion
+Scenario: Check that file has been created on SSH minion
+Scenario: Apply highstate to override changed content on SLE minion
+Scenario: Apply highstate to override changed content on Red Hat-like minion
+Scenario: Apply highstate to override changed content on Debian-like minion
+Scenario: Apply highstate to override changed content on SSH minion
+Scenario: Unsubscribe Red Hat-like minion and delete configuration files
+Scenario: Unsubscribe Debian-like minion and delete configuration files
+Scenario: Unsubscribe SSH minion and delete configuration files
+Scenario: Change file on Salt minion and compare
+Scenario: Check configuration channel and files via API for Salt minion
+Scenario: Extend configuration channel and deploy files via API for Salt minion
+Scenario: Unsubscribe systems via API for Salt minion
+Scenario: Re-add SLE Minion via SSM
+Scenario: Cleanup: remove remaining Salt minion from configuration channel
+Scenario: Cleanup: remove the mixed configuration channel
+Scenario: Cleanup: delete configuration files on remaining Salt minion
+Scenario: Cleanup: remove remaining systems from SSM after tests of configuration channel on all clients
+
+
+Scenario: Log in as admin user
+Scenario: Change child channels for SLES minion subscribed to a base channel
+Scenario: Check SLES minion is still subscribed to old channels before channel change completes
+Scenario: Check old channels are still enabled on SLES minion before channel change completes
+Scenario: Wait 3 minutes for the scheduled action to be executed
+Scenario: Check channel change has completed for the SLES minion
+Scenario: Check the SLES minion is subscribed to the new channels
+Scenario: Check the new channels are enabled on the SLES minion
+Scenario: System default channel can't be determined on the Red Hat-like minion
+Scenario: Cleanup: make sure the Red Hat-like minion is still unchanged
+Scenario: System default channel can't be determined on the Debian-like minion
+Scenario: Cleanup: make sure the Debian-like minion is still unchanged
+Scenario: Cleanup: subscribe the SLES minion back to previous channels
+Scenario: Cleanup: remove remaining systems from SSM after channel subscription tests
+
+
+Scenario: Pre-requisite: install virgo-dummy-1.0 and remove andromeda-dummy packages
+Scenario: Pre-requisite: refresh package list and check newly installed packages on Red Hat-like minion
+Scenario: Log in as admin user
+Scenario: Pre-requisite: re-subscribe the Red Hat-like minion to a base channel
+Scenario: Schedule errata refresh to reflect channel assignment on Red Hat-like minion
+Scenario: Install a patch on the Red Hat-like minion
+Scenario: Install a package on the Red Hat-like minion
+Scenario: Cleanup: remove virgo-dummy and andromeda-dummy packages from Red Hat-like minion
+
+
+Scenario: Pre-requisite: enable Prometheus exporters repository on the Red Hat-like minion
+Scenario: Log in as admin user
+Scenario: Apply Prometheus exporter formulas on the Red Hat-like minion
+Scenario: Configure Prometheus exporter formula on the Red Hat-like minion
+Scenario: Apply highstate for Prometheus exporters on the Red Hat-like minion
+Scenario: Visit monitoring endpoints on the Red Hat-like minion
+Scenario: Cleanup: undo Prometheus exporter formulas on the Red Hat-like minion
+Scenario: Cleanup: apply highstate after test monitoring on the Red Hat-like minion
+Scenario: Cleanup: disable Prometheus exporters repository on the Red Hat-like minion
+
+
+Scenario: Log in as admin user
+Scenario: Schedule errata refresh to reflect channel assignment on SSH minion
+Scenario: Install a package on the SSH minion
+Scenario: Cleanup: remove the package from the SSH minion
+
+
+Scenario: Log in as admin user
+Scenario: Pre-requisite: Deploy test playbooks and inventory file
+Scenario: Pre-requisite: Enable client tools repositories
+Scenario: Enable "Ansible control node" system type
+Scenario: Apply highstate and check that Ansible is installed
+Scenario: The Ansible tab appears in the system overview page
+Scenario: Configure some inventory and playbooks path
+Scenario: Display inventories
+Scenario: Discover playbooks and display them
+Scenario: Run a playbook using custom inventory
+Scenario: Cleanup: Disable Ansible and remove test playbooks and inventory file
+Scenario: Cleanup: Disable client tools repositories
+
+
+Scenario: Pre-requisite: enable Prometheus exporters repository on the Debian-like minion
+Scenario: Log in as admin user
+Scenario: Apply Prometheus exporter formulas on the Debian-like minion
+Scenario: Configure Prometheus exporter formula on the Debian-like minion
+Scenario: Apply highstate for Prometheus exporters on the Debian-like minion
+Scenario: Visit monitoring endpoints on the Debian-like minion
+Scenario: Cleanup: undo Prometheus exporter formulas on the Debian-like minion
+Scenario: Cleanup: apply highstate after test monitoring on the Debian-like minion
+Scenario: Cleanup: disable Prometheus exporters repository on the Debian-like minion
+
+
+Scenario: Pre-requisite: install virgo-dummy-1.0 package make sure orion-dummy is not present on Debian-like minion
+Scenario: Pre-requisite: refresh package list on Debian-like minion
+Scenario: Log in as admin user
+Scenario: Pre-requisite: ensure the errata cache is computed for Debian-like minion
+Scenario: Enable content staging for Debian-like minion
+Scenario: Install package in the future and check for staging on Debian-like minion
+Scenario: Cleanup: remove virgo-dummy and orion-dummy packages from Debian-like minion
+
+
+Scenario: Log in as admin user
+Scenario: Pre-requisite: install virgo-dummy-1.0 package on Debian-like minion
+Scenario: Install a package on the Debian-like minion
+Scenario: Update a package on the Debian-like minion
+Scenario: Cleanup: remove virgo-dummy and andromeda-dummy packages from Debian-like minion
+
+
+Scenario: Log in as admin user
+Scenario: Delete SLES minion system profile before API bootstrap test
+Scenario: Bootstrap a SLES minion via API
+Scenario: Check new minion bootstrapped via API in System Overview page
+Scenario: Check contact method of this minion
+Scenario: Check registration on proxy of minion bootstrapped via API
+Scenario: Check spacecmd system ID of minion bootstrapped via API
+Scenario: API bootstrap: subscribe to base channel
+Scenario: Check events history for failures on SLES minion after API bootstrap
+Scenario: Bootstrap via API a non-existing system
+Scenario: Bootstrap a salt-ssh system with activation key and default contact method
+
+
+Scenario: Log in as admin user
+Scenario: Bootstrap should fail when minion already exists
+Scenario: Bootstrap a SLES minion with wrong hostname
+Scenario: Bootstrap a SLES minion with wrong SSH credentials
+Scenario: Bootstrap a SLES minion with wrong SSH port number
+
+
+Scenario: Log in as admin user
+Scenario: Generate a re-activation key
+Scenario: Bootstrap should fail when minion already exists
+Scenario: Bootstrap should fail when system already exists in the server
+Scenario: Bootstrap a SLES minion with reactivation key
+Scenario: Check the events history for the reactivation
+Scenario: Cleanup: delete SLES minion after reactivation tests
+Scenario: Cleanup: bootstrap a SLES minion after reactivation tests
+
+
+Scenario: Pre-requisite: install old packages on SLES minion
+Scenario: Pre-requisite: refresh package list and check installed packages on SLE minion
+Scenario: Log in as admin user
+Scenario: Pre-requisite: ensure the errata cache is computed before software states tests
+Scenario: Accepted minion has a base channel
+Scenario: Remove a package through the UI
+Scenario: Install a package through the UI
+Scenario: Install an already installed package through the UI
+Scenario: Upgrade a package through the UI
+Scenario: Verify the package states
+Scenario: Use Salt presence mechanism on an active minion
+Scenario: Use Salt presence mechanism on an unreachable minion
+Scenario: Cleanup: restart the salt service on SLES minion
+Scenario: Cleanup: remove old packages from SLES minion
+
+
+Scenario: Pre-requisite: install virgo-dummy-1.0 package make sure orion-dummy is not present
+Scenario: Pre-requisite: refresh package list
+Scenario: Log in as admin user
+Scenario: Pre-requisite: ensure the errata cache is computed before staging tests
+Scenario: Enable content staging
+Scenario: Install package in the future and check for staging
+Scenario: Install patch in the future and check for staging
+Scenario: Cleanup: remove virgo-dummy package from SLES minion
+
+
+Scenario: Log in as admin user
+Scenario: Install the locale formula package on the server
+Scenario: The new formula appears on the server
+Scenario: Enable the formula on the minion
+Scenario: Parametrize the formula on the minion
+Scenario: Check the pillar data after saving the formula
+Scenario: No other minion is affected by the formula
+Scenario: Use the parametrized formula in test mode
+Scenario: Apply the parametrized formula via the highstate
+Scenario: Reset the formula on the minion
+Scenario: Check the pillar data after resetting the formula
+Scenario: Apply the reset formula via the highstate
+Scenario: Disable the formula on the minion
+Scenario: Check the pillar data after disabling the formula
+Scenario: Assign locale formula to minion via group formula
+Scenario: Check the pillar data after assigning group formula
+Scenario: No other minion is affected by the group formula
+Scenario: Cleanup: remove "locale-formula-group" system group
+Scenario: Cleanup: reset locale values on the minion
+Scenario: Cleanup: uninstall formula package from the server
+Scenario: Cleanup: remove remaining systems from SSM after formula tests
+
+
+Scenario: Log in as admin user
+Scenario: Install a test formula package on the server
+Scenario: Assign test formula to minion via group formula
+Scenario: Verify default values
+Scenario: Fill in and verify non-default values in group formula
+Scenario: Clear values in group formula and verify the defaults again
+Scenario: Fill in and verify mix of default and non-default values in group formula
+Scenario: Verify that minion form inherits the values from group form
+Scenario: Fill in and verify non-default values in minion formula
+Scenario: Clear values in minion formula and verify that the pillar is set to group values
+Scenario: Cleanup: remove formula from minion
+Scenario: Cleanup: remove "test-formula-group" system group
+
+
+Scenario: Pre-requisite: install virgo-dummy-1.0 package on SLE minion
+Scenario: Pre-requisite: refresh package list and check old packages installed on SLE minion
+Scenario: Log in as admin user
+Scenario: Pre-requisite: ensure the errata cache is computed before patching Salt minion
+Scenario: Install a patch on the minion
+Scenario: Cleanup: remove virgo-dummy package from SLE minion
+
+
+Scenario: Log in as admin user
+Scenario: Install the OpenSCAP packages on the SLE minion
+Scenario: Schedule an OpenSCAP audit job on the SLE minion
+Scenario: Check results of the audit job on the minion
+Scenario: Create a second almost identical audit job
+Scenario: Compare audit results
+Scenario: Cleanup: remove audit scans retention period
+Scenario: Cleanup: delete audit results
+Scenario: Cleanup: restore audit scans retention period
+Scenario: Cleanup: remove the OpenSCAP packages from the SLE minion
+
+
+Scenario: Log in as admin user
+Scenario: Create a user-defined state
+Scenario: Trigger highstate from API
+Scenario: Cleanup: remove user-defined state and the file it created
+
+
+Scenario: Log in as admin user
+Scenario: Check the Salt entitlement
+Scenario: Check that installed packages are visible
+Scenario: Check that Hardware Refresh button works on a SLES Salt minion
+Scenario: Check that Update Properties button works
+
+
+Scenario: Log in as admin user
+Scenario: Create a state channel
+Scenario: Subscribe a minion to the state channel
+Scenario: Salt state details
+Scenario: Apply the new state
+Scenario: Try to remove init.sls file
+Scenario: Cleanup: remove the state channel and the file
+
+
+Scenario: Log in as admin user
+Scenario: Create the 1st state channel
+Scenario: Create the 2nd state channel with same name
+Scenario: Create the 3rd state channel with spacecmd
+Scenario: Subscribe a minion to 1st and 2nd state channels
+Scenario: Apply the Configuration channel state
+Scenario: Subscribe a minion to the 3rd state channel
+Scenario: Apply the Configuration channel state with spacecmd
+Scenario: Cleanup: remove the 1st state channel and the deployed file
+Scenario: Cleanup: remove the 2nd state channel and the deployed file
+Scenario: Cleanup: remove the 3rd state channel and the deployed file
+
+
+Scenario: Create a state channel via API
+Scenario: Create a state channel with contents via API
+Scenario: Cleanup: remove state channels via API
+
+
+Scenario: Pre-requisite: install milkyway-dummy-1.0 package
+Scenario: Pre-requisite: refresh package list and check installed packages on SLE minion client
+Scenario: Log in as admin user
+Scenario: Pre-requisite: ensure the errata cache is computed before package list tests
+Scenario: Remove manually a package on a minion
+Scenario: Install manually a package on a minion
+Scenario: Cleanup: remove milkyway-dummy packages from SLES minion
+
+
+Scenario: Log in as admin user
+Scenario: Subscribe the SLES minion to a channel
+Scenario: Check the default RPM download point values
+Scenario: Set the custom RPM download point
+Scenario: Subscribe the SLES minion to a channel again so new RPM end-point will be taken into account
+Scenario: Check the channel.repo file to see the custom RPM download point
+Scenario: Cleanup: remove the custom RPM download point
+Scenario: Cleanup: subscribe the SLES minion to a channel
+Scenario: Cleanup: recheck the default RPM download point values
+
+
+Scenario: Pre-requisite: enable Prometheus exporters repository on the minion
+Scenario: Log in as admin user
+Scenario: Apply Prometheus and Prometheus exporter formulas
+Scenario: Configure Prometheus formula
+Scenario: Configure Prometheus exporter formula
+Scenario: Apply highstate for Prometheus exporters
+Scenario: Visit monitoring endpoints on the minion
+Scenario: Cleanup: undo Prometheus and Prometheus exporter formulas
+Scenario: Cleanup: apply highstate after test monitoring
+Scenario: Cleanup: disable Prometheus exporters repository
+
+
+Scenario: Log in as admin user
+Scenario: Pre-requisite: Deploy test playbooks and inventory file
+Scenario: Pre-requisite: Enable client tools repositories
+Scenario: Enable "Ansible control node" system type
+Scenario: Apply highstate and check that Ansible is installed
+Scenario: The Ansible tab appears in the system overview page
+Scenario: Configure some inventory and playbooks path
+Scenario: Display inventories
+Scenario: Discover playbooks and display them
+Scenario: Run a playbook using custom inventory
+Scenario: Cleanup: Disable Ansible and remove test playbooks and inventory file
+Scenario: Cleanup: Disable client tools repositories
+
+
+Scenario: Log in as admin user
+Scenario: Enter some invalid organization credentials
+Scenario: Make the credentials primary
+Scenario: Check the associated subscription list
+Scenario: Cleanup: delete the new organization credentials
+
+
+Scenario: Log in as admin user
+Scenario: Pre-requisite: downgrade milkyway-dummy to lower version
+Scenario: Schedule channel data refresh
+Scenario: Display CVE audit page
+Scenario: Search for a known CVE number
+Scenario: Search for an unknown CVE number
+Scenario: Select a system for the System Set Manager
+Scenario: List systems by patch status via API before patch
+Scenario: Apply patches
+Scenario: List systems by patch status via API after patch
+Scenario: Cleanup: remove installed packages
+Scenario: Cleanup: remove remaining systems from SSM after CVE audit tests
+
+
+Scenario: Log in as admin user
+Scenario: Check perseus-dummy-7891 patches
+Scenario: Check local metadata for long CVE IDs
+Scenario: Search for CVE ID with the new format
+
+
+Scenario: Log in as admin user
+Scenario: Pre-require: enable old packages to fake a possible installation
+Scenario: Check all patches exist
+Scenario: Check SLES release 6789 patches
+Scenario: Check packages of SLES release 6789 patches
+Scenario: Check relevant patches for this client
+Scenario: Cleanup: regenerate search index for later tests
+Scenario: Cleanup: remove old packages
+
+
+Scenario: Log in as admin user
+Scenario: Show the KVM host system overview
+Scenario: Prepare a KVM test virtual machine and list it
+Scenario: Start a KVM virtual machine
+Scenario: Show the VNC graphical console for KVM
+Scenario: Suspend a KVM virtual machine
+Scenario: Resume a KVM virtual machine
+Scenario: Shutdown a KVM virtual machine
+Scenario: Edit a KVM virtual machine
+Scenario: Add a network interface to a KVM virtual machine
+Scenario: Delete a network interface from a KVM virtual machine
+Scenario: Add a disk and a cdrom to a KVM virtual machine
+Scenario: Attach an image to a cdrom on a KVM virtual machine
+Scenario: Delete a disk from a KVM virtual machine
+Scenario: Delete a KVM virtual machine
+Scenario: Create a KVM virtual machine
+Scenario: Show the Spice graphical console for KVM
+Scenario: Show the virtual storage pools and volumes for KVM
+Scenario: delete a running KVM virtual machine
+Scenario: Create a KVM UEFI virtual machine
+Scenario: delete a running KVM UEFI virtual machine
+Scenario: Refresh a virtual storage pool for KVM
+Scenario: Stop a virtual storage pool for KVM
+Scenario: Start a virtual storage pool for KVM
+Scenario: Delete a virtual storage pool for KVM
+Scenario: Create a virtual storage pool for KVM
+Scenario: Edit a virtual storage pool for KVM
+Scenario: Delete a virtual volume
+Scenario: List virtual networks
+Scenario: Stop virtual network
+Scenario: Start virtual network
+Scenario: Delete virtual network
+Scenario: Create a virtual network
+Scenario: Edit a virtual network
+Scenario: Create auto installation distribution
+Scenario: Create auto installation profile
+Scenario: Configure auto installation profile
+Scenario: Create an auto installing KVM virtual machine
+Scenario: VNC console for the auto installing KVM virtual machine
+Scenario: Cleanup: remove the auto installation profile
+Scenario: Cleanup: remove the auto installation distribution
+
+
+Scenario: Shutdown spacewalk services
+Scenario: Check embedded database running
+Scenario: Check embedded database can be stopped started and restarted
+Scenario: Check system check of the database sets optimal configuration
+Scenario: Check database utilities
+Scenario: Check SMDBA backup setup facility
+Scenario: Take backup with SMDBA
+Scenario: Restore backup with SMDBA
+Scenario: Cleanup: remove backup directory
+Scenario: Cleanup: start spacewalk services
+
+
+Scenario: Call spacewalk-debug on server
+Scenario: Check the tomcat logs on server
+Scenario: Check salt event log for failures on server
+Scenario: Check the taskomatic logs on server
+Scenario: Check for out of memory errors
+
+
+Scenario: Extract the logs from all our clients
